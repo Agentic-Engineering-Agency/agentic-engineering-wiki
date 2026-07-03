@@ -34,6 +34,7 @@ Operating manual for the agency and Curia product work. **Internal-first;** publ
 
 - [Curia — product overview](./curia-overview.md)
 - [Curia — tech stack](./curia-tech-stack.md)
+- [Curia — docs site deploy runbook](./curia-docs-deploy-runbook.md) — internal ops (relocated from public docs, AGE-29)
 - [Curia GTM & pricing playbook](./curia-gtm-pricing-playbook.md)
 - [KLGV launch playbook](./klgv-launch-playbook.md) *(confidential)*
 - [KLGV relationship](./klgv-relationship.md) *(confidential)*
