@@ -11,6 +11,8 @@ sources:
   - research/operating-state-and-revenue-sequencing.md
   - external-sources/linear-operating-snapshot-2026-07-26.md
   - research/founder-interview-round-4-2026-07-26.md
+  - research/founder-dashboard-v0-operating-contract-2026-07-26.md
+  - research/ae-50-account-pilot-seed-2026-07-26.md
 ---
 
 ## Summary
@@ -84,6 +86,24 @@ If a required field is unknown, store `unknown`; do not ask a model to infer it.
 
 No send or publish occurs solely because the calendar reached a cadence step.
 
+## Week-zero bootstrap — 2026-07-27 through 2026-08-02
+
+This is an evidence-packet week, not a send week. Gmail remains blocked, no approved alternate outbound channel is recorded, the AE 50-account batch is not yet accepted, Curia readiness gates remain open, and Multiempaques has not passed the sufficient-data gate.
+
+| Day | Agentic Engineering | Curia | Required gate |
+|---|---|---|---|
+| Monday | Freeze one commercial wedge, segment, disqualifiers, ledger owner/location, stage exits, and WIP limits. Define Multiempaques sufficient-data fields, formats, owner, approver, and timestamp. | Lock research-only posture, allowed pilot/non-production wording, and public pricing as TBD. | Founder decision record |
+| Tuesday | Verify company-level public evidence toward a frozen 50-account set; record source, observed date, confidence, duplicates, and anti-fit. No named-person enrichment yet. | Build public-source evidence toward 25 firms, including workflow fit, privacy constraints, and warm-intro path. | Evidence completeness report |
+| Wednesday | Review source-link validity, evidence density, reviewer effort, and qualified yield. Hold an internal founder gate. | Reconcile readiness, privacy, and claims gaps; draft replacement language for unapproved claims. | Continue/stop decision |
+| Thursday | Draft segment-level first touch, follow-up, discovery, and proposal templates. Build only the portions of the Multiempaques Blueprint supported by received data. | Draft discovery questions, demo narrative, pilot measurement/support plan, and clearly labeled pricing hypotheses. | Draft-only packet |
+| Friday | Review one AE approval packet; keep contradictory claims and blocked channel visible. | Finish claim inventory and corrected-copy drafts. External contact remains stopped. | Human disposition |
+| Saturday | Red-team sources, privacy, claims, opt-out handling, duplicates, response ownership, and ledger destination. | Remove unconsented KLGV detail; red-team production, compliance, pricing, and support claims. | Adversarial review record |
+| Sunday | Report evidence metrics and `not_configured` commercial actuals; start Multiempaques day count only if the gate timestamp exists. | Record readiness classification and whether the next week stays research-only. | Weekly decision record |
+
+The smallest approval packet contains: entity and segment boundary; account/company rows with public provenance; an atomic claims sheet; exact first-touch/follow-up/CTA drafts; human approver and channel state; opt-out, reply, and meeting owners; ledger destination; and explicit stop conditions.
+
+Do not report revenue, cash, pipeline value, or conversion actuals as zero while authoritative sources are unconfigured. Use `not_configured`. AE may reach a future send gate only after the frozen batch reaches at least 90% required-field completeness and 95% reviewed source-link validity, duplicates/anti-fit are removed, reply/meeting/opt-out handling is ready, an authoritative ledger exists, a channel is working and approved, and a founder approves the exact batch.
+
 ## 30-day allocation
 
 ### Primary lane: Agentic Engineering agency
@@ -150,6 +170,19 @@ The ledger is the contract for the future daily-driver dashboard.
 - The dashboard reads these systems and should not silently become a second write authority.
 
 Twenty is the current working mirror for confirmed contacts in the landing-page plan, pending the open CRM architecture decision in AE-370 [source](../external-sources/linear-operating-snapshot-2026-07-26.md). Older HubSpot work remains operationally superseded unless that decision authorizes a migration. Gmail remains unavailable until OAuth is repaired; Paperclip is excluded until remote health returns [source](../external-sources/chronicle-and-runtime-snapshot-2026-07-26.md).
+
+### Provisional opportunity-ledger decision
+
+Until AE-370 selects and verifies a CRM authority, the recommended interim opportunity store is a private Git-native, schema-validated JSON registry in a new clean repository. This is a decision proposal, not an implemented system.
+
+- one file per opportunity with stable `ae-*` or `curia-*` ID;
+- required `schema_version`, `record_version`, `entity_scope`, company/account ID, offer, stage, amount/currency, confidence, owner, next action/date, decision date, blocker, evidence, and last-changed timestamp;
+- no name, email, phone, message body, or other direct personal data; opaque upstream IDs only;
+- validator rejects path/scope mismatch, invalid stage/currency, prohibited PII keys, and cross-entity aggregation;
+- dashboard reads a pinned commit and emits provenance URI, commit SHA, fetched-at time, authority, scope, and redactions;
+- cutover freezes a named commit, reconciles stable IDs/counts, then makes the selected CRM authoritative and Git evidence-only; no dual-write interval.
+
+Directory partitioning is not access control. If AE and Curia require distinct permissions, use separate repositories or databases. Git is disqualified if direct PII is required or frequent concurrent edits become material; SQLite/D1 with append-only events is the next candidate. Twenty may become authority only after live inspection proves Opportunity objects, stage history, stable read/export, and hard AE/Curia scope separation.
 
 ## Daily-driver dashboard contract
 
