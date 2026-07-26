@@ -48,10 +48,10 @@ The audit found a failed measurement, not a failed segment. The evidence does no
 | --- | ---: | --- |
 | E1 | 4 | Grupo CIPSA; DIMECA; Dysal; Productos Helados Milky Mich |
 | E2 | 5 | Raloy Lubricantes; Grugar Industrial; Pinturas Adhler; MEXDEN; ODISA |
-| Hold | 17 | ENVESTA; Grupo Formex; Poly Rafia; Quimica Delta; Promaquina; IPISA; DIFATSA; Alianza Electrica; Azerty de Mexico; YINSA; Mieles Campos Azules / Nobazul mapping unverified; UniSeal; DIDCOM; JAKO; Ah Cacao; IMAG Organics; Grupo Pochteca |
+| Hold | 17 | ENVESTA; Grupo Formex; Poly Rafia; Quimica Delta; Promaquina; IPISA; DIFATSA; Alianza Electrica; Azerty de Mexico; YINSA; Nobazul; UniSeal; DIDCOM; JAKO; Ah Cacao; IMAG Organics; Grupo Pochteca |
 | Disqualify | 2 | Maison Paulette; Super Tiendas Esquer |
 
-E1 and E2 are relative research-readiness labels only. They never mean qualified account, activated account, approved prospect, or permission to contact. All four E1 packets remain medium-confidence because each relies at least partly on vendor-case evidence.
+E1 and E2 are relative research-readiness labels only. They never mean qualified account, activated account, approved prospect, or permission to contact. All four E1 packets remain medium-confidence. Three of four—DIMECA, Dysal, and Productos Helados Milky Mich—are vendor-case dependent; Grupo CIPSA has controlling direct supplier-portal evidence, while its vendor-reported SAP Fiori signal remains supplementary and uncorroborated.
 
 ## Label-specific corrections
 
@@ -62,7 +62,7 @@ E1 and E2 are relative research-readiness labels only. They never mean qualified
 | JAKO | Hold | Old size evidence must be refreshed |
 | Ah Cacao | Hold | B2B/industrial operating-model adjudication is pending |
 | IMAG Organics | Hold | Identity mapping to “Inulina y Miel de Agave” and frozen-workflow trigger proof are pending |
-| Mieles Campos Azules / Nobazul mapping unverified | Hold | Identity mapping remains unverified |
+| Nobazul | Hold | Identity mapping to the SAP-cited Mieles Campos Azules remains unverified |
 | Grupo Pochteca | Hold | The supplier manual has an internal 2024 revision; the more-than-1,000-employee claim still needs a direct source |
 | Maison Paulette | Disqualify | The cited SAP source supports a B2C pastry/bistro-chain operating model |
 | Super Tiendas Esquer | Disqualify | The cited SAP/Xamai PDF supports a B2C retail operating model |

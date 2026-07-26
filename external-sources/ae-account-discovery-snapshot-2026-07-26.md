@@ -48,7 +48,7 @@ This does not clear the 50-qualified-account gate, create pipeline or traction, 
 
 E1 and E2 are relative research-readiness labels within this provisional cohort. They never mean qualified account, activated account, approved prospect, or permission to contact.
 
-All four E1 packets remain medium-confidence because each relies at least partly on vendor-case evidence; Grupo CIPSA additionally has direct supplier-portal evidence. E2 means the evidence packet is comparatively useful but still has a named repair gate. Holds have unresolved identity, operating-model, size, trigger, systems, durability, or corroboration gates. Disqualifiers are outside the working wedge on currently cited operating-model evidence.
+All four E1 packets remain medium-confidence. Three of four—DIMECA, Dysal, and Productos Helados Milky Mich—are vendor-case dependent; Grupo CIPSA has controlling direct supplier-portal evidence, while its vendor-reported SAP Fiori signal remains supplementary and uncorroborated. E2 means the evidence packet is comparatively useful but still has a named repair gate. Holds have unresolved identity, operating-model, size, trigger, systems, durability, or corroboration gates. Disqualifiers are outside the working wedge on currently cited operating-model evidence.
 
 ## Accounting/shared-services comparison
 
@@ -70,7 +70,7 @@ Strict comparison yield remains 2 of 7.
 
 | Account | Preserved evidence signal | Evidence condition |
 | --- | --- | --- |
-| Grupo CIPSA | [Supplier portal for purchase orders, invoices, credit notes, payment dates, and complements](https://proveedores.cipsa.com.mx/) plus vendor-reported SAP Fiori signal | Medium-confidence; direct portal plus vendor-case dependency |
+| Grupo CIPSA | [Supplier portal for purchase orders, invoices, credit notes, payment dates, and complements](https://proveedores.cipsa.com.mx/) plus vendor-reported SAP Fiori signal | Medium-confidence; direct supplier portal is controlling evidence, while the SAP Fiori detail is supplementary and uncorroborated |
 | DIMECA | [Tangente vendor case](https://tangentemexico.com/) covering requisitions, eight systems integrated with SAP Business One, and automatic invoicing | Medium-confidence; independently corroborate vendor case |
 | Dysal | [SAP/Xamai multi-company vendor case](https://assets.dm.ux.sap.com/iedt2020/pdfs/microxamaibook.pdf) retained as the systems source | Medium-confidence; corroborate account mapping and control |
 | Productos Helados Milky Mich | [Odoo customer review](https://www.odoo.com/es/blog/customer-reviews-6/revolucion-helada-helados-milky-mich-y-odoo-1314) | Medium-confidence; independently corroborate vendor case |
@@ -99,7 +99,7 @@ Strict comparison yield remains 2 of 7.
 | Alianza Electrica | Control, size, or evidence gate remains open |
 | Azerty de Mexico | Control, size, or evidence gate remains open |
 | YINSA | Control, size, or evidence gate remains open |
-| Mieles Campos Azules / Nobazul mapping unverified | [SAP cloud-automation case shared with IMAG Organics](https://news.sap.com/latinamerica/2022/12/sap-apoya-a-empresas-agaveras-en-su-automatizacion-y-procesos-en-la-nube/); hold pending identity mapping, control/size, and independent corroboration |
+| Nobazul | [SAP cloud-automation case naming Mieles Campos Azules alongside IMAG Organics](https://news.sap.com/latinamerica/2022/12/sap-apoya-a-empresas-agaveras-en-su-automatizacion-y-procesos-en-la-nube/); hold because the identity mapping between Nobazul and Mieles Campos Azules remains unverified; control/size and independent corroboration also remain open |
 | UniSeal | [SAP customer document](https://www.sap.com/documents/2025/06/589653ff-0c7f-0010-bca6-c68f7e60039b.html); control/size and independent-corroboration gates remain open |
 | DIDCOM | [Treasury/accounting role](https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-de-tesoreria-y-contabilidad-en-hermosillo-0B4567F4271918C961373E686DCF3405) is a transient secondary anti-bot job-board source; hold pending industrial operating-model evidence and a durable replacement |
 | JAKO | [SAP/Xamai multi-company case](https://assets.dm.ux.sap.com/iedt2020/pdfs/microxamaibook.pdf) remains systems calibration; hold until old size evidence is refreshed and account mapping is corroborated |
