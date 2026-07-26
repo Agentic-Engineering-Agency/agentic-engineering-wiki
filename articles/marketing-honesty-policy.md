@@ -14,8 +14,6 @@ sources:
   - articles/claims-registry.md
   - external-sources/sites-portfolio-snapshot-2026-07-26.md
 ---
-# Marketing honesty policy
-
 Bold positioning is allowed; ambiguous evidence states are not. Every material public, sales, or investor claim must distinguish intent, implementation, deployment, payment, repetition, and production readiness.
 
 ## Claim-state vocabulary

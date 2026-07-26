@@ -15,8 +15,6 @@ sources:
   - articles/claims-registry.md
   - research/operating-state-and-revenue-sequencing.md
 ---
-# KLGV pilot operating playbook
-
 Internal and confidential. This replaces the expired July 16 launch plan.
 
 ## Objective

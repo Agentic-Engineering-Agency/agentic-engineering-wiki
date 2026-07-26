@@ -11,8 +11,6 @@ tags:
   - internal
 title: Delivery process
 ---
-# Delivery process
-
 How Agentic Engineering ships client work and internal product. Public mirror: [agency site process section](../external-sources/agenticengineering-agency-site.md).
 
 ## Four phases

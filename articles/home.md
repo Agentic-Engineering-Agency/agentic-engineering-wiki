@@ -14,8 +14,6 @@ sources:
   - external-sources/sites-portfolio-snapshot-2026-07-26.md
   - external-sources/linear-operating-snapshot-2026-07-26.md
 ---
-# Agentic Engineering — internal wiki
-
 Canonical operating knowledge for Agentic Engineering, Curia, the product portfolio, GTM, agent/model harnesses, and investor-readiness boundaries. Internal-first; public use requires the [[articles/public-wiki-boundary|Public wiki boundary]].
 
 ## Start here

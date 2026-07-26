@@ -13,8 +13,6 @@ sources:
   - external-sources/chronicle-and-runtime-snapshot-2026-07-26.md
   - research/investor-claims-and-entity-readiness.md
 ---
-# Team & roles
-
 This page separates operational participation from legal founder, officer, employee, contractor, or equity status. Those are not interchangeable.
 
 ## People and role evidence

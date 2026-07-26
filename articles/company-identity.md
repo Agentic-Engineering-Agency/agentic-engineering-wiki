@@ -13,8 +13,6 @@ sources:
   - external-sources/github-org-snapshot-2026-07-26.md
   - external-sources/sites-portfolio-snapshot-2026-07-26.md
 ---
-# Company identity
-
 Agentic Engineering is currently a founder-led agentic-engineering business: it sells focused implementation work, develops reusable multi-agent infrastructure, and builds a portfolio of product IP. Its target company form is a **Delaware corporation created through Stripe Atlas**; that is a target, not a completed filing.
 
 ## Positioning

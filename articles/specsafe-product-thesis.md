@@ -11,8 +11,6 @@ tags:
   - internal
 title: SpecSafe — product thesis
 ---
-# SpecSafe — product thesis
-
 Internal canonical. Resolves [OSS golden path tension](./oss-golden-path-decision.md) for **methodology**; harness repo consolidation remains separate.
 
 ## Decision (2026-06-26)

@@ -11,8 +11,6 @@ tags:
   - canonical
 title: Curia — tech stack
 ---
-# Curia — tech stack
-
 Internal engineering reference. Complements [product overview](./curia-overview.md).
 
 ## Stack (founder-confirmed 2026-06-26)

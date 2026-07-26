@@ -11,8 +11,6 @@ tags:
   - canonical
 title: Open source strategy
 ---
-# Open source strategy
-
 ## Why we open-source
 
 **Primary effect today:** **indirect credibility and inbound interest** — not yet a **closed-deal attribution channel** (founder-confirmed 2026-06-26).

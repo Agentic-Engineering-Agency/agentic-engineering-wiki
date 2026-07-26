@@ -10,8 +10,6 @@ tags:
   - todo
 title: OSS golden path — decision (OPEN)
 ---
-# OSS golden path — decision (OPEN)
-
 > [!NOTE]
 > **SpecSafe direction decided (R3 28B):** [methodology / open core forever](./specsafe-product-thesis.md) — **not** a commercial product.
 >

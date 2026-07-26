@@ -10,8 +10,6 @@ tags:
   - internal
 title: Competitive landscape
 ---
-# Competitive landscape
-
 ## Agency services
 
 ### Threats (internal assessment)

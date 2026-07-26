@@ -13,8 +13,6 @@ sources:
   - external-sources/linear-operating-snapshot-2026-07-26.md
   - research/operating-state-and-revenue-sequencing.md
 ---
-# Active work snapshot
-
 Point-in-time operating picture. **As of 2026-07-26.** Replace this page when commercial stages, delivery commitments, or agent-runtime conditions materially change.
 
 ## Executive read

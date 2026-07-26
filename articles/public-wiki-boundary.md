@@ -13,8 +13,6 @@ sources:
   - articles/claims-registry.md
   - research/investor-claims-and-entity-readiness.md
 ---
-# Public wiki boundary
-
 This knowledge base is internal. A page being canonical does not make it public-safe.
 
 ## Eligible after review

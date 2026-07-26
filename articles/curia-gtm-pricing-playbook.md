@@ -14,8 +14,6 @@ sources:
   - research/investor-claims-and-entity-readiness.md
   - articles/claims-registry.md
 ---
-# Curia GTM & pricing playbook
-
 Curia should grow from documented design-partner value, not from a broad launch claim.
 
 ## Current motion

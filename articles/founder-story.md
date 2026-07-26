@@ -14,8 +14,6 @@ sources:
   - external-sources/github-org-snapshot-2026-07-26.md
   - articles/team-and-roles.md
 ---
-# Founder story
-
 This is the internal narrative spine, not a substitute for legal founder or cap-table records.
 
 ## The through-line

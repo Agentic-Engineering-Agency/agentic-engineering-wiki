@@ -14,8 +14,6 @@ sources:
   - articles/founder-led-growth-operating-system.md
   - external-sources/sites-portfolio-snapshot-2026-07-26.md
 ---
-# Ideal client profile
-
 Use separate ICPs for Agentic Engineering services and Curia. Do not mix them into one generic AI lead list.
 
 ## AE services — primary ICP

@@ -14,8 +14,6 @@ sources:
   - articles/claims-registry.md
   - external-sources/sites-portfolio-snapshot-2026-07-26.md
 ---
-# KLGV relationship
-
 > [!WARNING]
 > Internal only. Customer terms, usage, investor relationships, and individual identities require need-to-know handling.
 

@@ -12,8 +12,6 @@ tags:
   - canonical
 title: Curia — docs site deploy runbook
 ---
-# Curia — docs site deploy runbook
-
 Internal operations reference for the Curia documentation site (`apps/docs`, Fumadocs on Next.js). Complements [Curia — tech stack](./curia-tech-stack.md).
 
 > **Why this lives here:** relocated from `curia-ai/apps/docs/content/docs/operators/cloudflare-deploy.mdx` (AGE-29). That path is served on the **public, indexable** domain `docs.agenticengineering.lat` — operator/runbook material must not sit on a public surface. See [Public wiki boundary](./public-wiki-boundary.md). No secrets were exposed by the original page; this is a pattern fix.

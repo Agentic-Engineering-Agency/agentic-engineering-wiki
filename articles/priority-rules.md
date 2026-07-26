@@ -13,8 +13,6 @@ sources:
   - research/operating-state-and-revenue-sequencing.md
   - external-sources/linear-operating-snapshot-2026-07-26.md
 ---
-# Priority rules
-
 The former fixed 70/30 Curia-versus-agency split is superseded. Priorities now follow near-term outcomes, explicit deadlines, and evidence gates.
 
 ## Thirty-day primary lanes

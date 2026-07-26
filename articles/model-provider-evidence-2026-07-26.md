@@ -7,8 +7,6 @@ observed: 2026-07-26
 author: Codex with fresh cross-family review
 tags: [models, providers, routing, evidence, sales, internal]
 ---
-# Model provider evidence — 2026-07-26
-
 ## Conclusion
 
 Every scoped product is currently confirmed by an official provider source, but none has official evidence of better conversion, persuasion, or revenue performance. Provider positioning is a routing prior, not a sales benchmark. Agentic Engineering must promote a route only after it passes the sales-specific harness in [Model routing and sales harness](./model-routing-and-sales-harness.md).
@@ -18,7 +16,7 @@ A model product, a deployment route, and an independent provider family are diff
 ## Official facts and safe test roles
 
 | Product | Official fact observed 2026-07-26 | Safe role to test | Boundary |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Claude Opus 5 | Anthropic documents `claude-opus-5`, a 1M-token context window, and positioning for complex agentic and enterprise work [release](https://www.anthropic.com/news/claude-opus-5), [API notes](https://platform.claude.com/docs/en/about-claude/models/whats-new-opus-5) | High-stakes proposals, strategy, final QA of non-Anthropic work | Role is an inference; no sales-performance proof |
 | Claude Fable 5 | Anthropic documents `claude-fable-5`, demanding long-horizon work, restored access, and a 30-day retention requirement [introduction](https://platform.claude.com/docs/en/about-claude/models/introducing-claude-fable-5-and-claude-mythos-5), [product](https://www.anthropic.com/claude/fable), [redeployment](https://www.anthropic.com/news/redeploying-fable-5) | Rare flagship diligence after privacy review | Same Anthropic family as Opus; avoid prospect PII until retention/DPA is accepted |
 | GPT-5.6 Sol | OpenAI positions Sol as the frontier-capability tier; the `gpt-5.6` alias routes to Sol [guidance](https://developers.openai.com/api/docs/guides/latest-model), [release](https://openai.com/index/gpt-5-6/) | Strategic synthesis and different-family review of Anthropic-authored work | No sales-performance proof |

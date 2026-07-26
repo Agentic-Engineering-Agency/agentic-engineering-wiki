@@ -14,8 +14,6 @@ sources:
   - external-sources/sites-portfolio-snapshot-2026-07-26.md
   - articles/claims-registry.md
 ---
-# Curia — product overview
-
 Curia is a legal-operations product for Mexican law firms, focused on connecting court monitoring, deadlines, matters, documents, and citation-verified legal work into a governed workflow.
 
 ## Canonical current status

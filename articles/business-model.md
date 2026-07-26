@@ -13,8 +13,6 @@ sources:
   - research/operating-state-and-revenue-sequencing.md
   - research/investor-claims-and-entity-readiness.md
 ---
-# Business model & funding
-
 Agentic Engineering and Curia have connected founders and capabilities, but their commercial models, entities, cap tables, and raises must remain separable.
 
 ## Revenue sequence

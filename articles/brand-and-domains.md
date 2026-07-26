@@ -12,8 +12,6 @@ sources:
   - research/founder-interview-round-4-2026-07-26.md
   - articles/claims-registry.md
 ---
-# Brand & domains
-
 ## Brand architecture
 
 | Brand/surface | Intended role | Primary audience | Boundary |

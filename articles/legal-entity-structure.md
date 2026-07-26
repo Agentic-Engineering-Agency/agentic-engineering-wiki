@@ -13,8 +13,6 @@ sources:
   - research/investor-claims-and-entity-readiness.md
   - articles/claims-registry.md
 ---
-# Legal entity structure
-
 Internal planning record, not legal advice and not public marketing copy.
 
 ## Approved target structure
