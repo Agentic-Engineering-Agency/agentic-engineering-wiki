@@ -15,7 +15,7 @@ sources:
 
 ## Summary
 
-Agentic Engineering and Curia are separate company and financing theses. Agentic Engineering is the agency-to-platform company: services generate cash and workflow evidence; Ultimate Harness and related orchestration/evaluation assets become reusable delivery IP; PriceGenius and Defade are owned product options; Muta, Agentforge, and SpecSafe may enter the perimeter after explicit decisions. Curia is a separate Mexican legal-intelligence company with its own entity, product, customers, and raise [decision record](../research/founder-interview-round-4-2026-07-26.md).
+Agentic Engineering and Curia are separate company and financing theses. Agentic Engineering is the agency-to-platform company: services generate cash and workflow evidence; Ultimate Harness and related orchestration/evaluation assets are intended to become reusable delivery IP; PriceGenius and Defade are intended product options; Muta, Agentforge, and SpecSafe may enter the perimeter after explicit decisions and chain-of-title diligence. Curia is a separate Mexican legal-intelligence company with its own intended entity, product, customers, and raise [decision record](../research/founder-interview-round-4-2026-07-26.md).
 
 > [!WARNING]
 > This page records approved target state. It does not prove that either entity has been formed or that IP, contracts, domains, repositories, or trademarks have been legally assigned.
@@ -27,10 +27,10 @@ flowchart TB
     F["Founders"] --> AE["Agentic Engineering — intended Delaware corporation"]
     F --> C["Curia — intended Mexican SAPI"]
     AE --> A["Agency cash engine"]
-    AE --> UH["Ultimate Harness — delivery and governance IP"]
-    AE --> PG["PriceGenius — B2B option"]
-    AE --> D["Defade — bounded B2C option"]
-    AE -. "decision pending" .-> M["Muta / Agentforge / SpecSafe"]
+    AE -. "intended ownership; assignment pending" .-> UH["Ultimate Harness — delivery and governance IP"]
+    AE -. "intended ownership; assignment pending" .-> PG["PriceGenius — B2B option"]
+    AE -. "intended ownership; assignment pending" .-> D["Defade — bounded B2C option"]
+    AE -. "decision and assignment pending" .-> M["Muta / Agentforge / SpecSafe"]
     C --> CP["Curia legal-intelligence product"]
     C --> KR["KLGV paid design-partner relationship"]
 ```
@@ -49,7 +49,7 @@ See [legal entity structure](./legal-entity-structure.md) for the diligence chec
 
 ### Intended Agentic Engineering IP perimeter
 
-Agentic Engineering intends to own and use Ultimate Harness, PriceGenius, and Defade IP. Muta, Agentforge, and SpecSafe are possible additions, not completed assignments. The company must maintain an asset schedule covering repositories, domains, trademarks, datasets, customer agreements, vendor agreements, licenses, and founder inventions.
+Agentic Engineering intends to own and use Ultimate Harness, PriceGenius, and Defade IP. Muta, Agentforge, and SpecSafe are possible additions, not completed assignments. The company must maintain an asset schedule covering repositories, domains, trademarks, datasets, customer agreements, vendor agreements, licenses, and founder inventions. Prior ShesMine entity or asset references require their own inventory and disposition decision; calling an old structure superseded does not extinguish contracts, IP, liabilities, or ownership questions.
 
 ### Portfolio roles
 
@@ -57,12 +57,12 @@ Agentic Engineering intends to own and use Ultimate Harness, PriceGenius, and De
 |---|---|---|
 | Agency | Immediate cash engine and customer-discovery surface | Prepaid engagement from a qualified recurring-workflow buyer |
 | Multiempaques engagement | First-client validation exception | Free Blueprint after sufficient data; price 7–10 days later; implementation after acceptance |
-| Ultimate Harness | Delivery, orchestration, evaluation, and governance IP; possible workshop offer | Five interviews and one paid governance/onboarding workshop |
-| PriceGenius | B2B pricing-intelligence option | Eight seller interviews, two manual audits, one paid pilot |
-| Defade | Bounded B2C restoration option | Verified funnel plus five paid packs before broad rebuild |
-| Muta | Incubated control-plane option | Three strong customer commitments before more product build |
-| Prism Arena / MemSWE | Proof, evaluation, and lead-generation assets | Qualified conversations attributable to buyer-facing proof pieces |
-| Curia | Separate flagship vertical company | Additional paid pilot/design partner with governance evidence |
+| Ultimate Harness | Delivery, orchestration, evaluation, and governance IP; possible workshop offer | Chain of title plus canonical corpus, baselines, family-aware review, and a task-specific promotion decision |
+| PriceGenius | B2B pricing-intelligence option | Chain of title, one measurable buyer workflow, safe demo specification, and credible paid signal before major build |
+| Defade | Bounded B2C restoration option | Chain of title plus re-verified live revision, checkout/support readiness, analytics contract, and one approved low-risk test |
+| Muta | Incubated control-plane option | Ownership, product state, buyer, and customer evidence reconciled before more build |
+| Prism Arena / MemSWE | Owner-controlled proof and evaluation assets | Public CTA and claims review before treating either as an acquisition channel |
+| Curia | Separate flagship vertical company | KLGV readiness evidence plus an approved path to another paid design partner |
 
 The repository portfolio is much larger than the active seven-day development surface [source](../external-sources/github-org-snapshot-2026-07-26.md). Portfolio membership therefore does not imply equal staffing, GTM priority, or investor prominence.
 

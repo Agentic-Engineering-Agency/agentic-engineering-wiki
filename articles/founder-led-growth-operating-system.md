@@ -17,7 +17,7 @@ sources:
 
 Agentic Engineering will run a founder-led, evidence-first revenue system before scaling lead volume or building a new command-center application. The system turns proof assets and account research into qualified conversations, proposals, paid work, and reusable delivery evidence. Automation may discover, verify, score, draft, and summarize; a human approves every external send, price, proposal, scheduling commitment, CRM stage change with commercial consequences, and customer-visible claim.
 
-The two primary 30-day lanes are Agentic Engineering agency cash generation and a separate Curia paid-pilot motion, consistent with the [portfolio and platform strategy](./portfolio-and-platform-strategy.md).
+The current 30-day operating window is 2026-07-26 through 2026-08-25. Its two primary lanes are Agentic Engineering agency cash generation and a separate Curia paid-pilot motion, consistent with the [portfolio and platform strategy](./portfolio-and-platform-strategy.md).
 
 ## Offer architecture
 
@@ -88,24 +88,25 @@ No send or publish occurs solely because the calendar reached a cadence step.
 
 ### Primary lane: Agentic Engineering agency
 
-- Complete the Multiempaques data gate and free Blueprint.
-- Run one 50-account pilot before expanding Apollo to 500 accounts.
-- Target five decision-owner conversations, two priced proposals, and at least one prepaid engagement.
-- Use the Fit Check, Field Notes, Proof Foundry, MemSWE, and Prism assets as evidence-bearing entry points—not vanity traffic.
+- Complete the Multiempaques sufficient-data gate and free Blueprint; start its 7–10-day pricing clock only when that gate is recorded.
+- Validate one 50-account segment before considering a 500-account expansion.
+- Optimize for qualified decision-owner conversations, priced proposals, and prepaid work, but do not present desired counts as forecasts until a live baseline exists.
+- Use the Fit Check, Field Notes, and Proof Foundry only where their CTA, availability, and claims have been verified.
+- MemSWE and Prism may support private conversations as owner-controlled proof artifacts; they are not acquisition entry points until a public, claims-reviewed CTA exists.
 
 ### Primary lane: Curia
 
-- Define one narrow pilot outcome.
-- Conduct eight qualified conversations and three workflow demos.
-- Seek at least one additional paid pilot/design partner.
-- Keep KLGV language within the canonical claim boundary.
+- Re-verify KLGV pilot evidence, live privacy wording, and production gaps.
+- Define one narrow pilot outcome and prepare research for a second design partner.
+- Treat another paid design partner as a desired outcome, not current traction or a forecast.
+- Do not contact or commit a new pilot until claims, product-readiness, privacy, and commercial gates are approved.
 
-### Bounded validation quotas
+### Bounded validation gates
 
-- PriceGenius: eight seller interviews, two manual audits, one paid pilot.
-- Ultimate Harness: five engineering-leader interviews, one paid governance/onboarding workshop.
-- Defade: verify deployment/funnel, reach 200 qualified visits, at least 8% upload start, at least 2% purchase, and five paid packs across two message/channel tests.
-- Muta: no additional product build without three strong hosted-control-plane commitments.
+- PriceGenius: establish chain of title, one buyer, one measurable pricing workflow, a safe demo specification, and a credible paid signal before major build.
+- Ultimate Harness: own one canonical evaluation corpus, strong baselines, provider-family-aware review, and a promotion decision before platform-superiority claims.
+- Defade: re-verify the live revision, checkout, support, and analytics; select one segment and one offer; set numeric conversion thresholds only after a baseline exists.
+- Muta: no additional build until ownership, product state, buyer, and customer evidence are reconciled and founders approve the next test.
 
 ## Funnel stages
 

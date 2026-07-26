@@ -40,7 +40,9 @@ Every registry row should carry: `claim_id`, approved wording, state, evidence p
 | AE and Curia will raise separately | Founder decision | “Agentic Engineering and Curia are preparing separate financing paths.” Instrument and terms remain unapproved until indexed. |
 | Agentic Engineering entity | Founder decision | “Agentic Engineering intends to form a Delaware corporation through Stripe Atlas.” Do not say incorporated until formation evidence exists. |
 | Curia entity | Founder decision | “Curia intends to form a Mexican SAPI.” Do not publish RFC, domicile, incorporation, or capitalization until verified. |
-| AE owns portfolio IP | Founder decision; execution unverified | “Agentic Engineering intends to own Ultimate Harness, PriceGenius, and Defade IP.” Muta, Agentforge, and SpecSafe remain possible additions. |
+| AE owns portfolio IP | Founder decision; execution unverified | “Agentic Engineering intends to own Ultimate Harness, PriceGenius, and Defade IP.” Muta, Agentforge, and SpecSafe remain possible additions. Do not state ownership until assignments and asset schedules are indexed. |
+| AE use of Curia/KLGV traction | Prohibited unless explicitly framed as related-founder experience | Curia customer evidence is not AE customer traction. AE investor collateral remediation is tracked in Linear AE-389. |
+| ShesMine prior entity/asset references | Unverified | Inventory contracts, IP, liabilities, domains, contributors, and proposed disposition. “Superseded” does not prove obligations or ownership disappeared. |
 | Two US$750,000 asks | Unverified current terms | The inspected AE and Curia Sites each showed US$750,000 with different instrument language [source](../external-sources/sites-portfolio-snapshot-2026-07-26.md). Reconfirm each separately before outreach. |
 
 The legal and IP diligence plan lives in [portfolio and platform strategy](./portfolio-and-platform-strategy.md) and [legal entity structure](./legal-entity-structure.md).
