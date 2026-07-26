@@ -1,64 +1,83 @@
 ---
-description: Navigation hub for Agentic Engineering internal operating wiki.
+title: Internal wiki — home
+description: Canonical operating hub for Agentic Engineering, Curia, GTM, model routing, and claims.
 status: canonical
 tags:
   - wiki
   - hub
   - internal
   - navigation
-title: Internal wiki — home
+sources:
+  - research/founder-interview-round-4-2026-07-26.md
+  - external-sources/chronicle-and-runtime-snapshot-2026-07-26.md
+  - external-sources/github-org-snapshot-2026-07-26.md
+  - external-sources/sites-portfolio-snapshot-2026-07-26.md
+  - external-sources/linear-operating-snapshot-2026-07-26.md
 ---
 # Agentic Engineering — internal wiki
 
-Operating manual for the agency and Curia product work. **Internal-first;** public subset TBD.
+Canonical operating knowledge for Agentic Engineering, Curia, the product portfolio, GTM, agent/model harnesses, and investor-readiness boundaries. Internal-first; public use requires the [[articles/public-wiki-boundary|Public wiki boundary]].
 
-## Company
+## Start here
 
-- [Company identity](./company-identity.md) — who we are, positioning truth, capacity
-- [Team & roles](./team-and-roles.md) — both founders code; project split
-- [Business model & funding](./business-model.md) — revenue, funding, partnership economics
-- [Brand & domains](./brand-and-domains.md) — .agency vs .online vs future Curia brand
-- [Ideal client profile](./ideal-client-profile.md) — MX mid-market + global startup ICP
-- [Delivery process](./delivery-process.md) — Audit → Design → Build → Operate
-- [Competitive landscape](./competitive-landscape.md) — agency + Curia threats
-- [Open source strategy](./open-source-strategy.md) — repos, SpecSafe, consolidation
-- [OSS golden path decision (OPEN)](./oss-golden-path-decision.md)
-- [Public wiki boundary](./public-wiki-boundary.md) — what may go public later
-- [Marketing honesty policy](./marketing-honesty-policy.md) — aspirational hero + honest capacity page
-- [Legal entity structure](./legal-entity-structure.md) *(confidential)*
-- [Priority rules](./priority-rules.md) — 70/30 Curia vs agency
-- [Active work snapshot](./active-work.md) — June 2026 load
-- [Founder story](./founder-story.md)
+1. [[articles/active-work|Active work snapshot]] — current commercial gates and runtime constraints
+2. [[articles/priority-rules|Priority rules]] — 30-day outcome lanes and WIP limits
+3. [[articles/founder-led-growth-operating-system|Founder-led growth operating system]] — funnel, ledger, cadence, dashboard, and first revenue motion
+4. [[articles/model-routing-and-sales-harness|Model routing and sales harness]] — model roles, evidence envelopes, evaluations, shadow/canary rollout
+5. [[articles/claims-registry|Claims registry]] — canonical entity, customer, IP, financing, model, and traction states
 
-## Products & clients
+## Company and structure
 
-- [Curia — product overview](./curia-overview.md)
-- [Curia — tech stack](./curia-tech-stack.md)
-- [Curia — docs site deploy runbook](./curia-docs-deploy-runbook.md) — internal ops (relocated from public docs, AGE-29)
-- [Curia GTM & pricing playbook](./curia-gtm-pricing-playbook.md)
-- [KLGV launch playbook](./klgv-launch-playbook.md) *(confidential)*
-- [KLGV relationship](./klgv-relationship.md) *(confidential)*
-- [Héctor Guerra FX / DARK MODE](./clients-hector-guerra.md)
+- [[articles/company-identity|Company identity]] — services-to-platform thesis and truth boundary
+- [[articles/portfolio-and-platform-strategy|Portfolio and platform strategy]] — AE/Curia separation and product roles
+- [[articles/business-model|Business model and funding]] — revenue sequence and separate raises
+- [[articles/legal-entity-structure|Legal entity structure]] *(confidential)* — Delaware AE target, Curia SAPI target, chain of title
+- [[articles/team-and-roles|Team and roles]] — people evidence, authority, and agent-run contract
+- [[articles/founder-story|Founder story]] — evidence-bounded narrative
+- [[articles/brand-and-domains|Brand and domains]] — surface and entity boundaries
+- [[articles/marketing-honesty-policy|Marketing honesty policy]] — proof states for public, sales, and investor claims
+- [[articles/public-wiki-boundary|Public wiki boundary]] — what may graduate externally
 
-## Engineering & OSS
+## Revenue and delivery
 
-- [SpecSafe — product thesis](./specsafe-product-thesis.md)
-- [OSS golden path decision (OPEN)](./oss-golden-path-decision.md) — harness repos only
+- [[articles/ideal-client-profile|Ideal client profile]] — AE and Curia qualification gates
+- [[articles/delivery-process|Delivery process]] — Audit → Design → Build → Operate
+- [[articles/competitive-landscape|Competitive landscape]]
+- [[articles/open-source-strategy|Open-source strategy]]
+- [[articles/oss-golden-path-decision|OSS golden-path decision]]
+- [[articles/specsafe-product-thesis|SpecSafe product thesis]]
 
-## Research (provisional)
+## Curia
 
-- [Founder interview — Round 1](../research/founder-interview-round-1-2026-06-26.md)
-- [Founder interview — Round 2](../research/founder-interview-round-2-2026-06-26.md)
-- [Founder interview — Round 3](../research/founder-interview-round-3-2026-06-26.md)
+- [[articles/curia-overview|Curia product overview]] — paid-pilot status and readiness ladder
+- [[articles/curia-gtm-pricing-playbook|Curia GTM and pricing playbook]]
+- [[articles/klgv-relationship|KLGV relationship]] *(confidential)*
+- [[articles/klgv-launch-playbook|KLGV pilot operating playbook]] *(confidential)*
+- [[articles/curia-tech-stack|Curia tech stack]]
+- [[articles/curia-docs-deploy-runbook|Curia docs deployment runbook]]
 
-## External sources
+## Evidence snapshots — 2026-07-26
 
-- [Agency site snapshot](../external-sources/agenticengineering-agency-site.md)
+- [[external-sources/chronicle-and-runtime-snapshot-2026-07-26|Chronicle and runtime snapshot]]
+- [[external-sources/github-org-snapshot-2026-07-26|GitHub organization snapshot]]
+- [[external-sources/sites-portfolio-snapshot-2026-07-26|Sites portfolio snapshot]]
+- [[external-sources/linear-operating-snapshot-2026-07-26|Linear operating snapshot]]
+- [[external-sources/prism-scenespec-snapshot-2026-07-26|Prism SceneSpec snapshot]]
 
-## Codebase wiki (separate)
+## Current research — provisional
 
-The [wiki/](../wiki/OVERVIEW.md) tree is for **codebase documentation** (architecture, modules, flows). Not agency operating knowledge.
+- [[research/founder-interview-round-4-2026-07-26|Founder interview — Round 4]]
+- [[research/operating-state-and-revenue-sequencing|Operating state and revenue sequencing]]
+- [[research/model-routing-and-sales-harness|Model routing and sales-harness research]]
+- [[research/investor-claims-and-entity-readiness|Investor claims and entity readiness]]
+- [[research/founder-interview-round-1-2026-06-26|Founder interview — Round 1]]
+- [[research/founder-interview-round-2-2026-06-26|Founder interview — Round 2]]
+- [[research/founder-interview-round-3-2026-06-26|Founder interview — Round 3]]
+
+## Codebase wiki
+
+The [[wiki/OVERVIEW|wiki tree]] is for codebase architecture, modules, and flows. Operating knowledge belongs in `articles/`; immutable evidence in `external-sources/`; provisional synthesis in `research/`.
 
 ---
 
-*Last updated: 2026-06-26 — Rounds 1–3 founder interviews.*
+*Last reconciled: 2026-07-26. Authorized mutation scope: wiki + Linear only.*

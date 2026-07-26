@@ -31,3 +31,15 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Refreshed [active work snapshot](../articles/active-work.md): as-of bumped 2026-06-26 → 2026-07-03 with supersede + update-trigger stamp; noted Curia delivery owner and the 8-agent org running delivery.
 - Boundary check: both articles stay **internal only**; agent-swarm operating model is NOT added to the public subset ([public wiki boundary](../articles/public-wiki-boundary.md)). No KLGV/investor/credential detail introduced.
 - By Liv (Documentation Engineer).
+
+## 2026-07-26 — operating-system, GTM, and claims reconciliation
+
+- Captured immutable evidence snapshots for Chronicle/runtime activity, GitHub organization state, Sites projects, Linear issues, and Prism SceneSpec results.
+- Added Round 4 founder decisions and research syntheses for revenue sequencing, model routing, and investor/entity readiness.
+- Added canonical portfolio/platform strategy, founder-led growth operating system, model-routing sales harness, and claims registry.
+- Reconciled stale canonical pages covering active work, company identity, business model, entity structure, priorities, team roles, ICP, Curia/KLGV status, pricing/GTM, brand, founder narrative, marketing honesty, and public boundaries.
+- Replaced the expired KLGV July launch plan with a paid-pilot evidence playbook.
+- Recorded separate AE and Curia raise/entity targets, Multiempaques data → free Blueprint → 7–10-day pricing gate, and the wiki + Linear-only mutation boundary.
+- Ran a dead-link audit across all created or changed documents: zero dead links.
+- No external sends, merges, deployments, access changes, archival, or deletion.
+- By Codex with founder-approved OpenKnowledge classification; Claude/fresh-context validation follows before closing the batch.

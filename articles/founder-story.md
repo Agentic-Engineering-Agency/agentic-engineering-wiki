@@ -1,9 +1,6 @@
 ---
-description: Origin story, mission, Curia arc, agency model — internal + public subset source.
-sources:
-  - research/founder-interview-round-1-2026-06-26.md
-  - research/founder-interview-round-2-2026-06-26.md
-  - research/founder-interview-round-3-2026-06-26.md
+title: Founder story
+description: Evidence-bounded narrative of AE's evolution from services toward a multi-model platform.
 status: canonical
 tags:
   - founders
@@ -11,65 +8,51 @@ tags:
   - narrative
   - canonical
   - internal
-title: Founder story
+sources:
+  - research/founder-interview-round-4-2026-07-26.md
+  - external-sources/chronicle-and-runtime-snapshot-2026-07-26.md
+  - external-sources/github-org-snapshot-2026-07-26.md
+  - articles/team-and-roles.md
 ---
 # Founder story
 
-Origin narrative for internal alignment and future public subset. Sources: [LinkedIn](https://www.linkedin.com/company/agentic-engineering-agency/), [R1–R3 interviews](../research/founder-interview-round-1-2026-06-26.md).
+This is the internal narrative spine, not a substitute for legal founder or cap-table records.
 
 ## The through-line
 
-> We don't just "use AI tools" — we **engineer and orchestrate** AI systems that survive production, with discipline that keeps quality from "exploding into confetti."
+Agentic Engineering emerged from a repeated observation: AI demos are easy to produce, while reliable systems require explicit specifications, evaluation, model routing, recovery paths, observability, and human accountability.
 
-Public launch: **February 2026** (LinkedIn). Legal founding year listed **2025**. HQ **Zapopan, Jalisco** — working globally.
+The team has used its own work as a laboratory—client delivery, Curia, Prism/SceneSpec, MemSWE, Ultimate Harness, SpecSafe, orchestration tools, and a broad repository portfolio. That experience supports a credible services and platform thesis. It does not, by itself, prove market demand or universal router superiority.
 
-## Founders
+## Evolution
 
-**Eduardo Javier García López** (Cofundador) and **Fernando Ramos** (Co-Founder & AI Engineer) started Agentic Engineering after seeing teams ship AI demos that collapsed under real workflows, compliance, and cost.
+1. **Engineering services:** build real workflows and learn from operational constraints.
+2. **Product creation:** Curia and other products expose reusable needs and domain wedges.
+3. **Harness infrastructure:** extract routing, evaluation, context, review, and governance into repeatable systems.
+4. **Platform thesis:** combine task-specific models and harnesses into consistent delivery for teams that cannot maintain this stack themselves.
+5. **Evidence-led scale:** use customer revenue, benchmarks, and controlled product validation to determine what deserves investment.
 
-**Operating reality:** both founders **code**; work splits by **project**, not title ([team & roles](./team-and-roles.md)).
+## Current company boundary
 
-## Why "Agentic Engineering"
+Agentic Engineering and Curia target separate entities and separate raises. AE intends to own Ultimate Harness, PriceGenius, Defade, and possibly additional assets after chain-of-title diligence. Curia targets its own Mexican SAPI, product IP, contracts, and financing.
 
-Name signals **engineering rigor** applied to agents — specs, tests, evals, observability — vs. prompt-only consulting.
+## People boundary
 
-Differentiation stack ([company identity](./company-identity.md)):
+Lalo identifies Lucy as his main co-founder and operating partner. Historical wiki records also name Fernando Ramos as co-founder and AI engineer. Exact current titles, legal roles, equity, and signing authority must be reconciled before a public founder narrative or investor data room is considered final. See [[articles/team-and-roles|Team and roles]].
 
-1. [SpecSafe](./specsafe-product-thesis.md) methodology — spec + TDD gates on agent-assisted work
-2. Multi-agent orchestration with eval/observability from commit one
+## Public-safe narrative
 
-## Product arc: Curia
+- founder-led agentic engineering with production discipline
+- services that convert operational problems into governed AI workflows
+- reusable multi-model evaluation and routing infrastructure
+- Curia as an independently structured legal-operations product in paid pilot use
+- honest limits, evidence states, and human approval gates
 
-Flagship bet: **Mexican litigation ops** are fragmented (32+ systems), citation risk is existential, and generic ChatGPT is the real competitor ([competitive landscape](./competitive-landscape.md)).
-
-**KLGV Abogados** became design partner; **Eduardo García Villanueva** invested (internal record). Curia targets **July 2026** launch; intended **spinout within 2026** ([Curia overview](./curia-overview.md)).
-
-Stack: TanStack Start, Cloudflare, Turso, Mastra ([tech stack](./curia-tech-stack.md)).
-
-## Agency alongside product
-
-Services fund runway while Curia matures: **fixed-fee projects**, **1–2 concurrent max**, currently **one client** ([Héctor Guerra FX](./clients-hector-guerra.md)) plus Curia build.
-
-ICP: **Mexican mid-market ops automation** + **global startup agent infra** ([ideal client profile](./ideal-client-profile.md)).
-
-## Open source as signal
-
-21 public repos; honest internal view: some experiments need culling. **SpecSafe** is the methodology story; harness consolidation still open ([OSS golden path](./oss-golden-path-decision.md)).
-
-OSS drives **credibility/inbound**, not yet closed-deal attribution ([open source strategy](./open-source-strategy.md)).
-
-## Public narrative (approved subset)
-
-Safe to tell externally ([public wiki boundary](./public-wiki-boundary.md)):
-
-- Engineering-first agency; spec-driven delivery
-- Curia trust architecture for Mexican firms
-- Honest capacity: small team, selective engagements
-- **Not** KLGV investor identity, discount terms, informal contracting
+Exclude unverified customer counts, investment positions, entity completion, IP ownership, market size, model superlatives, and private commercial terms.
 
 ## Related
 
-- [Marketing honesty policy](./marketing-honesty-policy.md)
-- [Founder interview R1](../research/founder-interview-round-1-2026-06-26.md) · [R2](../research/founder-interview-round-2-2026-06-26.md) · [R3](../research/founder-interview-round-3-2026-06-26.md)
-
-*TODO: Eduardo + Fernando individual origin paragraphs (education, prior roles) — founder input needed.*
+- [[articles/company-identity|Company identity]]
+- [[articles/portfolio-and-platform-strategy|Portfolio and platform strategy]]
+- [[articles/team-and-roles|Team and roles]]
+- [[articles/marketing-honesty-policy|Marketing honesty policy]]

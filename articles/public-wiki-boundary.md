@@ -1,7 +1,6 @@
 ---
-description: What internal docs may become public; KLGV/investor excluded.
-sources:
-  - research/founder-interview-round-2-2026-06-26.md
+title: Public wiki boundary
+description: Rules for graduating internal knowledge into public AE or Curia materials.
 status: canonical
 tags:
   - wiki
@@ -9,46 +8,50 @@ tags:
   - policy
   - internal
   - canonical
-title: Public wiki boundary
+sources:
+  - articles/marketing-honesty-policy.md
+  - articles/claims-registry.md
+  - research/investor-claims-and-entity-readiness.md
 ---
 # Public wiki boundary
 
-What may graduate from this **internal** KB to a **public subset** later.
+This knowledge base is internal. A page being canonical does not make it public-safe.
 
-Founder decision (R2 **21B + C**):
+## Eligible after review
 
-## Approved for public subset
+- AE positioning, delivery method, selective capacity, and task-specific evaluation approach
+- high-level platform thesis without universal model-superiority claims
+- Curia problem, workflow, and trust approach using current pilot wording
+- approved case studies with explicit source, period, definitions, and customer consent
+- open-source architecture and benchmarks with reproducible scope and limitations
+- founder narrative after role/title reconciliation
 
-### B — Curia product story
+## Never copy directly
 
-- Problem (MX litigation fragmentation, citation risk)
-- Phased roadmap / launch milestones
-- Trust pillars (verification, ops chain, MX-native)
-- High-level [tech stack](./curia-tech-stack.md) diagram
+- cap tables, instruments, investor identities, or private fundraising terms
+- customer pricing, contracts, matter data, private usage, or support incidents
+- credentials, access details, private repository content, personal contact/payment data
+- security weaknesses or operational paths that create risk
+- unverified entity, IP-ownership, customer, revenue, pipeline, market-size, or model claims
+- internal model costs, errors, prompt text, or agent session details unless intentionally summarized and approved
 
-**Exclude always:** KLGV pricing, investor names/structure, unreleased features, security architecture detail.
+## Surface-specific review
 
-### C — Full company identity (honest capacity)
+| Surface | Required reviewer |
+| --- | --- |
+| Customer email/proposal | Human commercial owner |
+| Public site/social post | Human brand owner + claims check |
+| Investor deck/data room | Founders + claims check; counsel for legal/financing statements |
+| Case study/testimonial | Customer approval + privacy review |
+| Benchmark/model comparison | Technical reviewer + reproducibility check |
 
-- Who we are, founders, delivery model
-- **1–2 concurrent engagement cap** via dedicated **"How we work"** page ([marketing honesty policy](./marketing-honesty-policy.md)) — hero may stay aspirational (R3 24B)
-- [Delivery process](./delivery-process.md)
-- [Open source philosophy](./open-source-strategy.md) + [SpecSafe methodology](./specsafe-product-thesis.md) public-safe excerpt
-- Harness golden-path repo debate stays internal until resolved
+## Current mutation boundary
 
-## Stay internal only
-
-- [KLGV relationship](./klgv-relationship.md) (investor, discount terms)
-- Client SOW details ([Héctor Guerra](./clients-hector-guerra.md) internals)
-- [OSS golden path decision](./oss-golden-path-decision.md) until closed
-- Competitive vulnerability notes beyond public-safe positioning
-
-## Not approved yet
-
-- Full client list with revenue weighting
-- Fundraising cap table
+Wiki and Linear edits are authorized. External sends, merges, deployments, access changes, archival, and deletion are not.
 
 ## Related
 
-- [Brand & domains](./brand-and-domains.md)
-- [Internal wiki home](./home.md)
+- [[articles/marketing-honesty-policy|Marketing honesty policy]]
+- [[articles/claims-registry|Claims registry]]
+- [[articles/brand-and-domains|Brand and domains]]
+- [[articles/home|Internal wiki home]]
