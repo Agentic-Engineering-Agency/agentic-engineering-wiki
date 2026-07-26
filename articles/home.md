@@ -61,7 +61,8 @@ Canonical operating knowledge for Agentic Engineering, Curia, the product portfo
 - [[external-sources/chronicle-and-runtime-snapshot-2026-07-26|Chronicle and runtime snapshot]]
 - [[external-sources/github-org-snapshot-2026-07-26|GitHub organization snapshot]]
 - [[external-sources/sites-portfolio-snapshot-2026-07-26|Sites portfolio snapshot]]
-- [[external-sources/linear-operating-snapshot-2026-07-26|Linear operating snapshot]]
+- [[external-sources/linear-operating-snapshot-2026-07-26|Linear operating snapshot — before reconciliation]]
+- [[external-sources/linear-reconciliation-result-2026-07-26|Linear reconciliation result]]
 - [[external-sources/prism-scenespec-snapshot-2026-07-26|Prism SceneSpec snapshot]]
 
 ## Current research — provisional
