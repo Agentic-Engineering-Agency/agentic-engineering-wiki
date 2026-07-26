@@ -110,3 +110,9 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Controls are specified, not implemented or enforced.
 - No repository, ledger, schema, CI, manifest, adapter, dashboard, CRM sync, or write path was implemented.
 - After a fresh cross-family audit, specified required `authority_state`, the out-of-band `activation_commit`/`dataset_commit` split, versioned vocabularies, and typed rejected-write proof; none is implemented or enforced.
+
+## 2026-07-26: Fix agency-site hero heading
+
+- Replaced the emphasized `Global AI Engineering Agency` line with a `###` heading to resolve markdownlint/MD036.
+- OpenKnowledge lint reports zero problems for the [agency site snapshot](./external-sources/agenticengineering-agency-site.md).
+- Open follow-ups: none
