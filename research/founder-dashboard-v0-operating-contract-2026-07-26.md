@@ -37,6 +37,12 @@ The system must start useful with partial data. Linear, Sites, bounded Calendar,
 
 The UI is a later implementation. The current deliverable is the source-of-truth map, normalized object contract, information hierarchy, role boundary, degraded-state behavior, KPI dictionary, fixtures, and acceptance tests required by AE-388 and LP-23 [source](./linear-reconciliation-result-2026-07-26.md).
 
+## Provisional opportunity authority
+
+The [canonical authority decision](../articles/founder-led-growth-operating-system.md#provisional-opportunity-ledger-authority-decision) specifies a private Git JSON registry as temporary authority for opportunity state only, and only after explicit per-entity activation. Until its repository, schema, validation, machine-readable manifest, protected-write policy, and named founder activation decision exist, opportunity authority is `not_configured`. Twenty remains a contact mirror before a verified AE-370 cutover. Controls remain **specified, not implemented or enforced**.
+
+Dashboard v0 stays read-only and entity-partitioned: it reads the per-entity/per-object authority manifest at an exact pinned commit, never record self-claims; it never unions AE and Curia or commercial and fundraising opportunity sources. An activated, healthy, empty dataset may produce zero only where the metric definition permits a valid zero.
+
 ## Product boundary
 
 ### v0 includes
@@ -77,7 +83,7 @@ The dashboard opens in this order:
 ### Suggested shell
 
 | Surface | Primary content | Existing pattern to reuse |
-|---|---|---|
+| --- | --- | --- |
 | Today | decisions, three outcomes, meetings, source health | Cifra daily home and progressive setup |
 | Revenue | AE pipeline, Curia pipeline, next action, age, value, confidence | LP-23 funnel and founder ledger |
 | Delivery | Multiempaques gate, Curia pilot evidence, client milestones | Multiempaques meeting cockpit and AE proof artifacts |
@@ -90,7 +96,7 @@ Observed reusable UI patterns are documented in the point-in-time source snapsho
 ## System shape
 
 | Layer | Responsibility | May write? |
-|---|---|---|
+| --- | --- | --- |
 | Source adapter | Perform bounded read, strip secrets/PII, emit source envelope | No |
 | Source envelope | State provenance, timestamps, authority, scope, and degraded state | No external write |
 | Normalizer | Map source-specific records to ledger projections | Local/ephemeral only |
@@ -104,11 +110,13 @@ A later implementation should use a new read-only business data layer and founde
 Every adapter result must emit:
 
 | Field | Rule |
-|---|---|
+| --- | --- |
 | source_id | Stable connector/system identifier |
 | source_record_id | Stable upstream record ID when provided |
 | entity_scope | AE, Curia, UH/platform, PriceGenius, Defade, Muta/incubation, Agentforge/incubation, SpecSafe/methodology, or proof asset |
 | authority | authoritative, working mirror, evidence-only, aggregate-only, or unverified |
+| authority_scope | Exact entity/object/kind scope for which this source is authoritative or mirrored |
+| authority_until | Explicit authority end or cutover-effective timestamp when bounded; otherwise null |
 | source_status | healthy, stale, scoped, blocked, not_configured, or unknown |
 | observed_at | Timestamp represented by the upstream record |
 | fetched_at | Timestamp of the successful or failed read |
@@ -126,7 +134,7 @@ Mandatory redactions include connector tokens, credentials, cookies, secrets, pr
 ## Degraded-state semantics
 
 | State | Meaning | UI behavior |
-|---|---|---|
+| --- | --- | --- |
 | healthy | Successful read inside freshness SLA and within declared scope | Show value, window, source, fetched-at |
 | stale | Prior successful value exists but is older than SLA | Show prior value with stale badge and age; never imply current |
 | scoped | Read is healthy but connector coverage is narrower than the requested universe | Show value plus exact coverage boundary |
@@ -210,7 +218,7 @@ Every KPI additionally binds to a named source and a minimum authority level. A 
 ### Agentic Engineering
 
 | KPI | Definition |
-|---|---|
+| --- | --- |
 | Verified accounts | Accounts passing the current evidence contract in the selected AE segment |
 | Qualified-account rate | Qualified accounts divided by reviewed accounts in the same bounded cohort |
 | Next-action hygiene | Active accounts/opportunities with current owner, next action, and due date divided by active records |
@@ -223,7 +231,7 @@ Every KPI additionally binds to a named source and a minimum authority level. A 
 ### Curia
 
 | KPI | Definition |
-|---|---|
+| --- | --- |
 | Paid design partners | Verified current paid Curia design partners, not AE customers |
 | Active users | Count of distinct verified Curia product users with at least one named qualifying product event during the explicit window and project; the event taxonomy must be versioned |
 | Repeated workflows | Same qualified Curia workflow completed on multiple dates inside the window |
@@ -235,7 +243,7 @@ Every KPI additionally binds to a named source and a minimum authority level. A 
 ### Operations and agents
 
 | KPI | Definition |
-|---|---|
+| --- | --- |
 | Source health | Healthy/scoped sources divided by expected sources, with blocked sources listed separately |
 | Accepted artifact rate | Accepted reviewed outputs divided by outputs receiving a disposition |
 | Cost per accepted artifact | Tracked model/tool cost divided by accepted artifacts in the same workflow/version window |
@@ -298,12 +306,16 @@ Phase 1 excludes Gmail, Paperclip, CRM opportunity sync, finance actuals, and wr
 
 ### Phase 2 — authoritative business ledgers
 
-1. decide canonical CRM and read direction under AE-370;
-2. establish versioned founder opportunity ledger;
-3. establish separate AE and Curia finance actuals ledgers;
-4. reconcile duplicate AE cap-table workbooks;
-5. reauthenticate Gmail only in a separately approved access-change step;
-6. restore and verify Paperclip/Tailscale before live agent-state integration.
+1. implement and validate the provisional private Git JSON opportunity ledger, including schema and semantic controls;
+2. activate it per entity and object through the machine-readable authority manifest and named founder decision;
+3. add a read-only adapter pinned to the exact activated dataset commit;
+4. under AE-370, select and prove the durable destination, then perform the conditional no-dual-authority cutover while preserving continuity IDs;
+5. establish separate AE and Curia finance actuals ledgers;
+6. reconcile duplicate AE cap-table workbooks;
+7. reauthenticate Gmail only in a separately approved access-change step;
+8. restore and verify Paperclip/Tailscale before live agent-state integration.
+
+The ledger controls, manifest, adapter, and cutover safeguards in this phase are requirements only; they remain **specified until implemented and validated**.
 
 ### Phase 3 — separately approved actions
 
@@ -316,6 +328,18 @@ Only after v0 proves reliability: design explicit, narrowly authorized write act
 - A scoped GitHub connector never labels its two visible repositories as the whole organization.
 - A zero displays only after a successful query with visible window, scope, filters, and denominator, no silent truncation or narrowing, a fetched-at value inside freshness SLA, and a metric definition that permits zero.
 - An aggregate-only or working-mirror zero can never populate a KPI whose definition requires an authoritative source; that card renders `not_configured`.
+- A missing, malformed, or pre-activation opportunity-authority manifest renders `not_configured`.
+- An activated, healthy, exact-commit dataset with no opportunity records renders zero only when the metric definition permits a valid zero.
+- Opportunity records missing required schema/record versions, immutable prefixed IDs, matching entity/repository scope, or any required allowlisted field fail validation.
+- `next_action_type` and `blocker_codes` accept enumerated values only; unconstrained action or blocker text fails validation.
+- Evidence references accept typed allowlisted fields and opaque IDs only; raw snippets, direct contact URLs, and untyped references fail validation.
+- Direct PII, investor-person data, unconstrained free text, raw communications, message bodies, snippets, or contact-bearing URLs fail recursive validation.
+- A filename/ID/prefix/repository-scope mismatch, cross-entity reference, or cross-entity aggregation fails validation.
+- An opportunity adapter without the exact pinned dataset commit plus authority scope, authority-until, provenance, observed-at, fetched-at, and schema-version fields fails closed.
+- Twenty cannot satisfy an authority-required opportunity KPI before AE-370 completes a verified cutover.
+- Simultaneous writable Git and CRM authority, or a dashboard union across old and new opportunity sources, fails acceptance.
+- Cutover fails unless every `ae-*` and `curia-*` continuity ID is preserved in `external_source_id` or an immutable mapping artifact and independently reconciled per entity.
+- Protected writes, CI validation, manifests, adapters, rejected-write tests, and cutover controls are labeled `specified` until implementation evidence proves them.
 - An unclassifiable payload renders `unknown`, names the evidence needed to classify it, and shows no number.
 - A PostHog payload cannot expose, log, cache, or forward api_token.
 - A Calendar payload cannot expose, log, cache, or forward attendee names, email addresses, or phone numbers.

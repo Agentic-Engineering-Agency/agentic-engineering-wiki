@@ -79,7 +79,7 @@ If a required field is unknown, store `unknown`; do not ask a model to infer it.
 ## Weekly cadence
 
 | Day | Founder outcome | Agent support | Required record |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Monday | Choose one ICP, one offer, and 15–50 named accounts | Discover, verify, dedupe, score | Account evidence envelopes |
 | Tuesday | Approve top account briefs and outreach drafts | Draft personalized messages and Fit Check paths | Approval/rejection and edit distance |
 | Wednesday | Conduct calls and capture workflow evidence | Meeting prep, transcript summary, objection tagging | Conversation, pain, sponsor, next action |
@@ -93,7 +93,7 @@ No send or publish occurs solely because the calendar reached a cadence step.
 This is an evidence-packet week, not a send week. Gmail remains blocked, no approved alternate outbound channel is recorded, the AE 50-account batch is not yet accepted, Curia readiness gates remain open, and Multiempaques has not passed the sufficient-data gate.
 
 | Day | Agentic Engineering | Curia | Required gate |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Monday | Freeze one commercial wedge, segment, disqualifiers, ledger owner/location, stage exits, and WIP limits. Define Multiempaques sufficient-data fields, formats, owner, approver, and timestamp. | Lock research-only posture, allowed pilot/non-production wording, and public pricing as TBD. | Founder decision record |
 | Tuesday | Verify company-level public evidence toward a frozen 50-account set; record source, observed date, confidence, duplicates, and anti-fit. No named-person enrichment yet. | Build public-source evidence toward 25 firms, including workflow fit, privacy constraints, and warm-intro path. | Evidence completeness report |
 | Wednesday | Review source-link validity, evidence density, reviewer effort, and qualified yield. Hold an internal founder gate. | Reconcile readiness, privacy, and claims gaps; draft replacement language for unapproved claims. | Continue/stop decision |
@@ -135,7 +135,7 @@ For the first 50-company falsification batch, use a provisional segment threshol
 ## Funnel stages
 
 | Stage | Entry rule | Exit evidence |
-|---|---|---|
+| --- | --- | --- |
 | Researched | Account and provenance exist | ICP fit scored |
 | Qualified | Workflow, owner, sponsor, access, and value gate pass | Human approves contact |
 | Contact-ready | Draft is evidence-grounded and approved | Message sent by authorized human/system |
@@ -152,7 +152,7 @@ A list of leads is not pipeline until stage, owner, last touch, and next action 
 The ledger is the contract for the future daily-driver dashboard.
 
 | Object | Required fields |
-|---|---|
+| --- | --- |
 | Account | stable ID, company, ICP evidence, owner, source, stage, last touch, next action |
 | Evidence | atomic claim, source URL/path, observed date, snippet, confidence, allowed use |
 | Contact | role, public/provided contact channel, consent or lawful-use basis, account link |
@@ -175,18 +175,59 @@ The ledger is the contract for the future daily-driver dashboard.
 
 Twenty is the current working mirror for confirmed contacts in the landing-page plan, pending the open CRM architecture decision in AE-370 [source](../external-sources/linear-operating-snapshot-2026-07-26.md). Older HubSpot work remains operationally superseded unless that decision authorizes a migration. Gmail remains unavailable until OAuth is repaired; Paperclip is excluded until remote health returns [source](../external-sources/chronicle-and-runtime-snapshot-2026-07-26.md).
 
-### Provisional opportunity-ledger decision
+### Provisional opportunity-ledger authority decision
 
-Until AE-370 selects and verifies a CRM authority, the recommended interim opportunity store is a private Git-native, schema-validated JSON registry in a new clean repository. This is a decision proposal, not an implemented system.
+These controls are **specified only**. No repository, schema, validation, manifest, protected-write policy, adapter, or enforcement exists now.
 
-- one file per opportunity with stable `ae-*` or `curia-*` ID;
-- required `schema_version`, `record_version`, `entity_scope`, company/account ID, offer, stage, amount/currency, confidence, owner, next action/date, decision date, blocker, evidence, and last-changed timestamp;
-- no name, email, phone, message body, or other direct personal data; opaque upstream IDs only;
-- validator rejects path/scope mismatch, invalid stage/currency, prohibited PII keys, and cross-entity aggregation;
-- dashboard reads a pinned commit and emits provenance URI, commit SHA, fetched-at time, authority, scope, and redactions;
-- cutover freezes a named commit, reconciles stable IDs/counts, then makes the selected CRM authoritative and Git evidence-only; no dual-write interval.
+#### Temporal authority
 
-Directory partitioning is not access control. If AE and Curia require distinct permissions, use separate repositories or databases. Git is disqualified if direct PII is required or frequent concurrent edits become material; SQLite/D1 with append-only events is the next candidate. Twenty may become authority only after live inspection proves Opportunity objects, stage history, stable read/export, and hard AE/Curia scope separation.
+- **Before an accepted AE-370 cutover:** only opportunity state may use the temporary authority below, and only after explicit per-entity activation. Twenty remains a contact mirror, not opportunity authority. Accounts, contacts, touches, cash, communications, and direct PII are outside the temporary ledger's authority.
+- **Before activation prerequisites are complete:** authority is `not_configured`. This applies until a new clean private repository, schema, validation, machine-readable activation manifest, protected-write policy, and founder activation decision all exist.
+- **After accepted cutover:** the durable CRM selected and proved under AE-370 owns opportunity state. The Git ledger is frozen evidence only.
+
+The provisional authority is a private Git-native, schema-validated JSON registry in a **new clean private repository**, scoped to opportunity state only. Activation is explicit per entity; no record may declare itself authoritative.
+
+#### Allowlisted opportunity records
+
+Records use strict machine fields only:
+
+- `schema_version`; `record_version`; immutable `opportunity_id` with an `ae-*` or `curia-*` prefix; `entity_scope`; and `opportunity_kind` (`commercial` or `fundraising`);
+- `lifecycle_state`; controlled `stage`; `amount_state`; integer `amount_minor`; ISO `currency`; controlled `confidence`; opaque `owner_ref`; enum `next_action_type`; `next_action_due_on`; and enum `blocker_codes`;
+- opaque `account_ref`; exactly one applicable reference between `offer_ref` for commercial opportunities and `raise_ref` for fundraising opportunities;
+- typed `evidence_refs`; `approval_state`; opaque `approver_ref`; `changed_at`; and `previous_record_sha256`.
+
+No unconstrained free text is allowed. Names, emails, phones, message bodies, snippets, contact-bearing URLs, investor-person data, and other direct PII are prohibited. Each typed evidence reference contains only allowlisted fields such as `system` enum, opaque `record_id`, `observed_at`, `content_sha256`, and `allowed_use`; it contains no raw snippet or direct contact URL.
+
+#### Validation and activation
+
+Validation extends beyond JSON Schema and must enforce:
+
+- filename, ID prefix, entity, and repository-scope agreement; global ID uniqueness;
+- `record_version` increments of exactly one and a matching prior digest in `previous_record_sha256`;
+- permitted stage transitions; amount/currency coupling; and owner, action, and date on active records;
+- tombstones instead of deletion; no cross-entity reference or aggregation;
+- recursive PII and secret scanning plus an evidence-system allowlist;
+- deterministic per-entity index, count, and digest generation.
+
+A per-entity and per-object machine-readable manifest, for example `authority.json`, contains `activated`, `activated_at`, `activated_by_ref`, `authority_scope`, `entity_scope`, `opportunity_kind` or `object_type`, `policy_version`, `dataset_commit`, `prior_authority`, and `status`. The dashboard trusts this manifest at one exact pinned commit, never record self-claims. A missing, malformed, or pre-activation manifest yields `not_configured`. An activated, healthy source with no records may yield zero only when the metric definition permits a valid zero.
+
+AE and Curia use distinct repositories or databases by default. Directories in one repository are not access control and are acceptable only after an explicit identical-access decision. Commercial and fundraising opportunities remain distinct collections or kinds. AE and Curia raises, customers, revenue, and opportunities are never blended or aggregated, and investor-person data is never stored.
+
+#### Future enforcement requirements
+
+Protected branches, required CI validation, review and tombstone policy, signed or tagged freezes, read-only credentials, rejected-write tests, and dashboard adapters are future implementation requirements. Local pre-commit checks would be advisory only. None exists now.
+
+#### Conditional no-dual-authority cutover
+
+AE-370 must select and prove the durable destination; this decision does not precommit to Twenty. The required sequence is:
+
+1. After activation, Git remains the sole opportunity authority while Twenty remains contact-mirror-only.
+2. AE-370 proves the destination Opportunity object, stage history, export/read stability, and entity separation.
+3. Freeze each entity ledger at a named signed or tagged commit and prove writes fail.
+4. Import while the destination is non-authoritative. Preserve every `ae-*` or `curia-*` continuity ID in `external_source_id` or an immutable mapping artifact.
+5. Independently reconcile IDs, counts, stages, amounts, currencies, and digests per entity. If validation fails, discard the import and Git remains authority.
+6. One manifest change atomically switches authority at an explicit effective time. The dashboard switches adapters without unioning sources.
+7. Git remains frozen evidence-only. Rollback requires a new explicit authority decision.
 
 ## Daily-driver dashboard contract
 
