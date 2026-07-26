@@ -126,28 +126,15 @@ These accounts are not part of the 28-label primary cohort and cannot qualify un
 | [ALMER](https://www.almer.com.mx) | [Inventory, status, and billing systems](https://www.almer.com.mx/soluciones-logisticas), including ERP/WMS/SISAL/COMPRAS | More than 1,000 employees |
 | [Grupo Castores](https://www.castores.com.mx) | [Payment-requisition and approval roles](https://innovacion.castores.com.mx/bolsa-trabajo/) plus [invoice reception](https://cyber.castores.com.mx/RecepcionFacturasCyber/) | More than 1,000 employees |
 
-## Next gate — 28-row trigger ledger
+## Completed row-level ledger
 
-Build one row for every distinct candidate label with all of these fields:
+The [28-row trigger ledger](../research/ae-28-row-trigger-ledger-2026-07-26.md) records every candidate label, entity/domain dedupe, operating-model verdict, strict trigger, system signal, durable source, source class, observed-at date, reviewer, human disposition, and remaining gaps.
 
-| Required field | Completion rule |
-| --- | --- |
-| Candidate label | Preserve the current cohort label |
-| Legal entity/domain dedupe status | Explicit matched, distinct, or unknown status |
-| Operating-model verdict | Industrial manufacturer/distributor, outside wedge, or unknown |
-| Direct trigger verdict and rule | Yes, no, or unknown for the recurring AP/PO/invoice/reconciliation/approval/close rule |
-| System signal | ERP/system evidence or unknown |
-| Durable source | Direct, durable URL or local source path |
-| Source class | Primary, vendor case, secondary, or transient secondary |
-| Observed-at | Explicit observation date |
-| Reviewer | Explicit reviewer |
-| Human disposition | Explicit E1, E2, Hold, or Disqualify decision |
-
-Only after all 28 rows carry these fields may direct-trigger “yes” verdicts be counted against the provisional >=15 discovery threshold.
+It reports 18 raw YES / 10 UNKNOWN / 0 NO, 13 durable YES, and a conservative working set of 10. Existing 4 E1 / 5 E2 / 17 Hold / 2 DQ dispositions remain unchanged. The ledger is evidence accounting, not qualification or activation.
 
 ## Evidence-repair priority
 
-1. Build and review the 28-row trigger ledger before calculating any direct-trigger count.
+1. Human-review the completed 28-row trigger ledger and repair UNKNOWN or non-durable fields before any reassessment of the >=15 gate.
 2. Replace transient secondary job-board evidence for DIDCOM, Pinturas Adhler, and MEXDEN with durable direct sources while preserving the current URLs as provenance.
 3. Refresh Mexican control and size for every E2 account; refresh JAKO’s old size evidence.
 4. Independently corroborate vendor-published Odoo, SAP, SAP/Xamai, Tangente, and partner cases.

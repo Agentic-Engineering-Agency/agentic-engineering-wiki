@@ -1,7 +1,7 @@
 ---
 type: research-note
 title: AE 50-account pilot — evidence seed and segment correction
-description: Provisional research decision for the Mexican-controlled industrial wedge, with 28 distinct candidate labels, a 4/5/17/2 readiness split, and an open trigger-measurement gate.
+description: Provisional research decision for the Mexican-controlled industrial wedge, with 28 distinct candidate labels, a 4/5/17/2 readiness split, and a measured trigger-evidence gate.
 status: provisional
 created: 2026-07-26
 author: Codex, incorporating founder-provided adjudication
@@ -35,12 +35,14 @@ This is a provisional research record, not a final claim of market validation, c
 | --- | --- | --- |
 | Primary-cohort denominator | 28 distinct candidate labels | Legal-entity/domain dedup pending |
 | Relative research-readiness split | 4 E1, 5 E2, 17 holds, 2 disqualifiers | 4 + 5 + 17 + 2 = 28 |
-| Direct-trigger count | Not reproducible from current row-level evidence | The prior “at least 21/28” claim is retracted |
-| Provisional >=15 discovery threshold | Open; not evaluated | Every row first needs an explicit trigger verdict, rule, and durable source |
+| Raw strict-trigger verdict | 18 yes, 10 unknown, 0 no | Absence was not inferred |
+| Durable-trigger count | 13 yes | Tested against the provisional >=15 gate |
+| Conservative working set | 10 | Narrower than the durable count; not qualification |
+| Provisional >=15 discovery threshold | NOT CLEARED | 13 durable yes < 15; segment not rejected |
 | Accounting/shared-services comparison | 2 passes of 7 | TACTIK CSC and Grupo GSG Mefintax |
 | Enterprise calibration | 3 labels | Super Kiosko, ALMER, and Grupo Castores; all above 1,000 employees |
 
-The audit found a failed measurement, not a failed segment. The evidence does not yet support counting the cohort against the >=15 threshold, and it does not imply that the wedge failed.
+The [28-row trigger ledger](./ae-28-row-trigger-ledger-2026-07-26.md) repairs the failed measurement. The provisional >=15 evidence gate is not cleared because 13 durable YES verdicts are below 15. The segment is not rejected, and no second batch is authorized.
 
 ## Corrected disposition arithmetic
 
@@ -69,24 +71,11 @@ E1 and E2 are relative research-readiness labels only. They never mean qualified
 
 The supporting direct sources and retained transient URLs are in the [summary adjudication](../external-sources/ae-account-discovery-snapshot-2026-07-26.md).
 
-## Next gate — 28-row trigger ledger
+## Completed row-level ledger
 
-Before any trigger count is calculated, build one row for each distinct candidate label with:
+The [28-row trigger ledger](./ae-28-row-trigger-ledger-2026-07-26.md) records all required row fields and separates raw, durable, and conservative counts. It reports 18 raw YES / 10 UNKNOWN / 0 NO, 13 durable YES, and a conservative working set of 10.
 
-| Required field | Completion rule |
-| --- | --- |
-| Candidate label | Preserve the current cohort label |
-| Legal entity/domain dedupe status | Explicit matched, distinct, or unknown status |
-| Operating-model verdict | Industrial manufacturer/distributor, outside wedge, or unknown |
-| Direct trigger verdict and rule | Yes, no, or unknown for the recurring AP/PO/invoice/reconciliation/approval/close rule |
-| System signal | ERP/system evidence or unknown |
-| Durable source | Direct, durable URL or local source path |
-| Source class | Primary, vendor case, secondary, or transient secondary |
-| Observed-at | Explicit observation date |
-| Reviewer | Explicit reviewer |
-| Human disposition | Explicit E1, E2, Hold, or Disqualify decision |
-
-Only after all 28 rows are complete may direct-trigger “yes” verdicts be counted against the provisional >=15 discovery threshold.
+These counts do not change the 4/5/17/2 human dispositions and do not qualify or activate any account. Human review remains pending.
 
 ## Qualification contract and boundary
 
@@ -106,7 +95,7 @@ This corrected research record does not:
 
 ## Priority evidence repairs
 
-1. Build and human-review the 28-row trigger ledger before calculating a direct-trigger count.
+1. Human-review the completed 28-row trigger ledger and repair UNKNOWN or non-durable fields before any reassessment of the >=15 gate.
 2. Replace the transient secondary job-board evidence for DIDCOM, Pinturas Adhler, and MEXDEN while retaining the current URLs as provenance.
 3. Refresh Mexican control and size for every E2 label; refresh JAKO’s old size evidence.
 4. Independently corroborate vendor-published Odoo, SAP, SAP/Xamai, Tangente, and partner cases.
@@ -121,6 +110,7 @@ Stop after correcting and validating these existing evidence records. Do not res
 
 ## Related
 
+- [AE 28-row trigger ledger](./ae-28-row-trigger-ledger-2026-07-26.md)
 - [AE account-discovery snapshot](../external-sources/ae-account-discovery-snapshot-2026-07-26.md)
 - [Account discovery evidence rules](../articles/account-discovery-evidence-rules.md)
 - [Founder-led growth operating system](../articles/founder-led-growth-operating-system.md)

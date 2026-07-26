@@ -99,3 +99,5 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - 2026-07-26 — Reconciled the [account-discovery snapshot](./external-sources/ae-account-discovery-snapshot-2026-07-26.md) and [50-account pilot seed](./research/ae-50-account-pilot-seed-2026-07-26.md) to the 28-account adjudication, >=15 provisional threshold, and evidence-repair boundary.
 
 - 2026-07-26 — Applied the adversarial account-discovery correction: 28 distinct labels, a 4/5/17/2 readiness split, and the >=15 trigger gate left open pending a complete row ledger.
+
+- 2026-07-26 — Added the [28-row trigger ledger](./research/ae-28-row-trigger-ledger-2026-07-26.md): 18 raw YES, 13 durable YES, 10 conservative, and the >=15 evidence gate not cleared.
