@@ -14,24 +14,37 @@ sources:
 
 ## Summary
 
-Agentic Engineering uses a lean, task-specific router rather than an all-model swarm. Luna handles structured extraction; Terra is the default sales operator; Gemini handles search/Maps/multimodal discovery; Opus handles high-stakes synthesis and proposals; Sol provides deep research and fresh different-family review. Grok, Fable, Kimi, and Qwen are scoped specialists or challengers until workflow evidence promotes them.
+Agentic Engineering uses a lean, task-specific router rather than an all-model swarm. Luna handles structured extraction; Terra is the default sales operator; Gemini handles search/Maps/multimodal discovery; Opus handles high-stakes synthesis and proposals; Sol provides deep research and OpenAI-family review of Anthropic-authored work. Grok, Fable, Kimi, and Qwen are scoped specialists or challengers until workflow evidence promotes them. Sol, Terra, and Luna are not independent-family reviewers of one another under the current local labels.
 
 The objective is cost per accepted, evidence-grounded outcome. No model is universally “best,” and the platform will not claim broad superiority before task-specific evaluation demonstrates it.
+
+## Provider-family map
+
+| Local label | Current family classification | Review implication |
+|---|---|---|
+| Luna / Terra / Sol | OpenAI GPT-5.6 family in the local runtime labels | Useful for different effort/cost roles, but not independent-family review of one another |
+| Opus / Fable | Anthropic Claude family | Independent of OpenAI-authored work; not independent of one another |
+| Gemini | Google family | Independent discovery or multimodal challenger |
+| Grok | xAI family | Independent social-context or adversarial challenger |
+| Kimi | Moonshot family | Independent shadow challenger |
+| Qwen | Alibaba family | Independent shadow challenger |
+
+Provider identity and versions are runtime facts, not permanent brand facts. Re-verify them at execution time.
 
 ## Routing policy
 
 | Task | Primary | Review / escalation | Non-negotiable control |
 |---|---|---|---|
-| Lead discovery | Gemini; Grok for X-specific signals | Terra or Sol for strategic accounts | Source URL/path, timestamp, snippet, confidence |
-| Enrichment and dedupe | Luna | Terra on conflict/schema failure | Typed schema; `unknown` instead of inference |
+| Lead discovery | Gemini; Grok for X-specific signals | Terra or Sol for synthesis; Opus samples material claims | Source URL/path, timestamp, snippet, confidence |
+| Enrichment and dedupe | Luna | Terra for schema/conflict repair; Opus samples high-risk records | Typed schema; `unknown` instead of inference |
 | ICP scoring | Deterministic rubric + Terra explanation | Opus sample audit | Versioned rubric; no protected-trait decisions |
 | Personalized outreach | Terra | Opus for high-value accounts | Every personalized sentence linked to evidence; human approves send |
-| Meeting preparation | Terra | Sol or Opus for strategic meetings | One-page cap, stale-data labels, open questions |
+| Meeting preparation | Terra | Opus for strategic meetings; Sol may deepen research | One-page cap, stale-data labels, open questions |
 | Proposals | Opus | Sol fresh-context alternative | Canonical pricing, requirement traceability, human approval |
 | Objection handling | Grok simulation + Terra response | Opus synthesis | Approved evidence only; never autonomous live reply |
 | Social content | Grok signals + Terra draft | Opus editorial | Source/license review; human publishes |
-| Sales assets | Opus or Sol | Gemini multimodal QA | Claims rubric plus rendered-output QA |
-| Engineering/harness work | Opus or Sol | Different-family reviewer | Tests, bounded budget, diff review |
+| Sales assets | Opus or Sol | Gemini multimodal QA plus different-family claims review | Claims rubric plus rendered-output QA |
+| Engineering/harness work | Opus or Sol | Sol reviews Anthropic authors; Opus/Fable reviews OpenAI authors | Tests, bounded budget, diff review |
 | Long-running flagship diligence | Fable escalation | Sol review | Use only when ambiguity/value justifies cost |
 | Challenger tests | Kimi / Qwen | Same harness as primary | Shadow only until provider and task gates pass |
 
@@ -82,6 +95,8 @@ human_disposition
 
 ### Offline elimination screen
 
+UH-142 owns one canonical cross-workflow corpus. LP-25 contributes and analyzes its sales slice; it must not create a second competing set.
+
 Use 30 fixed cases:
 
 - 5 discovery;
@@ -106,6 +121,8 @@ Run one frozen-evidence track and one tool-enabled track.
 - required-constraint adherence at least 90%;
 - working provenance for every external claim;
 - approved data-retention/DPA path before prospect PII enters a provider.
+
+These are prospective sales-harness promotion thresholds. The SceneSpec snapshot did not test this sales corpus and did not establish that any route has already passed the 98% schema-validity gate here.
 
 ### Shadow and canary
 
