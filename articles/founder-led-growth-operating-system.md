@@ -165,7 +165,7 @@ The ledger is the contract for the future daily-driver dashboard.
 
 ### Source-of-truth rule
 
-- CRM owns accounts, contacts, touches, and opportunities.
+- CRM owns accounts, contacts, and touches. Opportunity authority follows the temporal rule below: it is `not_configured` before activation, the activated private Git ledger is sole temporary authority before an accepted AE-370 cutover, and the selected proved CRM is authority after cutover.
 - Linear owns work and delivery status.
 - The wiki owns claims, decisions, playbooks, and evidence policy.
 - Finance ledger owns cash and runway.
