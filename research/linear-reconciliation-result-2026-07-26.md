@@ -63,6 +63,8 @@ The existing Linear workspace and connector were healthy, so no replacement work
 - Added Curia legal/privacy readiness dependencies and qualified CUR-276's reported interim privacy fix.
 - Reduced optional product/dashboard/model work from High to Medium to limit priority inflation.
 - Created immediate collateral-remediation owners without authorizing any Sites edit or deployment.
+- Corrected AE-390 after final GPT-5.6 Sol review: removed unsupported “single website” and customer-sentiment wording; replacement drafting must quote the canonical claims registry.
+- Re-read structured relations with Linear's relation-aware issue endpoint. Simpler search/fetch views may omit those fields and are not evidence that an edge is absent.
 
 ## Operating consequences
 
