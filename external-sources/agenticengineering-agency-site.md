@@ -12,7 +12,6 @@ tags:
   - text
   - marketing
 ---
-# Agentic Engineering — public site snapshot
 
 > Source captured 2026-06-26 from [agenticengineering.agency](https://agenticengineering.agency). Verbatim marketing copy; no analysis in this file.
 
