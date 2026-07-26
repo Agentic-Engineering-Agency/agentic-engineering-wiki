@@ -1,7 +1,7 @@
 ---
 type: source
 title: AE account-discovery snapshot — 2026-07-26
-description: Point-in-time summary adjudication for 28 distinct candidate labels in the Mexican industrial wedge, its 2/7 comparison cohort, enterprise calibration set, and open trigger-measurement gate.
+description: Point-in-time summary adjudication for 28 distinct candidate labels in the Mexican industrial wedge, its 2/7 comparison cohort, enterprise calibration set, and measured trigger-evidence gate.
 source_url: local://ae-account-discovery/2026-07-26
 date_fetched: 2026-07-26
 observed_at: 2026-07-26
@@ -36,11 +36,13 @@ Admission requires both a recurring operational trigger and a systems signal. Co
 | Accounting/shared-services comparison | 2 of 7 passes | TACTIK CSC and Grupo GSG Mefintax only |
 | Primary-cohort denominator | 28 distinct candidate labels | Legal-entity/domain dedup pending |
 | Relative research-readiness split | 4 E1, 5 E2, 17 holds, 2 disqualifiers | 4 + 5 + 17 + 2 = 28 |
-| Direct-trigger count | Not reproducible from current row-level evidence | The earlier “at least 21/28” claim is retracted |
-| Provisional >=15 discovery threshold | Open; not evaluated | Count only after every row has an explicit trigger verdict, rule, and durable source |
+| Raw strict-trigger verdict | 18 yes, 10 unknown, 0 no | Absence was not inferred |
+| Durable-trigger count | 13 yes | Four raw yes rely on transient sources; DIMECA uses a mutable vendor homepage |
+| Conservative working set | 10 | Durable trigger plus industrial model, system signal, and no identified outside/control/size blocker |
+| Provisional >=15 discovery threshold | NOT CLEARED | 13 durable yes < 15; segment not rejected and no second batch |
 | Enterprise calibration | 3 accounts | Separate from the 28; all above 1,000 employees |
 
-The adversarial audit found a failed measurement, not a failed segment. The current record neither supports nor refutes the wedge at the >=15 threshold.
+The completed [28-row trigger ledger](../research/ae-28-row-trigger-ledger-2026-07-26.md) makes the failed measurement reproducible. The provisional >=15 gate is not cleared under the current evidence contract because 13 durable YES verdicts are below 15. This does not reject the segment.
 
 This does not clear the 50-qualified-account gate, create pipeline or traction, qualify or activate an account, or authorize a second batch, contacts, CRM work, drafting, or outreach.
 
