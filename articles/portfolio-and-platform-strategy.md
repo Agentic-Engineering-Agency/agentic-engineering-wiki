@@ -71,7 +71,9 @@ The repository portfolio is much larger than the active seven-day development su
 
 ### 30-day evidence allocation
 
-This allocation applies to optional AE portfolio work after the agency cash lane and Curia's separately governed lane. It is an evidence budget, not authority to build, deploy, merge, or contact externally.
+This allocation applies only to optional AE portfolio work after the current single-wedge freeze and its first evidence gate. It is an evidence budget, not authority to build, deploy, merge, or contact externally.
+
+**Activation rule:** during the 2026-07-27 through 2026-08-02 week, chain of title is a binary gate for every asset named in the chosen wedge, and all remaining effort goes to the frozen account evidence and approval packet. Do not reserve portfolio percentages during that week. Activate the percentages below only after the wedge and first batch are accepted for continuation; an asset receives work only when the wedge requires it or a founder separately approves its evidence test.
 
 | Allocation | Workstream | Required outcome | Disconfirming evidence |
 |---:|---|---|---|
