@@ -17,7 +17,7 @@ tags:
 
 ## Hero
 
-**Global AI Engineering Agency**
+### Global AI Engineering Agency
 
 Imagine it, we ship the AI systems that other teams can't.
 
