@@ -15,7 +15,7 @@ sources:
 
 ## Summary
 
-Agentic Engineering and Curia are separate company and financing theses. Agentic Engineering is the agency-to-platform company: services generate cash and workflow evidence; Ultimate Harness and related orchestration/evaluation assets are intended to become reusable delivery IP; PriceGenius and Defade are intended product options; Muta, Agentforge, and SpecSafe may enter the perimeter after explicit decisions and chain-of-title diligence. Curia is a separate Mexican legal-intelligence company with its own intended entity, product, customers, and raise [decision record](../research/founder-interview-round-4-2026-07-26.md).
+Agentic Engineering and Curia are separate company and financing theses. Agentic Engineering is the agency-to-platform company: services generate cash and workflow evidence; Ultimate Harness and related orchestration/evaluation assets are intended to become reusable delivery IP; PriceGenius and Defade are intended product options; Muta, Agentforge, SpecSafe, and any separately verified Forgecraft asset may enter the perimeter after explicit decisions and chain-of-title diligence. Curia is a separate Mexican legal-intelligence company with its own intended entity, product, customers, and raise [decision record](../research/founder-interview-round-4-2026-07-26.md).
 
 > [!WARNING]
 > This page records approved target state. It does not prove that either entity has been formed or that IP, contracts, domains, repositories, or trademarks have been legally assigned.
@@ -30,7 +30,7 @@ flowchart TB
     AE -. "intended ownership; assignment pending" .-> UH["Ultimate Harness — delivery and governance IP"]
     AE -. "intended ownership; assignment pending" .-> PG["PriceGenius — B2B option"]
     AE -. "intended ownership; assignment pending" .-> D["Defade — bounded B2C option"]
-    AE -. "decision and assignment pending" .-> M["Muta / Agentforge / SpecSafe"]
+    AE -. "decision and assignment pending" .-> M["Muta / Agentforge / SpecSafe / Forgecraft"]
     C --> CP["Curia legal-intelligence product"]
     C --> KR["KLGV paid design-partner relationship"]
 ```
@@ -49,7 +49,7 @@ See [legal entity structure](./legal-entity-structure.md) for the diligence chec
 
 ### Intended Agentic Engineering IP perimeter
 
-Agentic Engineering intends to own and use Ultimate Harness, PriceGenius, and Defade IP. Muta, Agentforge, and SpecSafe are possible additions, not completed assignments. The company must maintain an asset schedule covering repositories, domains, trademarks, datasets, customer agreements, vendor agreements, licenses, and founder inventions. Prior ShesMine entity or asset references require their own inventory and disposition decision; calling an old structure superseded does not extinguish contracts, IP, liabilities, or ownership questions.
+Agentic Engineering intends to own and use Ultimate Harness, PriceGenius, and Defade IP. Muta, Agentforge, and SpecSafe are possible additions, not completed assignments. Forgecraft is an unresolved name/asset reference and must not be conflated with Agentforge or Buildcraft. The company must maintain an asset schedule covering repositories, domains, trademarks, datasets, customer agreements, vendor agreements, licenses, and founder inventions. Prior ShesMine entity or asset references require their own inventory and disposition decision; calling an old structure superseded does not extinguish contracts, IP, liabilities, or ownership questions.
 
 ### Portfolio roles
 
@@ -60,11 +60,29 @@ Agentic Engineering intends to own and use Ultimate Harness, PriceGenius, and De
 | Ultimate Harness | Delivery, orchestration, evaluation, and governance IP; possible workshop offer | Chain of title plus canonical corpus, baselines, family-aware review, and a task-specific promotion decision |
 | PriceGenius | B2B pricing-intelligence option | Chain of title, one measurable buyer workflow, safe demo specification, and credible paid signal before major build |
 | Defade | Bounded B2C restoration option | Chain of title plus re-verified live revision, checkout/support readiness, analytics contract, and one approved low-risk test |
-| Muta | Incubated control-plane option | Ownership, product state, buyer, and customer evidence reconciled before more build |
+| SpecSafe | Lightweight adoption probe and possible portfolio component | External installs/users/interviews; no feature expansion without adoption evidence |
+| Muta | Incubated control-plane and UH dogfood fixture | Ownership, product state, buyer, and customer evidence reconciled before more build |
+| Agentforge | Archived asset candidate only | Chain of title, naming, failing CI, issue backlog, and overlap with UH/Muta reconciled before any revival |
+| Forgecraft | Unresolved name/asset reference | Resolve whether this means Agentforge or another asset; do not conflate with Buildcraft |
 | Prism Arena / MemSWE | Owner-controlled proof and evaluation assets | Public CTA and claims review before treating either as an acquisition channel |
 | Curia | Separate flagship vertical company | KLGV readiness evidence plus an approved path to another paid design partner |
 
 The repository portfolio is much larger than the active seven-day development surface [source](../external-sources/github-org-snapshot-2026-07-26.md). Portfolio membership therefore does not imply equal staffing, GTM priority, or investor prominence.
+
+### 30-day evidence allocation
+
+This allocation applies to optional AE portfolio work after the agency cash lane and Curia's separately governed lane. It is an evidence budget, not authority to build, deploy, merge, or contact externally.
+
+| Allocation | Workstream | Required outcome | Disconfirming evidence |
+|---:|---|---|---|
+| 25% | Chain of title and claims register | AE-254 asset/counterparty schedule covering ownership, licenses, customer data, domains, and related-party obligations | Intended ownership is not documentary ownership |
+| 25% | Ultimate Harness proof | UH-142 reproducible multi-model corpus, baselines, provider-family-aware review, and promotion decision | Local v0.10.0 evidence differs from public 0.9.0 state; repo is stale/dirty and claims are unproven |
+| 20% | Defade validation | DEF-86 live revision/checkout/deployment parity, funnel analytics, and one bounded Spanish-market test | Current CI/deploy failed; analytics and production parity remain unverified |
+| 20% | PriceGenius validation | PRI-218 five qualified conversations and one credible paid-pilot/design-partner signal for a specific pricing workflow | Strong engineering surface does not establish buyer, deployment, ownership, or customer demand |
+| 10% | SpecSafe adoption probe | External installs, active users, or interviews measured without feature expansion | Published package and landing test have not produced adoption, retention, or revenue evidence |
+| 0% | Muta / Agentforge / Forgecraft build | Preserve evidence and resolve ownership/naming only | Muta has conflicting drafts; Agentforge is archived with failing CI; Forgecraft identity is unresolved |
+
+Curia remains a comparison lane, not an AE portfolio asset. It has the strongest current product-implementation evidence and one paid design partner, but no completed production/repeatability proof. Its next gate is production readiness plus legal/privacy, then a separately approved second-partner test.
 
 ## Platform thesis
 
