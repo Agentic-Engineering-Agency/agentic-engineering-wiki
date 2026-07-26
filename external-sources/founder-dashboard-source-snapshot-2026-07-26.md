@@ -37,14 +37,14 @@ PostHog connector responses may include an api_token property. Any adapter must 
 
 The connector exposed exactly six active owner-only custom projects. None had a preview URL, custom domain, or runtime environment variable. A latest saved version is observable, but the connector did not expose an absolute latest-saved-to-live deployment link; do not claim those are identical without deployment evidence.
 
-| Project | Project ID | Latest saved evidence | Live URL |
-|---|---|---|---|
-| Cifra | appgprj_6a65614de2848191bd4cfbcb94c6b195 | v2; ecf9302211b9ae41c42d577a3a14624c93ecf440; updated 2026-07-26 | https://cifra-finance-command-center.agenticengineering.chatgpt.site |
-| Multiempaques · Prep 30 | appgprj_6a6287818d2c8191b1216d349d848225 | v1; 6b7b45d666d1a6f8490e3ebe7ee7aceec580a4e3; updated 2026-07-23 | https://multiempaques-prep-30.agenticengineering.chatgpt.site |
-| Curia — Investor Deck | appgprj_6a5683dbf5108191bc40a8e9eb5791f9 | v1; 013fa21572748880086f535c93ba7cc6d8c6587e; updated 2026-07-14 | https://curia-investor-deck.agenticengineering.chatgpt.site |
-| Agentic Engineering — Investor Overview | appgprj_6a541ec349cc8191b7726f7e29d6c78f | v4; 338cdd0a9df56fc4371d07304bb7fe4041568888; updated 2026-07-14 | https://agentic-engineering-investor-overview.agenticengineering.chatgpt.site |
-| Agentic Engineering — Client Sales | appgprj_6a541ebbad34819190dd7db354467c31 | v2; 860596c7823a89dd7ded8b0d13b81158ef5e2639; updated 2026-07-13 | https://agentic-engineering-client-deck.agenticengineering.chatgpt.site |
-| MemSWE · Resultados PAP 2026 | appgprj_6a50250533dc819188d073395072cf89 | v9; aeb6e8c6a2180173d42693f2be288d01483acad6; updated 2026-07-17 | https://memswe-pap-2026.agenticengineering.chatgpt.site |
+| Project | Project ID | Latest saved evidence | Live URL | Access mode |
+|---|---|---|---|---|
+| Cifra | appgprj_6a65614de2848191bd4cfbcb94c6b195 | v2; ecf9302211b9ae41c42d577a3a14624c93ecf440; updated 2026-07-26 | https://cifra-finance-command-center.agenticengineering.chatgpt.site | Owner-only |
+| Multiempaques · Prep 30 | appgprj_6a6287818d2c8191b1216d349d848225 | v1; 6b7b45d666d1a6f8490e3ebe7ee7aceec580a4e3; updated 2026-07-23 | https://multiempaques-prep-30.agenticengineering.chatgpt.site | Owner-only |
+| Curia — Investor Deck | appgprj_6a5683dbf5108191bc40a8e9eb5791f9 | v1; 013fa21572748880086f535c93ba7cc6d8c6587e; updated 2026-07-14 | https://curia-investor-deck.agenticengineering.chatgpt.site | Owner-only |
+| Agentic Engineering — Investor Overview | appgprj_6a541ec349cc8191b7726f7e29d6c78f | v4; 338cdd0a9df56fc4371d07304bb7fe4041568888; updated 2026-07-14 | https://agentic-engineering-investor-overview.agenticengineering.chatgpt.site | Owner-only |
+| Agentic Engineering — Client Sales | appgprj_6a541ebbad34819190dd7db354467c31 | v2; 860596c7823a89dd7ded8b0d13b81158ef5e2639; updated 2026-07-13 | https://agentic-engineering-client-deck.agenticengineering.chatgpt.site | Owner-only |
+| MemSWE · Resultados PAP 2026 | appgprj_6a50250533dc819188d073395072cf89 | v9; aeb6e8c6a2180173d42693f2be288d01483acad6; updated 2026-07-17 | https://memswe-pap-2026.agenticengineering.chatgpt.site | Owner-only |
 
 Reusable observed interaction patterns:
 
