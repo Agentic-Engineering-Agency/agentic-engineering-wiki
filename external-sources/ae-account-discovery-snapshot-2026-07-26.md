@@ -36,15 +36,18 @@ Admission requires both a recurring operational trigger and a systems signal. Co
 | Accounting/shared-services comparison | 2 of 7 passes | TACTIK CSC and Grupo GSG Mefintax only |
 | Primary-cohort denominator | 28 distinct candidate labels | Legal-entity/domain dedup pending |
 | Relative research-readiness split | 4 E1, 5 E2, 17 holds, 2 disqualifiers | 4 + 5 + 17 + 2 = 28 |
-| Raw strict-trigger verdict | 18 yes, 10 unknown, 0 no | Absence was not inferred |
-| Durable-trigger count | 13 yes | Four raw yes rely on transient sources; DIMECA uses a mutable vendor homepage |
-| Conservative working set | 10 | Durable trigger plus industrial model, system signal, and no identified outside/control/size blocker |
-| Provisional >=15 discovery threshold | NOT CLEARED | 13 durable yes < 15; segment not rejected and no second batch |
+| Raw strict-trigger verdict | 20 YES, 8 UNKNOWN, 0 NO | Absence was not inferred |
+| Durable-trigger count | 15 YES | Numerical >=15 gate cleared exactly; human review pending |
+| Conservative working set | 11 | Prior 10 plus Poly Rafia; durable trigger plus industrial model, system signal, and no identified outside/control/size blocker |
+| Identity adjudication | 24 MATCHED, 1 DISTINCT, 3 UNKNOWN | DIDCOM upgraded to MATCHED |
+| Operating-model adjudication | 25 INDUSTRIAL, 2 OUTSIDE, 1 UNKNOWN | Unchanged |
+| System-signal adjudication | 24 PRESENT, 4 UNKNOWN | Unchanged; DIDCOM remains UNKNOWN |
+| Numerical >=15 evidence gate | CLEARED exactly | 15 durable YES; pending human review and no second batch authorized |
 | Enterprise calibration | 3 accounts | Separate from the 28; all above 1,000 employees |
 
-The completed [28-row trigger ledger](../research/ae-28-row-trigger-ledger-2026-07-26.md) makes the failed measurement reproducible. The provisional >=15 gate is not cleared under the current evidence contract because 13 durable YES verdicts are below 15. This does not reject the segment.
+The completed [28-row trigger ledger](../research/ae-28-row-trigger-ledger-2026-07-26.md) makes the measurement reproducible. Fifteen frozen UNKNOWN or non-durable records were reviewed, and only DIDCOM and Poly Rafia were upgraded. The numerical >=15 evidence gate is cleared exactly at 15 durable YES verdicts, pending human review.
 
-This does not clear the 50-qualified-account gate, create pipeline or traction, qualify or activate an account, or authorize a second batch, contacts, CRM work, drafting, or outreach.
+This numerical gate result does not clear the 50-qualified-account gate, create pipeline or traction, qualify or activate an account, or authorize a second batch, named-person or contact research, CRM mutation, drafting, outreach, sends, deployments, merges, access changes, archival, or deletion.
 
 ## Research-readiness labels
 
@@ -93,7 +96,7 @@ Strict comparison yield remains 2 of 7.
 | --- | --- |
 | ENVESTA | [Billing/collections role](https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-analista-contable-facturacion-y-cobranza-en-toluca-FD9478A34DC83BC761373E686DCF3405) is transient secondary evidence; size remains unresolved |
 | Grupo Formex | Control, size, or evidence gate remains open |
-| Poly Rafia | Control, size, or evidence gate remains open |
+| Poly Rafia | [Liconsa contract with Poly Rafia](https://repositorio.liconsa.gob.mx/files/DC/SADM/2022/CONTRATOS%201/CADQ-635-2022%20POLIESTER%20BOPP%20POLY%20RAFIA%20VP%202022.pdf) records monthly orders to Poly plus a per-delivery invoice package, electronic CFDI/PDF/XML, and correction/resubmission. Strict YES, durable YES, conservative IN. These are Poly-side order/invoice obligations; Liconsa AP controls are not attributed to Poly. Control, size, and system-specific corroboration remain open. |
 | Quimica Delta | Control, size, or evidence gate remains open |
 | Promaquina | Control, size, or evidence gate remains open |
 | IPISA | [Odoo customer review](https://www.odoo.com/es_ES/blog/customer-reviews-6/ipisa-lleva-su-desempeno-a-otro-nivel-con-odoo-1171); control/size and independent-corroboration gates remain open |
@@ -103,7 +106,7 @@ Strict comparison yield remains 2 of 7.
 | YINSA | Control, size, or evidence gate remains open |
 | Nobazul | [SAP cloud-automation case naming Mieles Campos Azules alongside IMAG Organics](https://news.sap.com/latinamerica/2022/12/sap-apoya-a-empresas-agaveras-en-su-automatizacion-y-procesos-en-la-nube/); hold because the identity mapping between Nobazul and Mieles Campos Azules remains unverified; control/size and independent corroboration also remain open |
 | UniSeal | [SAP customer document](https://www.sap.com/documents/2025/06/589653ff-0c7f-0010-bca6-c68f7e60039b.html); control/size and independent-corroboration gates remain open |
-| DIDCOM | [Treasury/accounting role](https://mx.computrabajo.com/ofertas-de-trabajo/oferta-de-trabajo-de-auxiliar-de-tesoreria-y-contabilidad-en-hermosillo-0B4567F4271918C961373E686DCF3405) is a transient secondary anti-bot job-board source; hold pending industrial operating-model evidence and a durable replacement |
+| DIDCOM | [DIDCOM privacy notice](https://didcom.com.mx/wp-content/uploads/2021/09/Aviso-de-Privacidad-Didcom.pdf) matches Grupo Tecnológico DIDCOM SA de CV to didcom.com.mx and covers invoice/payment communications, billing management, and collections. Strict YES and durable YES; conservative OUT because system remains UNKNOWN. |
 | JAKO | [SAP/Xamai multi-company case](https://assets.dm.ux.sap.com/iedt2020/pdfs/microxamaibook.pdf) remains systems calibration; hold until old size evidence is refreshed and account mapping is corroborated |
 | Ah Cacao | [Odoo customer review](https://www.odoo.com/es/blog/customer-reviews-6/sabiduria-ancestral-y-el-poder-del-cacao-el-salto-digital-de-ah-cacao-con-odoo-1755); hold pending B2B/industrial operating-model adjudication |
 | IMAG Organics | [SAP cloud-automation case](https://news.sap.com/latinamerica/2022/12/sap-apoya-a-empresas-agaveras-en-su-automatizacion-y-procesos-en-la-nube/); hold pending identity mapping to “Inulina y Miel de Agave” and frozen-workflow trigger proof |
@@ -114,7 +117,7 @@ Strict comparison yield remains 2 of 7.
 | Account | Direct evidence | Disqualifier |
 | --- | --- | --- |
 | Maison Paulette | [SAP customer document](https://www.sap.com/documents/2025/11/da8443d1-2a7f-0010-bca6-c68f7e60039b.html) | B2C pastry/bistro chain; outside the industrial wedge |
-| Super Tiendas Esquer | [SAP/Xamai multi-company case](https://assets.dm.ux.sap.com/iedt2020/pdfs/microxamaibook.pdf) documents its retail operating model | B2C retailer; outside the industrial wedge |
+| Super Tiendas Esquer | [Audited Chihuahua procurement report](https://ihacienda.chihuahua.gob.mx/tfiscal/indtfisc/InformeTecnicoASE2021.pdf) records one audited procurement, not a recurring trigger; a trade domain was observed but legal mapping remains unresolved | UNKNOWN trigger, NOT COUNTED, DQ; retail remains outside the industrial wedge |
 
 ## Enterprise calibration only
 
@@ -130,16 +133,16 @@ These accounts are not part of the 28-label primary cohort and cannot qualify un
 
 The [28-row trigger ledger](../research/ae-28-row-trigger-ledger-2026-07-26.md) records every candidate label, entity/domain dedupe, operating-model verdict, strict trigger, system signal, durable source, source class, observed-at date, reviewer, human disposition, and remaining gaps.
 
-It reports 18 raw YES / 10 UNKNOWN / 0 NO, 13 durable YES, and a conservative working set of 10. Existing 4 E1 / 5 E2 / 17 Hold / 2 DQ dispositions remain unchanged. The ledger is evidence accounting, not qualification or activation.
+It reports 20 raw YES / 8 UNKNOWN / 0 NO, 15 durable YES, and a conservative working set of 11. Identity is 24 MATCHED / 1 DISTINCT / 3 UNKNOWN; operating model remains 25 INDUSTRIAL / 2 OUTSIDE / 1 UNKNOWN; systems remain 24 PRESENT / 4 UNKNOWN. Existing 4 E1 / 5 E2 / 17 Hold / 2 DQ dispositions remain unchanged. The ledger is evidence accounting, not qualification or activation, and human review remains pending.
 
 ## Evidence-repair priority
 
-1. Human-review the completed 28-row trigger ledger and repair UNKNOWN or non-durable fields before any reassessment of the >=15 gate.
-2. Replace transient secondary job-board evidence for DIDCOM, Pinturas Adhler, and MEXDEN with durable direct sources while preserving the current URLs as provenance.
-3. Refresh Mexican control and size for every E2 account; refresh JAKO’s old size evidence.
-4. Independently corroborate vendor-published Odoo, SAP, SAP/Xamai, Tangente, and partner cases.
-5. Complete role-only, allowed-use, duplicate, reviewer, and human-disposition fields.
-6. Keep personal contact fields excluded; reject search-result snippets as evidence.
+1. Human-review the completed 28-row trigger ledger; the numerical >=15 gate is cleared exactly but remains pending human review.
+2. Preserve the completed DIDCOM and Poly Rafia upgrades; replace transient secondary job-board evidence for Pinturas Adhler and MEXDEN, and find a durable case permalink for DIMECA.
+3. Repair the eight remaining strict-trigger UNKNOWN rows and other non-durable fields without expanding the frozen cohort.
+4. Refresh Mexican control and size for every E2 account; refresh JAKO’s old size evidence.
+5. Independently corroborate vendor-published Odoo, SAP, SAP/Xamai, Tangente, and partner cases.
+6. Complete role-only, allowed-use, duplicate, reviewer, and human-disposition fields while keeping personal contact fields excluded.
 
 ## Source method and operating boundary
 
