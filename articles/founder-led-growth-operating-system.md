@@ -177,26 +177,30 @@ Twenty is the current working mirror for confirmed contacts in the landing-page 
 
 ### Provisional opportunity-ledger authority decision
 
-These controls are **specified only**. No repository, schema, validation, manifest, protected-write policy, adapter, or enforcement exists now.
+These controls are **specified only**. No repository, schema, validation, manifest, protected-write policy, adapter, rejected-write proof, or enforcement exists now.
 
 #### Temporal authority
 
-- **Before an accepted AE-370 cutover:** only opportunity state may use the temporary authority below, and only after explicit per-entity activation. Twenty remains a contact mirror, not opportunity authority. Accounts, contacts, touches, cash, communications, and direct PII are outside the temporary ledger's authority.
-- **Before activation prerequisites are complete:** authority is `not_configured`. This applies until a new clean private repository, schema, validation, machine-readable activation manifest, protected-write policy, and founder activation decision all exist.
-- **After accepted cutover:** the durable CRM selected and proved under AE-370 owns opportunity state. The Git ledger is frozen evidence only.
+The required per-entity and per-object `authority_state` enum is `not_configured`, `git_authoritative`, or `crm_authoritative_git_frozen`. Only `not_configured` → `git_authoritative` → `crm_authoritative_git_frozen` is a valid forward sequence. Rollback requires a new explicit authority decision.
 
-The provisional authority is a private Git-native, schema-validated JSON registry in a **new clean private repository**, scoped to opportunity state only. Activation is explicit per entity; no record may declare itself authoritative.
+- **`not_configured`:** applies until a new clean private repository, schema, validation, machine-readable activation manifest, protected-write policy, and explicit founder activation decision all exist. No opportunity source is authoritative.
+- **`git_authoritative`:** requires explicit founder activation. Only opportunity state may use the temporary authority below; Twenty remains a contact mirror, not opportunity authority. Accounts, contacts, touches, cash, communications, and direct PII are outside the temporary ledger's authority.
+- **`crm_authoritative_git_frozen`:** requires an accepted AE-370 cutover, valid rejected-write proof, and independently reconciled frozen Git evidence. The selected and proved durable CRM owns opportunity state; Git is evidence only.
+
+The provisional authority is a private Git-native, schema-validated JSON registry in a **new clean private repository**, scoped to opportunity state only. Activation is explicit per entity and object; neither a record nor a manifest may self-authorize outside these rules.
 
 #### Allowlisted opportunity records
 
 Records use strict machine fields only:
 
-- `schema_version`; `record_version`; immutable `opportunity_id` with an `ae-*` or `curia-*` prefix; `entity_scope`; and `opportunity_kind` (`commercial` or `fundraising`);
+- `schema_version`; `vocabulary_version`; `record_version`; immutable `opportunity_id` with an `ae-*` or `curia-*` prefix; `entity_scope`; and `opportunity_kind` (`commercial` or `fundraising`);
 - `lifecycle_state`; controlled `stage`; `amount_state`; integer `amount_minor`; ISO `currency`; controlled `confidence`; opaque `owner_ref`; enum `next_action_type`; `next_action_due_on`; and enum `blocker_codes`;
 - opaque `account_ref`; exactly one applicable reference between `offer_ref` for commercial opportunities and `raise_ref` for fundraising opportunities;
 - typed `evidence_refs`; `approval_state`; opaque `approver_ref`; `changed_at`; and `previous_record_sha256`.
 
 No unconstrained free text is allowed. Names, emails, phones, message bodies, snippets, contact-bearing URLs, investor-person data, and other direct PII are prohibited. Each typed evidence reference contains only allowlisted fields such as `system` enum, opaque `record_id`, `observed_at`, `content_sha256`, and `allowed_use`; it contains no raw snippet or direct contact URL.
+
+`vocabulary_version` selects versioned allowlists for `lifecycle_state`, `stage`, `confidence`, `amount_state`, `approval_state`, `next_action_type`, `blocker_codes`, `evidence_refs.system`, and `evidence_refs.allowed_use`. An unknown vocabulary version or value fails validation.
 
 #### Validation and activation
 
@@ -206,10 +210,12 @@ Validation extends beyond JSON Schema and must enforce:
 - `record_version` increments of exactly one and a matching prior digest in `previous_record_sha256`;
 - permitted stage transitions; amount/currency coupling; and owner, action, and date on active records;
 - tombstones instead of deletion; no cross-entity reference or aggregation;
-- recursive PII and secret scanning plus an evidence-system allowlist;
+- recursive PII and secret scanning plus versioned evidence-system and allowed-use allowlists;
 - deterministic per-entity index, count, and digest generation.
 
-A per-entity and per-object machine-readable manifest, for example `authority.json`, contains `activated`, `activated_at`, `activated_by_ref`, `authority_scope`, `entity_scope`, `opportunity_kind` or `object_type`, `policy_version`, `dataset_commit`, `prior_authority`, and `status`. The dashboard trusts this manifest at one exact pinned commit, never record self-claims. A missing, malformed, or pre-activation manifest yields `not_configured`. An activated, healthy source with no records may yield zero only when the metric definition permits a valid zero.
+A per-entity and per-object machine-readable manifest, for example `authority.json`, contains `activated`, `activated_at`, `activated_by_ref`, `authority_scope`, `entity_scope`, `opportunity_kind` or `object_type`, `policy_version`, `vocabulary_version`, `dataset_commit`, `prior_authority`, and required enum-only `authority_state`; generic `status` is not an authority field. `not_configured` requires `activated: false`. `git_authoritative` requires `activated: true`, `activated_at`, `activated_by_ref`, and explicit founder activation. `crm_authoritative_git_frozen` requires `activated: true`, accepted AE-370 cutover, a valid rejected-write proof, and independent per-entity reconciliation. Missing, malformed, invalid-transition, or contradictory combinations fail closed to `not_configured` with an error and never yield zero. The manifest cannot self-authorize.
+
+Dashboard configuration pins `activation_commit` out-of-band; that commit contains the authority manifest. The manifest's `dataset_commit` identifies the immutable opportunity-data snapshot. The dashboard verifies both commits and their relationship; they may differ. No commit is required to contain its own SHA. A valid authoritative state plus a healthy source and empty records may yield zero only when the metric definition permits a valid zero.
 
 AE and Curia use distinct repositories or databases by default. Directories in one repository are not access control and are acceptable only after an explicit identical-access decision. Commercial and fundraising opportunities remain distinct collections or kinds. AE and Curia raises, customers, revenue, and opportunities are never blended or aggregated, and investor-person data is never stored.
 
@@ -217,16 +223,18 @@ AE and Curia use distinct repositories or databases by default. Directories in o
 
 Protected branches, required CI validation, review and tombstone policy, signed or tagged freezes, read-only credentials, rejected-write tests, and dashboard adapters are future implementation requirements. Local pre-commit checks would be advisory only. None exists now.
 
+A rejected-write test must produce a machine-readable proof record containing `frozen_commit`, `enforcement_policy_version`, `attempted_write_at`, enum `attempted_operation`, `rejection_code`, opaque `proof_ref`, and `proof_sha256`. It contains no PII, secret, raw request, or direct storage URL.
+
 #### Conditional no-dual-authority cutover
 
 AE-370 must select and prove the durable destination; this decision does not precommit to Twenty. The required sequence is:
 
-1. After activation, Git remains the sole opportunity authority while Twenty remains contact-mirror-only.
+1. In `git_authoritative`, Git remains the sole opportunity authority while Twenty remains contact-mirror-only.
 2. AE-370 proves the destination Opportunity object, stage history, export/read stability, and entity separation.
-3. Freeze each entity ledger at a named signed or tagged commit and prove writes fail.
+3. Freeze each entity ledger at a named signed or tagged commit and produce a valid typed rejected-write proof.
 4. Import while the destination is non-authoritative. Preserve every `ae-*` or `curia-*` continuity ID in `external_source_id` or an immutable mapping artifact.
-5. Independently reconcile IDs, counts, stages, amounts, currencies, and digests per entity. If validation fails, discard the import and Git remains authority.
-6. One manifest change atomically switches authority at an explicit effective time. The dashboard switches adapters without unioning sources.
+5. Independently reconcile IDs, counts, stages, amounts, currencies, and digests per entity. If validation fails, discard the import and Git remains authoritative.
+6. Only after valid proof and reconciliation, one manifest change sets `authority_state` to `crm_authoritative_git_frozen` at an explicit effective time; dashboard configuration pins that manifest's `activation_commit` out-of-band and switches adapters without unioning sources.
 7. Git remains frozen evidence-only. Rollback requires a new explicit authority decision.
 
 ## Daily-driver dashboard contract

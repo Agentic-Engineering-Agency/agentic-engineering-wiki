@@ -39,9 +39,9 @@ The UI is a later implementation. The current deliverable is the source-of-truth
 
 ## Provisional opportunity authority
 
-The [canonical authority decision](../articles/founder-led-growth-operating-system.md#provisional-opportunity-ledger-authority-decision) specifies a private Git JSON registry as temporary authority for opportunity state only, and only after explicit per-entity activation. Until its repository, schema, validation, machine-readable manifest, protected-write policy, and named founder activation decision exist, opportunity authority is `not_configured`. Twenty remains a contact mirror before a verified AE-370 cutover. Controls remain **specified, not implemented or enforced**.
+The [canonical authority decision](../articles/founder-led-growth-operating-system.md#provisional-opportunity-ledger-authority-decision) specifies required enum-only `authority_state`: `not_configured` → `git_authoritative` → `crm_authoritative_git_frozen`. Only forward transitions are valid; rollback requires a new explicit authority decision. `git_authoritative` requires explicit founder activation. `crm_authoritative_git_frozen` requires accepted AE-370 cutover, valid typed rejected-write proof, and independently reconciled frozen Git evidence. Twenty remains a contact mirror before that verified cutover. Controls remain **specified, not implemented or enforced**.
 
-Dashboard v0 stays read-only and entity-partitioned: it reads the per-entity/per-object authority manifest at an exact pinned commit, never record self-claims; it never unions AE and Curia or commercial and fundraising opportunity sources. An activated, healthy, empty dataset may produce zero only where the metric definition permits a valid zero.
+Dashboard v0 stays read-only and entity-partitioned. Its configuration pins `activation_commit` out-of-band; that commit contains the per-entity/per-object authority manifest, whose `dataset_commit` identifies the immutable opportunity-data snapshot. The dashboard verifies both commits and their relationship; they may differ, and neither is required to contain its own SHA. It trusts no record or manifest self-claim and never unions AE and Curia or commercial and fundraising sources. Missing, malformed, invalid-transition, or contradictory authority data fails closed to `not_configured` with an error and never zero. A valid authoritative state plus a healthy, empty dataset may produce zero only where the metric definition permits a valid zero.
 
 ## Product boundary
 
@@ -115,8 +115,11 @@ Every adapter result must emit:
 | source_record_id | Stable upstream record ID when provided |
 | entity_scope | AE, Curia, UH/platform, PriceGenius, Defade, Muta/incubation, Agentforge/incubation, SpecSafe/methodology, or proof asset |
 | authority | authoritative, working mirror, evidence-only, aggregate-only, or unverified |
+| authority_state | For opportunity authority only: `not_configured`, `git_authoritative`, or `crm_authoritative_git_frozen` |
 | authority_scope | Exact entity/object/kind scope for which this source is authoritative or mirrored |
 | authority_until | Explicit authority end or cutover-effective timestamp when bounded; otherwise null |
+| activation_commit | Out-of-band pinned commit that contains the authority manifest |
+| dataset_commit | Manifest-declared commit for the immutable opportunity-data snapshot |
 | source_status | healthy, stale, scoped, blocked, not_configured, or unknown |
 | observed_at | Timestamp represented by the upstream record |
 | fetched_at | Timestamp of the successful or failed read |
@@ -128,6 +131,7 @@ Every adapter result must emit:
 | allowed_operations | Read-only in v0 |
 | redactions | Fields dropped before normalization |
 | schema_version | Version of the adapter contract |
+| vocabulary_version | Version of the opportunity controlled vocabularies when applicable |
 
 Mandatory redactions include connector tokens, credentials, cookies, secrets, private message bodies, any cross-client confidential data, and direct personal data — names, email addresses, phone numbers, and calendar attendee identities — in every founder view, unless a named human has approved a specific, recorded per-record exception. PostHog api_token fields and the plaintext credential-bearing root config file are specifically excluded. Calendar is redacted at the adapter before normalization: meeting cards render title, time, duration, and attendee count only [source](../external-sources/founder-dashboard-source-snapshot-2026-07-26.md).
 
@@ -306,10 +310,10 @@ Phase 1 excludes Gmail, Paperclip, CRM opportunity sync, finance actuals, and wr
 
 ### Phase 2 — authoritative business ledgers
 
-1. implement and validate the provisional private Git JSON opportunity ledger, including schema and semantic controls;
-2. activate it per entity and object through the machine-readable authority manifest and named founder decision;
-3. add a read-only adapter pinned to the exact activated dataset commit;
-4. under AE-370, select and prove the durable destination, then perform the conditional no-dual-authority cutover while preserving continuity IDs;
+1. implement and validate the provisional private Git JSON opportunity ledger, including schema, semantic controls, and versioned vocabularies;
+2. activate it per entity and object through the machine-readable manifest and named founder decision, producing `authority_state: git_authoritative` and a manifest-declared immutable `dataset_commit`;
+3. configure `activation_commit` out-of-band and add a read-only adapter that verifies the manifest commit, the dataset commit, and their relationship without requiring self-reference;
+4. under AE-370, select and prove the durable destination, preserve continuity IDs, require typed rejected-write proof plus independent per-entity reconciliation, and then perform the no-dual-authority transition to `crm_authoritative_git_frozen`;
 5. establish separate AE and Curia finance actuals ledgers;
 6. reconcile duplicate AE cap-table workbooks;
 7. reauthenticate Gmail only in a separately approved access-change step;
