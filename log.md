@@ -109,3 +109,4 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Specified a conditional no-dual-authority cutover that preserves `ae-*` and `curia-*` continuity IDs.
 - Controls are specified, not implemented or enforced.
 - No repository, ledger, schema, CI, manifest, adapter, dashboard, CRM sync, or write path was implemented.
+- After a fresh cross-family audit, specified required `authority_state`, the out-of-band `activation_commit`/`dataset_commit` split, versioned vocabularies, and typed rejected-write proof; none is implemented or enforced.

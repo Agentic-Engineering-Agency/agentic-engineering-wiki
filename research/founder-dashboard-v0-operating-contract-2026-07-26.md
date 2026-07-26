@@ -332,18 +332,25 @@ Only after v0 proves reliability: design explicit, narrowly authorized write act
 - A scoped GitHub connector never labels its two visible repositories as the whole organization.
 - A zero displays only after a successful query with visible window, scope, filters, and denominator, no silent truncation or narrowing, a fetched-at value inside freshness SLA, and a metric definition that permits zero.
 - An aggregate-only or working-mirror zero can never populate a KPI whose definition requires an authoritative source; that card renders `not_configured`.
-- A missing, malformed, or pre-activation opportunity-authority manifest renders `not_configured`.
-- An activated, healthy, exact-commit dataset with no opportunity records renders zero only when the metric definition permits a valid zero.
-- Opportunity records missing required schema/record versions, immutable prefixed IDs, matching entity/repository scope, or any required allowlisted field fail validation.
+- Opportunity authority accepts required enum-only `authority_state`: `not_configured`, `git_authoritative`, or `crm_authoritative_git_frozen`; only forward transitions pass.
+- A missing, malformed, pre-activation, or invalid-transition opportunity-authority manifest renders `not_configured` with an error and no number.
+- `activated: false` contradicting an authoritative state, or `activated: true` with `not_configured`, fails closed and never renders zero.
+- Dashboard configuration must pin `activation_commit` out-of-band, and that commit must contain the authority manifest.
+- The manifest's `dataset_commit` must identify the immutable opportunity-data snapshot; the dashboard verifies both commits and their relationship, and unequal commits are valid.
+- Any contract requiring a commit to contain its own SHA fails acceptance.
+- A valid authoritative state plus a healthy, verified dataset with no opportunity records renders zero only when the metric definition permits a valid zero.
+- Opportunity records missing required schema, vocabulary, or record versions; immutable prefixed IDs; matching entity/repository scope; or any required allowlisted field fail validation.
+- An unknown `vocabulary_version` or unknown value for `lifecycle_state`, `stage`, `confidence`, `amount_state`, `approval_state`, `next_action_type`, `blocker_codes`, `evidence_refs.system`, or `evidence_refs.allowed_use` fails validation.
 - `next_action_type` and `blocker_codes` accept enumerated values only; unconstrained action or blocker text fails validation.
 - Evidence references accept typed allowlisted fields and opaque IDs only; raw snippets, direct contact URLs, and untyped references fail validation.
 - Direct PII, investor-person data, unconstrained free text, raw communications, message bodies, snippets, or contact-bearing URLs fail recursive validation.
 - A filename/ID/prefix/repository-scope mismatch, cross-entity reference, or cross-entity aggregation fails validation.
-- An opportunity adapter without the exact pinned dataset commit plus authority scope, authority-until, provenance, observed-at, fetched-at, and schema-version fields fails closed.
+- An opportunity adapter without `activation_commit`, `dataset_commit`, authority state, authority scope, authority-until, provenance, observed-at, fetched-at, schema-version, and vocabulary-version fields fails closed.
 - Twenty cannot satisfy an authority-required opportunity KPI before AE-370 completes a verified cutover.
 - Simultaneous writable Git and CRM authority, or a dashboard union across old and new opportunity sources, fails acceptance.
 - Cutover fails unless every `ae-*` and `curia-*` continuity ID is preserved in `external_source_id` or an immutable mapping artifact and independently reconciled per entity.
-- Protected writes, CI validation, manifests, adapters, rejected-write tests, and cutover controls are labeled `specified` until implementation evidence proves them.
+- Transition to `crm_authoritative_git_frozen` fails without independent per-entity reconciliation and a typed rejected-write proof containing `frozen_commit`, `enforcement_policy_version`, `attempted_write_at`, enum `attempted_operation`, `rejection_code`, opaque `proof_ref`, and `proof_sha256`, with no PII, secret, raw request, or direct storage URL.
+- Authority-state, commit-split, vocabulary, protected-write, CI, manifest, adapter, rejected-write, and cutover controls remain labeled `specified only`, not implemented or enforced, until implementation evidence proves otherwise.
 - An unclassifiable payload renders `unknown`, names the evidence needed to classify it, and shows no number.
 - A PostHog payload cannot expose, log, cache, or forward api_token.
 - A Calendar payload cannot expose, log, cache, or forward attendee names, email addresses, or phone numbers.

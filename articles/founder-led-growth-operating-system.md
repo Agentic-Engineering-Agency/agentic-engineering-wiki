@@ -165,7 +165,7 @@ The ledger is the contract for the future daily-driver dashboard.
 
 ### Source-of-truth rule
 
-- CRM owns accounts, contacts, and touches. Opportunity authority follows the temporal rule below: it is `not_configured` before activation, the activated private Git ledger is sole temporary authority before an accepted AE-370 cutover, and the selected proved CRM is authority after cutover.
+- CRM owns accounts, contacts, and touches. Opportunity authority follows the temporal rule below: it is `not_configured` before founder activation, `git_authoritative` after activation and before accepted AE-370 cutover, and `crm_authoritative_git_frozen` only after accepted cutover with verified frozen Git evidence.
 - Linear owns work and delivery status.
 - The wiki owns claims, decisions, playbooks, and evidence policy.
 - Finance ledger owns cash and runway.
@@ -234,7 +234,7 @@ AE-370 must select and prove the durable destination; this decision does not pre
 3. Freeze each entity ledger at a named signed or tagged commit and produce a valid typed rejected-write proof.
 4. Import while the destination is non-authoritative. Preserve every `ae-*` or `curia-*` continuity ID in `external_source_id` or an immutable mapping artifact.
 5. Independently reconcile IDs, counts, stages, amounts, currencies, and digests per entity. If validation fails, discard the import and Git remains authoritative.
-6. Only after valid proof and reconciliation, one manifest change sets `authority_state` to `crm_authoritative_git_frozen` at an explicit effective time; dashboard configuration pins that manifest's `activation_commit` out-of-band and switches adapters without unioning sources.
+6. Only after valid proof and reconciliation, one manifest change sets `authority_state` to `crm_authoritative_git_frozen` at an explicit effective time; dashboard configuration pins the commit containing that manifest as `activation_commit` out-of-band and switches adapters without unioning sources.
 7. Git remains frozen evidence-only. Rollback requires a new explicit authority decision.
 
 ## Daily-driver dashboard contract
