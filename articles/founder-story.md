@@ -45,7 +45,7 @@ Lalo identifies Lucy as his main co-founder and operating partner. Historical wi
 - founder-led agentic engineering with production discipline
 - services that convert operational problems into governed AI workflows
 - reusable multi-model evaluation and routing infrastructure
-- Curia as an independently structured legal-operations product in paid pilot use
+- Curia as a separate legal-operations product lane in paid pilot use, with its Mexican SAPI still a target state
 - honest limits, evidence states, and human approval gates
 
 Exclude unverified customer counts, investment positions, entity completion, IP ownership, market size, model superlatives, and private commercial terms.
