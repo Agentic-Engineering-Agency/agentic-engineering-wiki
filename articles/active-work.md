@@ -44,6 +44,13 @@ See [[articles/founder-led-growth-operating-system|Founder-led growth operating 
 - Curia is in pilot use; it is **not yet a completed full-production or repeatable commercial deployment**.
 - Near-term evidence: active users, repeated weekly workflows, verified legal outputs, time saved, issues resolved, willingness to renew or expand, and a second-firm pipeline.
 
+### Defade
+
+- DEF-85 and DEF-15 report a deployed Spanish landing surface and live Stripe mapping.
+- DEF-14 analytics and safety monitoring remains open.
+- Repository-to-live deployment parity, checkout/support readiness, and the current deployed revision are not independently verified.
+- Revival stays bounded to one segment, one offer, and one human-approved test after chain-of-title and instrumentation gates.
+
 ## Portfolio allocation
 
 | Lane | Role now | Current action |
@@ -61,6 +68,8 @@ See [[articles/founder-led-growth-operating-system|Founder-led growth operating 
 The latest evidence window shows concentrated work on landing pages, Prism and SceneSpec benchmarking, GTM and investor materials, repo maintenance, agent orchestration, and desktop/toolchain operations. GitHub activity was broad, but commercial telemetry and follow-through were thinner than implementation output.
 
 ## Runtime constraints
+
+These were observed on 2026-07-26 and can drift quickly. Re-verify each before operational use.
 
 - Paperclip's server path is currently blocked by an expired Tailscale peer key; its July 3 roster must not be presented as live status.
 - Gmail automation is blocked by an OAuth `invalid_grant`; no outbound automation should be assumed operational.

@@ -58,11 +58,14 @@ Approved wording:
 | “Paid design partner” | Approved |
 | “Deployed in pilot use” | Approved with the non-production qualifier |
 | “Production deployment” | Prohibited today |
+| Existing Client Sales deck wording that says “production deployment” | Prohibited in place; corrected-copy work is owned in Linear AE-390. No deployment is authorized in the current batch. |
 | “Production customer” | Prohibited today |
 | “Repeatable commercial deployment” | Prohibited today |
 | Customer quote, ROI, adoption, metric, screenshot, or case study | Unverified until signed evidence and publication permission are indexed |
 
 The inspected Sites used conflicting KLGV language [source](../external-sources/sites-portfolio-snapshot-2026-07-26.md). All future collateral must use the wording above.
+
+Curia privacy status must also remain qualified: CUR-276 reports that literal placeholders were replaced by interim “entity in formalization” copy, but CUR-277 still lacks independently verified real entity, RFC, domicile, and counsel-approved production wording. Re-verify the live surface before stating either the old placeholder condition or the interim correction is current.
 
 ### Multiempaques
 
@@ -80,14 +83,28 @@ The current Agentic Engineering reference ladder is free Fit Check → US$4,000 
 
 Curia pricing is a separate product motion. Do not mix Curia MXN SaaS pricing with agency USD engagement pricing.
 
+| Curia collateral claim | State | Approved treatment |
+|---|---|---|
+| MXN 1,250 / 5,800 price points | Unverified current pricing | Treat as internal deck hypotheses until their source, date, scope, founder approval, and canonical pricing-page reconciliation are recorded in CUR-524. |
+| Ten paid pilots | Planned milestone, not traction | May appear only as a labeled target; never as achieved customers, current pipeline, or forecast. |
+| Current Curia price | Unverified | No public quote until the pricing decision and contracting entity are approved. |
+
 ### Pipeline and traction
 
 | Claim | State | Approved treatment |
 |---|---|---|
-| 50 curated leads / 80 drafts / 50 Twenty records | Observed historical batch | Call it a 2026-06 batch artifact. Do not call it current pipeline without live stage, last touch, reply, meeting, owner, and next-action data. |
+| 50 curated leads / 80 drafts / 50 Twenty records | Self-reported historical artifact; live state unverified | Call it a reported 2026-06 batch artifact. Do not call it observed current pipeline without direct CRM verification of stage, last touch, reply, meeting, owner, and next action. |
 | Repository, commit, test, deployment, or deck count | Observed product evidence | Use as execution proof, not customer demand or revenue. |
 | Current replies, meetings, proposals, CAC, LTV, retention, churn | Unverified | Do not publish until source-of-truth metrics exist. |
 | Héctor Guerra work | Existing client evidence in current wiki | Keep separate from Curia traction and investor proof unless explicitly approved. |
+
+### ICP and market-positioning claims
+
+| Claim | State | Approved treatment |
+|---|---|---|
+| AE services primary ICP: operationally complex Mexican mid-market companies | Current canonical operating hypothesis | Use for the first 50-account segment; it is a focus decision, not proof of market demand. |
+| Regulated U.S. mid-market, 50–499 employees | Unverified investor-deck positioning | Do not replace the current Mexico-primary ICP or publish as validated focus until founders reconcile segment, geography, proof, and economics. Remediation is tracked in AE-389. |
+| AE platform ICP: product teams with material agent workloads and measurable failure/economic data | Current canonical operating hypothesis | Qualify by production task volume, task metric, failure examples, economic value, and implementation authority. |
 
 ### Model and platform claims
 
@@ -95,6 +112,7 @@ Curia pricing is a separate product motion. Do not mix Curia MXN SaaS pricing wi
 |---|---|---|
 | SceneSpec score/latency | Observed narrow benchmark | May state with exact harness scope and date. |
 | Opus/Sol/Kimi ranking on SceneSpec | Observed narrow benchmark | Do not transfer to sales or general intelligence. |
+| 98% sales-harness schema-validity gate | Prospective promotion threshold | SceneSpec did not test the sales corpus and does not prove this threshold has been met. |
 | AE router can become better than any constituent model on validated tasks | Founder decision / thesis | State as the platform objective. |
 | AE router is already universally superior | Prohibited | Requires task-specific evaluation and production evidence. |
 
