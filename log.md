@@ -43,3 +43,17 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Ran a dead-link audit across all created or changed documents: zero dead links.
 - No external sends, merges, deployments, access changes, archival, or deletion.
 - By Codex with founder-approved OpenKnowledge classification; Claude/fresh-context validation follows before closing the batch.
+
+## 2026-07-26 — Wiki + Linear reconciliation finalized
+
+- Reconciled the operating narrative around two separate raises and target entities: Agentic Engineering as a Delaware corporation via Stripe Atlas; Curia as a Mexican SAPI. Formation remains a target state until verified.
+- Recorded AE’s intended IP perimeter—Ultimate Harness, PriceGenius, Defade, and possible Muta, Agentforge, or SpecSafe inclusion—subject to assignment and chain-of-title diligence.
+- Preserved the Multiempaques sequence: data pending → sufficient-data gate → free Blueprint exception → price approximately 7–10 days after sufficient data → paid work only after acceptance.
+- Made model routing provider-family-aware: Luna, Terra, and Sol are one OpenAI GPT-5.6 family; Opus/Fable are Anthropic. Different-family review is required for material gates.
+- Assigned UH-142 one canonical evaluation corpus; LP-25 owns only the sales slice. Numerical thresholds are prospective gates or hypotheses, not traction.
+- Reconciled Linear ownership, dates, priorities, and explicit relations across LP-23, AE-369/370/387/388/389/390, AE-240/254, CUR-277/348/523/524, DEF-14/86, PRI-218, and UH-142/LP-25.
+- Added remediation gates for AE/Curia cross-entity traction, KLGV production wording, Curia pilot/pricing/milestone claims, ICP conflict, privacy/entity readiness, and chain of title.
+- Corrected AE-390 after final adversarial review: removed unsupported “single website” and customer-sentiment wording; the ticket now references only canonical pilot/design-partner language.
+- Verified structured relations through the relation-aware Linear issue reader; a separate validator’s simpler read path could not expose them, so this is recorded as an observability distinction rather than a missing-edge finding.
+- Reclassified the Linear reconciliation document as a research note, preserved history, rendered the home/model pages, and found no dead links in the changed corpus.
+- Scope held: no customer/prospect sends, merges, deployments, access changes, publication, archival, deletion, or repository cleanup.
