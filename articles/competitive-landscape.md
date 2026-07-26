@@ -33,7 +33,7 @@ title: Competitive landscape
 
 ### Primary competitor (founder view)
 
-**C — Generic ChatGPT + spreadsheets + manual Outlook**
+#### C — Generic ChatGPT + spreadsheets + manual Outlook
 
 Not (yet) dedicated Mexican legal SaaS incumbents or Harvey in MX mid-market.
 

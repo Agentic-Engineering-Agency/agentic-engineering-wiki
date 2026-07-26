@@ -1,12 +1,12 @@
 ---
 name: open-knowledge-pack-knowledge-base
-version: "0.18.0"
-description: "How to work in a Knowledge Base project (the `knowledge-base` starter pack). Read when the project has the three-layer source-grounded layout — `external-sources/` → `research/` → `articles/` — wired to the `workflow` MCP tool's ingest / research / consolidate kinds. Carries the pack's workflow, per-folder rules, status flows, and log discipline so this guidance does NOT live inside template bodies or log.md. Complements the platform `open-knowledge` skill; does not replace it."
-compatibility: "Claude Code, Claude Desktop, Claude Cowork, Claude.ai web. Requires OpenKnowledge MCP server. Installed project-local by `ok seed --pack knowledge-base`."
-metadata:
-  pack: "knowledge-base"
-  author: "Inkeep"
-  repository: "https://github.com/inkeep/open-knowledge"
+description: How to work in a Knowledge Base project (the `knowledge-base`
+  starter pack). Read when the project has the three-layer source-grounded
+  layout — `external-sources/` → `research/` → `articles/` — wired to the
+  `workflow` MCP tool's ingest / research / consolidate kinds. Carries the
+  pack's workflow, per-folder rules, status flows, and log discipline so this
+  guidance does NOT live inside template bodies or log.md. Complements the
+  platform `open-knowledge` skill; does not replace it.
 ---
 # Knowledge Base pack — how to work here
 
@@ -65,3 +65,5 @@ Entry shape:
 ## Templates
 
 Each folder has a starter template (`clip`, `research-log`, `article`). Create with `write({ document: { path, template: "<name>" } })`. Templates carry only structure (headings + frontmatter scaffold) — the meaning of each field and section is described above, not repeated inside the document body.
+
+**Never add a body-level `# H1`.** Every doc's frontmatter `title:` already renders as its heading. A duplicate `# Title` at the top of the body trips markdownlint MD025 (multiple top-level headings) — the article templates already start at `## Summary` for this reason; keep it that way in `research/` and `external-sources/` docs too.

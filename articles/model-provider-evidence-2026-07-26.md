@@ -47,7 +47,11 @@ A model product, a deployment route, and an independent provider family are diff
 
 > Current provider documentation positions Sol for frontier work, Terra for balanced everyday workloads, and Luna for efficient high-volume work. Agentic Engineering treats those descriptions as routing priors and promotes routes only through sales-specific evaluations.
 
+<!-- -->
+
 > Grok 4.5 can be paired with xAI's X Search tool for cited social-signal research when that tool is explicitly enabled.
+
+<!-- -->
 
 > No current model has yet demonstrated a conversion or revenue advantage on Agentic Engineering's sales corpus.
 

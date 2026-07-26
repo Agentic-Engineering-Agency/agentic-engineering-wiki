@@ -20,7 +20,7 @@ Use separate ICPs for Agentic Engineering services and Curia. Do not mix them in
 
 Operationally complex Mexican mid-market companies where a founder or senior operator owns a costly workflow and can provide enough data to design a Blueprint.
 
-**Strong signals**
+### Strong signals
 
 - repeated spreadsheet, email, document, pricing, support, or approval work
 - visible handoff failures or slow decision cycles
