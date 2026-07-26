@@ -11,8 +11,6 @@ tags:
   - canonical
 title: Héctor Guerra FX / DARK MODE
 ---
-# Héctor Guerra FX / DARK MODE
-
 Internal client record. Public: listed on [agency site](../external-sources/agenticengineering-agency-site.md) under "Trusted by" for **trading mentorship infrastructure**.
 
 ## Relationship type
