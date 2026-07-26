@@ -9,8 +9,6 @@ preservation: text-only
 source_type: multi-provider-and-live-public-web-snapshot
 tags: [source, immutable, layer-ingest, sales, gtm, accounts, mexico, 2026-07-26]
 ---
-# AE account-discovery snapshot — 2026-07-26
-
 ## Capture method and limits
 
 This record combines a bounded Claude Desktop Opus 5 validation task, a bounded Gemini NotebookLM question against the existing 63-source Agentic Engineering notebook, and live public-web research through TinyFish and parallel read-only research agents.
@@ -38,7 +36,7 @@ Notebook sources named: AE_Client_Deck_EN.pdf, AE_Investor_Overview_EN.pdf, and 
 ## Accounting/shared-services cohort
 
 | Account | Identity/size | Workflow/system evidence | Disposition |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | [TACTIK CSC](https://tactik.net/quienes-somos.html) | Monterrey; Mexican shared services; [51–200](https://mx.linkedin.com/company/tactikcsc) | [“Registro de Cuentas por Pagar a través de Portales”](https://tactik.net/contabilidad.html); AP/AR in ERP and platform reconciliation | Strict pass; High |
 | [Grupo GSG Mefintax](https://www.gsgconsultores.com.mx/wp-content/uploads/2024/06/Brochure-Grupo-GSG-Mefintax-Mayo-24.pdf) | CDMX; Mexican accounting/BPO; [51–200](https://www.linkedin.com/company/gsgmefintax) | [Cash-flow, reconciliation, reporting, budget control](https://www.gsgconsultores.com.mx/servicios/business-advisory-services/compartidos-integrales-shared-services/); ERP, SAP, Oracle, QuickBooks, BI, RPA | Strict pass; High |
 | [Humanitak](https://humanitak.com/) | Mexican HR/admin BPO; [11–50](https://mx.linkedin.com/company/humanitak-staffing-group) | Bank reconciliation, accounting entries/reports, CFDI payroll integration | Hold: below size floor |
@@ -52,7 +50,7 @@ Strict yield: 2 of 7 reviewed, or 29%.
 ## Industrial-operations cohort
 
 | Account | Identity/size | Workflow/system evidence | Disposition |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | [Grupo CIPSA](https://www.cipsa.com.mx) | Puebla; family industrial group; 201–500 | [Portal](https://proveedores.cipsa.com.mx/) supports POs, invoices, credit notes, payment dates/complements; SAP Fiori | Pass; High |
 | [DIMECA](https://www.dimeca.com.mx) | Saltillo; Mexican metal/logistics; 501–1,000 | [Tangente case](https://tangentemexico.com/): requisitions plus eight systems integrated to SAP Business One; automatic invoicing | Pass; High; vendor case |
 | [Grugar Industrial](https://www.grugar.com.mx) | CDMX/Edo. Méx.; manufacturing; 51–200 | [Dec-2025 policy](https://www.grugar.com.mx/grugar/descargables/proveedores.pdf) requires invoice/PO/quantity/price match; Odoo AP | Pass; High workflow, Medium control |

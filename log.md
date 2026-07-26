@@ -87,3 +87,9 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Updated Linear AE-388, LP-23, AE-254, UH-142, AE-369, and CUR-348 with the new gates and canonical paths.
 - Verification: OpenKnowledge Synced, Problems 0; five changed pages had zero broken local links; targeted secret scan and malformed citation scan returned no findings.
 - Scope held: wiki + Linear only; no sends, merges, deployments, publications, access changes, archival, deletion, credential use/rotation, or non-wiki repository mutation.
+
+## 2026-07-26: Fix account-discovery snapshot title
+
+- Removed the duplicate body H1 while preserving the frontmatter title and section hierarchy; OpenKnowledge lint reports zero problems.
+- Files touched: [AE account-discovery snapshot](./external-sources/ae-account-discovery-snapshot-2026-07-26.md)
+- Open follow-ups: none
