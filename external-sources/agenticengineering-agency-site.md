@@ -29,21 +29,27 @@ NOW SHIPPING · Curia for KLGV Abogados · Launch July 2026
 ## Service lines
 
 ### Custom AI Product Development
+
 Complete AI applications built around users, workflows, and data.
 
 ### Operational Workflow Automation
+
 Map messy work; automate repetitive parts safely with human approval gates.
 
 ### Curia: Legal AI
+
 Court monitoring, deadline calculation, calendar sync, citation-verified document analysis.
 
 ### AI Infrastructure & Cost Optimization
+
 Private/hybrid/cloud AI; model routing; predictable spend.
 
 ### Intelligent System Integration
+
 Multi-model/tool workflows with fallbacks and quality checks.
 
 ### Reliable AI Agent Systems
+
 Agents that read, draft, update, report in real business tools with monitoring.
 
 ## Delivery process
@@ -70,6 +76,6 @@ Desktop workspaces: monitoring, cases, evidence, cited review. LFPDPPP-compliant
 
 ## Contact
 
-- info@agenticengineering.agency
+- <info@agenticengineering.agency>
 - WhatsApp: +52 33 2241 2595
 - Jalisco, Mexico · Working globally

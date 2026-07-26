@@ -18,7 +18,7 @@ Secret values and personal contact data are intentionally omitted. The root work
 ## Connector observations
 
 | Source | Observed state | Evidence boundary | Dashboard-safe use |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | Linear | Confirmed | AE team and current issues readable on 2026-07-26 | Work, owner, priority, dates, relations, blockers, updated-at |
 | Sites | Confirmed | Six accessible active projects; metadata, saved versions, commits, live URLs | Artifact status, latest saved version, update time, access mode |
 | Google Calendar | Confirmed | Primary calendar bounded search returned a live event | Today and seven-day schedule; redact attendee/contact detail |
@@ -38,13 +38,13 @@ PostHog connector responses may include an api_token property. Any adapter must 
 The connector exposed exactly six active owner-only custom projects. None had a preview URL, custom domain, or runtime environment variable. A latest saved version is observable, but the connector did not expose an absolute latest-saved-to-live deployment link; do not claim those are identical without deployment evidence.
 
 | Project | Project ID | Latest saved evidence | Live URL | Access mode |
-|---|---|---|---|---|
-| Cifra | appgprj_6a65614de2848191bd4cfbcb94c6b195 | v2; ecf9302211b9ae41c42d577a3a14624c93ecf440; updated 2026-07-26 | https://cifra-finance-command-center.agenticengineering.chatgpt.site | Owner-only |
-| Multiempaques · Prep 30 | appgprj_6a6287818d2c8191b1216d349d848225 | v1; 6b7b45d666d1a6f8490e3ebe7ee7aceec580a4e3; updated 2026-07-23 | https://multiempaques-prep-30.agenticengineering.chatgpt.site | Owner-only |
-| Curia — Investor Deck | appgprj_6a5683dbf5108191bc40a8e9eb5791f9 | v1; 013fa21572748880086f535c93ba7cc6d8c6587e; updated 2026-07-14 | https://curia-investor-deck.agenticengineering.chatgpt.site | Owner-only |
-| Agentic Engineering — Investor Overview | appgprj_6a541ec349cc8191b7726f7e29d6c78f | v4; 338cdd0a9df56fc4371d07304bb7fe4041568888; updated 2026-07-14 | https://agentic-engineering-investor-overview.agenticengineering.chatgpt.site | Owner-only |
-| Agentic Engineering — Client Sales | appgprj_6a541ebbad34819190dd7db354467c31 | v2; 860596c7823a89dd7ded8b0d13b81158ef5e2639; updated 2026-07-13 | https://agentic-engineering-client-deck.agenticengineering.chatgpt.site | Owner-only |
-| MemSWE · Resultados PAP 2026 | appgprj_6a50250533dc819188d073395072cf89 | v9; aeb6e8c6a2180173d42693f2be288d01483acad6; updated 2026-07-17 | https://memswe-pap-2026.agenticengineering.chatgpt.site | Owner-only |
+| --- | --- | --- | --- | --- |
+| Cifra | appgprj_6a65614de2848191bd4cfbcb94c6b195 | v2; ecf9302211b9ae41c42d577a3a14624c93ecf440; updated 2026-07-26 | <https://cifra-finance-command-center.agenticengineering.chatgpt.site> | Owner-only |
+| Multiempaques · Prep 30 | appgprj_6a6287818d2c8191b1216d349d848225 | v1; 6b7b45d666d1a6f8490e3ebe7ee7aceec580a4e3; updated 2026-07-23 | <https://multiempaques-prep-30.agenticengineering.chatgpt.site> | Owner-only |
+| Curia — Investor Deck | appgprj_6a5683dbf5108191bc40a8e9eb5791f9 | v1; 013fa21572748880086f535c93ba7cc6d8c6587e; updated 2026-07-14 | <https://curia-investor-deck.agenticengineering.chatgpt.site> | Owner-only |
+| Agentic Engineering — Investor Overview | appgprj_6a541ec349cc8191b7726f7e29d6c78f | v4; 338cdd0a9df56fc4371d07304bb7fe4041568888; updated 2026-07-14 | <https://agentic-engineering-investor-overview.agenticengineering.chatgpt.site> | Owner-only |
+| Agentic Engineering — Client Sales | appgprj_6a541ebbad34819190dd7db354467c31 | v2; 860596c7823a89dd7ded8b0d13b81158ef5e2639; updated 2026-07-13 | <https://agentic-engineering-client-deck.agenticengineering.chatgpt.site> | Owner-only |
+| MemSWE · Resultados PAP 2026 | appgprj_6a50250533dc819188d073395072cf89 | v9; aeb6e8c6a2180173d42693f2be288d01483acad6; updated 2026-07-17 | <https://memswe-pap-2026.agenticengineering.chatgpt.site> | Owner-only |
 
 Reusable observed interaction patterns:
 
@@ -58,7 +58,7 @@ Reusable observed interaction patterns:
 ## Existing implementation surfaces
 
 | Surface | Exact path | Reusable evidence | Limitation |
-|---|---|---|---|
+| --- | --- | --- | --- |
 | AE 5-week dashboard | /Users/eduardojaviergarcialopez/AgenticEngineering/Agentic-Engineering-GTM/ops/5-week-plan/ae-5wk-dashboard.html | Plan, risk, owner, cash/runway, Linear-query information architecture | Stale May prototype; hardcoded MCP tool ID, labels, owners, dates, and finance values |
 | Weekly operating review | /Users/eduardojaviergarcialopez/AgenticEngineering/Agentic-Engineering-GTM/ops/weekly-review/workspace/iteration-2/benchmark.json | Cash/runway, KPIs, GTM tracks, risks, next actions, cross-system checks | Evaluation evidence is narrow and not an authoritative business ledger |
 | Twenty inbound adapter | /Users/eduardojaviergarcialopez/AgenticEngineering/landing-page/lib/twenty-crm.ts | Typed failures, timeout, PII-safe logging, person upsert | Write-only inbound path; no account/opportunity/stage read model |
@@ -71,7 +71,7 @@ Reusable observed interaction patterns:
 ## Local machine-readable business data
 
 | Source | Observed use | Readiness |
-|---|---|---|
+| --- | --- | --- |
 | Agentic-Engineering-GTM/investor-data-room/AE_CapTable.xlsx and Agentic-Engineering-GTM/data-room/AE_CapTable.xlsx | Two same-day capitalization workbooks | Conflicting potential authorities; reconcile before aggregates |
 | Agentic-Engineering-GTM/data-room/AE_3yr_Projection.xlsx | Three-year planning model from 2026-05-07 | Forecast assumptions only; not cash or actuals |
 | Agentic-Engineering-GTM/directory-publishing/AE_DIRECTORY_SUBMISSION_TRACKER.csv | Directory/channel tracking | Distribution coverage only; not lead or revenue truth |
