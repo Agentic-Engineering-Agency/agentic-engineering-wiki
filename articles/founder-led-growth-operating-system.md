@@ -30,7 +30,7 @@ The current 30-day operating window is 2026-07-26 through 2026-08-25. Its two pr
 3. Bounded pilot: US$8,000 / US$12,000 / US$15,000 reference tiers.
 4. Operations retainer: US$2,500 / US$5,000 monthly reference tiers.
 
-Pricing references come from current Sites and Linear evidence, not a blanket promise for every geography or scope [sources](../external-sources/sites-portfolio-snapshot-2026-07-26.md).
+Pricing references come from current Sites and Linear evidence, not a blanket promise for every geography or scope [source](../external-sources/sites-portfolio-snapshot-2026-07-26.md).
 
 ### Curia
 
