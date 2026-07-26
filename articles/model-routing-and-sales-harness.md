@@ -10,26 +10,29 @@ title: Model routing and sales harness
 sources:
   - research/model-routing-and-sales-harness.md
   - external-sources/prism-scenespec-snapshot-2026-07-26.md
+  - articles/model-provider-evidence-2026-07-26.md
 ---
 
 ## Summary
 
-Agentic Engineering uses a lean, task-specific router rather than an all-model swarm. Luna handles structured extraction; Terra is the default sales operator; Gemini handles search/Maps/multimodal discovery; Opus handles high-stakes synthesis and proposals; Sol provides deep research and OpenAI-family review of Anthropic-authored work. Grok, Fable, Kimi, and Qwen are scoped specialists or challengers until workflow evidence promotes them. Sol, Terra, and Luna are not independent-family reviewers of one another under the current local labels.
+Agentic Engineering uses a lean, task-specific router rather than an all-model swarm. Current provider documentation gives useful priors: Luna for efficient structured work, Terra for balanced coordination and drafting, Sol or Opus for high-stakes synthesis, Gemini for search/Maps/multimodal discovery, Grok for X-specific discovery only when its search tool is enabled, and Fable for rare long-horizon diligence. Kimi, Qwen, Cursor Composer, and Fugu Ultra remain measured challengers or implementation routes rather than presumed sales winners.
 
-The objective is cost per accepted, evidence-grounded outcome. No model is universally “best,” and the platform will not claim broad superiority before task-specific evaluation demonstrates it.
+The objective is cost per accepted, evidence-grounded outcome. No model has demonstrated a conversion or revenue advantage on the Agentic Engineering sales corpus. Product name, deployment route, enabled tools, and provider family are recorded separately; capability does not imply independent-review eligibility.
 
 ## Provider-family map
 
-| Local label | Current family classification | Review implication |
+| Local label / route | Current family classification | Review implication |
 |---|---|---|
-| Luna / Terra / Sol | OpenAI GPT-5.6 family in the local runtime labels | Useful for different effort/cost roles, but not independent-family review of one another |
-| Opus / Fable | Anthropic Claude family | Independent of OpenAI-authored work; not independent of one another |
+| Luna / Terra / Sol | OpenAI GPT-5.6 family | Useful for different effort/cost roles, but not independent-family review of one another |
+| Opus 5 / Fable 5 | Anthropic Claude family | Independent of OpenAI-authored work; not independent of one another |
 | Gemini | Google family | Independent discovery or multimodal challenger |
-| Grok | xAI family | Independent social-context or adversarial challenger |
-| Kimi | Moonshot family | Independent shadow challenger |
+| Grok 4.5 via xAI or Cursor | Shared named Grok lineage across distinct deployment routes | Record route/tools/version; do not count xAI and Cursor routes as independent families |
+| Kimi K3 | Moonshot family | Independent shadow challenger; verify route and price at execution time |
 | Qwen | Alibaba family | Independent shadow challenger |
+| Cursor Composer 2.5 | Cursor first-party coding model | Implementation route, not a sales-quality claim |
+| Sakana Fugu Ultra | Undisclosed fixed multi-model pool | Useful experimental escalation; cannot prove independent-family review |
 
-Provider identity and versions are runtime facts, not permanent brand facts. Re-verify them at execution time.
+Provider identity, route health, tools, retention, price, and versions are runtime facts. Re-verify them at execution time. The official-source boundary is maintained in [Model provider evidence](./model-provider-evidence-2026-07-26.md).
 
 ## Routing policy
 
@@ -134,6 +137,17 @@ Start a 5% canary only after shadow gates pass. Review all first 100 externally 
 
 The local SceneSpec snapshot recorded Opus at 18.38/20, Sol at 17.82, Kimi K3 at 17.77, Fable at 17.32, Terra at 16.68, Luna at 15.93, and Gemini at 15.03, with route-specific validity and latency [source](../external-sources/prism-scenespec-snapshot-2026-07-26.md). These results apply only to that harness. They do not justify a sales, persuasion, or revenue ranking.
 
+## Official-source boundary
+
+[Model provider evidence](./model-provider-evidence-2026-07-26.md) confirms current product availability and provider positioning. Those facts do not establish sales performance. In particular:
+
+- local Factory notes are stale on Fable 5 availability; Anthropic says access was restored July 1;
+- Fable 5 requires a 30-day retention posture, so prospect PII needs an accepted retention/DPA path;
+- Grok has cited X access only when the separate X Search tool is enabled;
+- Cursor Composer 2.5 is supported as a coding/harness route, not a persuasion specialist;
+- Fugu Ultra's hidden pool prevents it from serving as the known different-family final reviewer;
+- local Prism scores remain SceneSpec-only evidence.
+
 ## Seven-day pilot
 
 1. Choose one agency offer and one ICP.
@@ -162,5 +176,6 @@ Review monthly and whenever a model/version/provider/tool/prompt changes. Promot
 
 - [Model-routing research](../research/model-routing-and-sales-harness.md)
 - [Prism SceneSpec snapshot](../external-sources/prism-scenespec-snapshot-2026-07-26.md)
+- [Model provider evidence](./model-provider-evidence-2026-07-26.md)
 - [Founder-led growth operating system](./founder-led-growth-operating-system.md)
 - [Marketing honesty policy](./marketing-honesty-policy.md)
