@@ -57,3 +57,12 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Verified structured relations through the relation-aware Linear issue reader; a separate validator’s simpler read path could not expose them, so this is recorded as an observability distinction rather than a missing-edge finding.
 - Reclassified the Linear reconciliation document as a research note, preserved history, rendered the home/model pages, and found no dead links in the changed corpus.
 - Scope held: no customer/prospect sends, merges, deployments, access changes, publication, archival, deletion, or repository cleanup.
+
+### Final adversarial-panel closure
+
+- Claude Fable 5 completed a read-only 49-agent adversarial workflow with seven independent finders and three-vote refutation panels. Two P1 coverage gaps survived: Curia entity-separation overstatement in the founder story, and an unowned public agency-site claims surface.
+- Corrected the founder story to keep Curia's Mexican SAPI as target state.
+- Added the public agency-site launch/privacy/KLGV wording to the claims registry and created Linear AE-391, related to CUR-277, CUR-348, and AE-390. Current batch remains inventory/drafting only.
+- Resolved all six accepted P2 hygiene findings: recorded-gate pricing language, ShesMine diligence, open CRM-decision qualification, and superseded-research labels.
+- Claude's bounded read-only recheck returned PASS with no surviving P0/P1. Its final P2 echo in the Active Work executive summary was then aligned to the same recorded sufficient-data gate date.
+- Final graph audit: zero dead links in the changed corpus. Scope remained wiki + Linear only.
