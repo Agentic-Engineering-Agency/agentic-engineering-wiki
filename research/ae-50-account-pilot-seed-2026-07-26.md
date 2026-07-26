@@ -1,91 +1,100 @@
 ---
 type: research-note
 title: AE 50-account pilot — evidence seed and segment correction
-description: Provisional account seed for AE-369, with the Opus gate, NotebookLM hypothesis, live evidence yield, and next bounded research funnel.
+description: Provisional research decision for the Mexican-controlled industrial wedge, with 28-account adjudication, 21-trigger falsification result, and evidence-repair gates.
 status: provisional
 created: 2026-07-26
-author: Codex with Claude Opus 5 validation and Gemini NotebookLM selection
-tags: [research, gtm, sales, accounts, mexico, validation, 2026-07-26]
+author: Codex, incorporating founder-provided adjudication
+tags:
+  - research
+  - gtm
+  - sales
+  - accounts
+  - mexico
+  - validation
+  - 2026-07-26
 sources:
   - external-sources/ae-account-discovery-snapshot-2026-07-26.md
   - articles/founder-led-growth-operating-system.md
   - articles/model-routing-and-sales-harness.md
   - articles/claims-registry.md
 ---
-# AE 50-account pilot — evidence seed and segment correction
-
 ## Decision record
 
-The Opus 5 validation gate passed an internal-only 50-account research experiment, not outreach or pipeline creation.
+The controlling working wedge for this discovery layer is:
 
-Gemini NotebookLM proposed Mexican back-office accounting and financial services focused on payment reconciliation and invoice approvals. Live research supported the workflow but not the initial industry label: only 2 of 7 accounting/shared-services candidates passed the size, identity, operating-model, and workflow-evidence gates.
+> Mexican-controlled industrial manufacturers and distributors, 51–1,000 employees, with direct recurring AP, PO, invoice, reconciliation, approval, or close evidence plus an ERP/system signal.
 
-The provisional primary segment is therefore:
+The accounting/shared-services comparison remains 2 of 7 passes: TACTIK CSC and Grupo GSG Mefintax. It remains a comparison cohort and is not counted inside the 28-account primary cohort. The full evidence and direct-source ledger are preserved in the [AE account-discovery snapshot](../external-sources/ae-account-discovery-snapshot-2026-07-26.md).
 
-> Mexican-controlled industrial manufacturers and distributors, 51–1,000 employees, with public evidence of recurring supplier-invoice, purchase-order, payment-application, reconciliation, or approval work plus an ERP/system signal.
+This is the controlling segment correction for the current research layer, not a final claim of market validation or commercial traction.
 
-This is a data-led segment correction, not a final founder commitment. It preserves the narrow workflow while moving to a cohort with denser first-party operational evidence.
+## Adjudication summary
 
-## Current evidence state
+| Population | Count | Result | Interpretation |
+| --- | ---: | --- | --- |
+| Primary cohort | 28 | 5 E1, 8 E2, 13 holds, 2 disqualifiers | Unique company-level candidates adjudicated |
+| Accounting/shared-services comparison | 7 | 2 passes, 5 holds | Workflow exists, but strict public-account yield remains sparse |
+| Enterprise calibration | 3 | Super Kiosko, ALMER, Grupo Castores | More than 1,000 employees; outside the current size ceiling |
 
-| Cohort | Reviewed | Provisional passes | Holds | Interpretation |
-|---|---:|---:|---:|---|
-| Accounting/shared services | 7 | 2 | 5 | Workflow fit is real; strict public-account yield is too sparse for fast expansion |
-| Industrial/manufacturing/distribution core | 7 | 6 | 1 | Best current route toward the first 50 |
-| Upper-mid/enterprise calibration | 3 | 0 | 3 | Strong workflows, but above provisional size ceiling |
+| Disposition | Count | Accounts | Meaning |
+| --- | ---: | --- | --- |
+| E1 | 5 | Grupo CIPSA, DIMECA, Raloy Lubricantes, Dysal, Productos Helados Milky Mich | Strongest research-ready accounts; not yet qualified accounts |
+| E2 | 8 | Grugar Industrial, DIDCOM, Pinturas Adhler, MEXDEN, ODISA, JAKO, Ah Cacao, IMAG Organics | Provisional accounts requiring evidence repair |
+| Hold | 13 | ENVESTA, Grupo Formex, Poly Rafia, Quimica Delta, Promaquina, IPISA, DIFATSA, Alianza Electrica, Azerty de Mexico, YINSA, Nobazul, Maison Paulette, UniSeal | One or more control, size, workflow, system, or corroboration gates remain open |
+| Disqualify | 2 | Grupo Pochteca, Super Tiendas Esquer | More than 1,000 employees; B2C retailer, respectively |
 
-Current qualified seed: Grupo CIPSA, DIMECA, Grugar Industrial, DIDCOM, Pinturas Adhler, and MEXDEN. TACTIK CSC and Grupo GSG Mefintax remain a two-account comparison cohort. ENVESTA is held pending size verification. Super Kiosko, ALMER, and Grupo Castores are held pending an explicit upper-size decision.
+The counts reconcile to 28 unique primary-cohort candidates. E1 and E2 are research dispositions only; neither label means that the 50-qualified-account gate has been met.
 
-This is research inventory, not traction, a CRM, a prospect pipeline, or permission to contact anyone.
+## Falsification result and boundary
+
+At least 21 of 28 primary-cohort candidates conservatively have a direct observable trigger tied to the wedge. This clears only the provisional >=15 discovery-layer falsification threshold documented in the [source snapshot](../external-sources/ae-account-discovery-snapshot-2026-07-26.md).
+
+It does not:
+
+- clear the 50-qualified-account gate;
+- create pipeline, traction, customers, or revenue evidence;
+- authorize a second batch;
+- authorize named-person or personal contact research;
+- authorize CRM creation or mutation;
+- authorize drafting or outreach;
+- authorize marking AE-369 complete.
 
 ## Acceptance contract
 
-Each admitted account needs:
+Before any account can count toward the 50-qualified-account gate, its record must include:
 
-- legal/trade identity and registrable domain;
-- Mexican headquarters or operating footprint;
-- sector, operating model, and size band;
-- candidate workflow plus direct evidence URL and short snippet;
-- decision-owner role only, never a person by default;
-- dated trigger and ERP/systems signal;
-- explicit disqualifier check;
-- observed-at time, claim confidence, allowed use, reviewer, and human disposition.
+- legal or trade identity and registrable domain;
+- Mexican control and headquarters or operating footprint;
+- industrial manufacturing or distribution operating model;
+- 51–1,000 employee size evidence;
+- a direct recurring AP, PO, invoice, reconciliation, approval, or close trigger;
+- an ERP or other systems signal;
+- a dated source URL or path, observed-at time, and short evidence snippet;
+- claim confidence, allowed use, account ID, and explicit disqualifier check;
+- decision-owner role only, never a named person by default;
+- duplicate status, reviewer, and human disposition.
 
 Unknown is acceptable. Inference is not.
 
-## Next bounded funnel
+## Priority evidence repairs
 
-1. Seed 100–150 company names from CLAUT, CANIETI, ANTP, IMMEX, and regional industrial associations.
-2. Resolve identity and size through primary domains plus DENUE/SIEM; suppress all personal contact data.
-3. Enrich survivors with supplier portals, finance/accounting roles, ERP stories, procurement events, and corporate events.
-4. Require Medium-or-better identity, size, operational-complexity, and stack/pain/urgency evidence.
-5. Deduplicate at source-record, establishment, legal-entity, and account/domain grains.
-6. Stop at 50 qualified or earlier if the remaining pool requires relaxed evidence, inferred fields, PII, gated data, or an anti-fit majority.
-7. Sample-audit links before any human decision about contacts, CRM import, messages, or expansion.
+1. Replace the transient secondary job-board evidence for DIDCOM, Pinturas Adhler, and MEXDEN while retaining the current URLs as provenance.
+2. Refresh Mexican control and size for every E2 account.
+3. Independently corroborate vendor-published Odoo, SAP, SAP/Xamai, Tangente, and partner cases.
+4. Finish role-only, allowed-use, duplicate, reviewer, and human-disposition fields.
+5. Sample-audit source validity and deduplicate at source-record, establishment, legal-entity, and account/domain grains.
 
-## Do not do yet
+Evidence repair applies only to the existing adjudicated cohort. It does not authorize a second discovery batch.
 
-- Do not expand to 500.
-- Do not research named people or personal contact details.
-- Do not add companies to a CRM.
-- Do not draft or send outreach under this research task.
-- Do not mark AE-369 complete.
-- Do not treat vendor case-study ROI as independently verified.
-- Do not combine Curia legal-firm prospects with the AE segment.
-- Do not count Multiempaques as an active paid client; its Blueprint remains blocked on client data and the pricing clock has not started.
+## Current stop condition
 
-## Model and provider use
-
-- Opus 5: acceptance contract and high-risk gate. Conserve remaining weekly quota; do not use Fable for validation under the current founder instruction.
-- Gemini NotebookLM: source-bounded hypothesis generation from the existing AE notebook.
-- TinyFish and public sources: deterministic company-level evidence gathering.
-- Codex/subagents: normalization, claim scoring, synthesis, and internal documentation.
-- Candidate admission is evidence-driven rather than model-vote-driven.
+Stop after documenting and repairing the existing evidence packet. Do not research named people, retain personal contact details, add accounts to a CRM, draft messages, send outreach, expand the cohort, or reinterpret vendor case-study claims as independently verified.
 
 ## Related
 
-- [[external-sources/ae-account-discovery-snapshot-2026-07-26|AE account-discovery snapshot]]
-- [[articles/account-discovery-evidence-rules|Account discovery evidence rules]]
-- [[articles/founder-led-growth-operating-system|Founder-led growth operating system]]
-- [[articles/model-routing-and-sales-harness|Model routing and sales harness]]
-- [[articles/claims-registry|Claims registry]]
+- [AE account-discovery snapshot](../external-sources/ae-account-discovery-snapshot-2026-07-26.md)
+- [Account discovery evidence rules](../articles/account-discovery-evidence-rules.md)
+- [Founder-led growth operating system](../articles/founder-led-growth-operating-system.md)
+- [Model routing and sales harness](../articles/model-routing-and-sales-harness.md)
+- [Claims registry](../articles/claims-registry.md)

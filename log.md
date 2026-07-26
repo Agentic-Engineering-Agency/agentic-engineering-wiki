@@ -68,6 +68,7 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Final graph audit: zero dead links in the changed corpus. Scope remained wiki + Linear only.
 
 ## 2026-07-26 — founder-dashboard source and v0 contract
+
 - Captured a read-only source snapshot across Linear, six owner-only Sites projects, bounded Calendar, connector-scoped GitHub, per-project PostHog, Apollo aggregates, local machine-readable business data, dashboard code surfaces, and agent/runtime constraints.
 - Specified the v0 source envelope, degraded states, zero rules, normalized ledgers, AE/Curia/portfolio/proof partitions, KPI contracts, role boundaries, implementation phases, and deterministic tests.
 - Recorded Gmail, Paperclip/Tailscale, authoritative CRM pipeline, finance actuals, broader GitHub coverage, and some agent-runtime coverage as blocked, not configured, scoped, or unknown—not zero.
@@ -78,6 +79,7 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Scope held: no sends, merges, deployments, publications, access changes, archival, deletion, credential use/rotation, or repository mutation outside OpenKnowledge-managed wiki Markdown and Linear.
 
 ## 2026-07-26 — provider, revenue, portfolio, and raise consolidation
+
 - Used one bounded Claude Opus 5 read-only audit, then preserved Anthropic quota and moved the fresh-context challenge to Cursor default Grok 4.5 High Fast. Cursor reported no changed files.
 - Added current official provider evidence for Opus 5, Fable 5, GPT-5.6 Sol/Terra/Luna, Kimi K3, Grok 4.5, Cursor Composer 2.5, and Sakana Fugu Ultra. Corrected stale local Fable availability and classified Fugu Ultra's hidden pool as ineligible for known-family independent review.
 - Updated the canonical model router to separate product, route, tools, version, retention, price, and provider-family independence. No model is represented as having proven conversion or revenue superiority.
@@ -93,3 +95,5 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Removed the duplicate body H1 while preserving the frontmatter title and section hierarchy; OpenKnowledge lint reports zero problems.
 - Files touched: [AE account-discovery snapshot](./external-sources/ae-account-discovery-snapshot-2026-07-26.md)
 - Open follow-ups: none
+
+- 2026-07-26 — Reconciled the [account-discovery snapshot](./external-sources/ae-account-discovery-snapshot-2026-07-26.md) and [50-account pilot seed](./research/ae-50-account-pilot-seed-2026-07-26.md) to the 28-account adjudication, >=15 provisional threshold, and evidence-repair boundary.
