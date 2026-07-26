@@ -39,10 +39,12 @@ Curia has its own narrow law-firm pilot and SaaS motion. It does not inherit the
 ### Multiempaques exception
 
 - Wait for sufficient operating data.
-- Deliver the Blueprint free as a one-time early-client validation exception.
-- Start the 7–10-day pricing window only when the data-completeness gate is met.
-- Present scope and price after the Blueprint.
+- The gate record must name the received-data manifest, baseline and measurement method, missing fields, owner, approver, and timestamp.
+- Deliver the Blueprint free as a one-time early-client validation exception, with explicit deliverables, exclusions, and end condition.
+- Start the 7–10-day pricing window only when the recorded data-completeness gate is met.
+- Present a pricing packet after the Blueprint with paid scope, price logic, acceptance criteria, acceptance authority, and expiry.
 - Start paid implementation only after explicit acceptance.
+- If the gate remains incomplete at week end, close the weekly work item and return the engagement to waiting; do not imply that the relationship is lost or that the pricing clock started.
 - Record the exception so it does not silently reset the standard Blueprint price.
 
 ## Revenue workflow
@@ -103,6 +105,8 @@ This is an evidence-packet week, not a send week. Gmail remains blocked, no appr
 The smallest approval packet contains: entity and segment boundary; account/company rows with public provenance; an atomic claims sheet; exact first-touch/follow-up/CTA drafts; human approver and channel state; opt-out, reply, and meeting owners; ledger destination; and explicit stop conditions.
 
 Do not report revenue, cash, pipeline value, or conversion actuals as zero while authoritative sources are unconfigured. Use `not_configured`. AE may reach a future send gate only after the frozen batch reaches at least 90% required-field completeness and 95% reviewed source-link validity, duplicates/anti-fit are removed, reply/meeting/opt-out handling is ready, an authoritative ledger exists, a channel is working and approved, and a founder approves the exact batch.
+
+For the first 50-company falsification batch, use a provisional segment threshold of at least 15 companies with a direct observable trigger tied to the frozen wedge. If fewer than 15 pass, stop expansion, create no second batch, and reframe the wedge once from the completed evidence. This is an internal experiment threshold, not a forecast or universal benchmark.
 
 ## 30-day allocation
 
