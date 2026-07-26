@@ -1,8 +1,6 @@
 ---
-description: Internal Curia product overview — Mexican legal AI, phases, launch, spinout intent.
-sources:
-  - external-sources/agenticengineering-agency-site.md
-  - research/founder-interview-round-1-2026-06-26.md
+title: Curia — product overview
+description: Current Curia product thesis, pilot readiness, entity target, and evidence gates.
 status: canonical
 tags:
   - curia
@@ -10,53 +8,68 @@ tags:
   - legal
   - canonical
   - internal
-title: Curia — product overview
+sources:
+  - research/founder-interview-round-4-2026-07-26.md
+  - research/investor-claims-and-entity-readiness.md
+  - external-sources/sites-portfolio-snapshot-2026-07-26.md
+  - articles/claims-registry.md
 ---
 # Curia — product overview
 
-Internal canonical. Public product marketing lives on [agenticengineering.online](https://agenticengineering.online).
+Curia is a legal-operations product for Mexican law firms, focused on connecting court monitoring, deadlines, matters, documents, and citation-verified legal work into a governed workflow.
 
-## One-liner
+## Canonical current status
 
-**Curia** is legal operations intelligence for **Mexican law firms** — court monitoring, deadline management, document analysis, and **citation-verified** legal research in one workflow.
+> [!IMPORTANT]
+> **KLGV Abogados is Curia's single current paid design partner. Curia is deployed in pilot use, but is not yet a completed full-production or repeatable commercial deployment.**
 
-## Problem (Mexico litigation)
+This wording supersedes old “committed launch” and generic “production deployment” claims unless newer evidence passes the [[articles/claims-registry|Claims registry]].
 
-- **32+ fragmented judicial systems** — manual bulletin review every morning.
-- **Missed publications = malpractice risk.**
-- Generic AI **hallucinates citations** — unacceptable for firm liability.
+## Product thesis
 
-## Core capabilities (phased)
+Curia should reduce the operational risk and time involved in fragmented Mexican litigation workflows while keeping a lawyer in control of consequential decisions.
 
-| Phase | Window | Deliverables |
-| --- | --- | --- |
-| 1 — Foundation | Apr–May 2026 | Auth, federal + Jalisco monitoring, case registry, tasks, **Outlook sync** |
-| 2 — Intelligence | May–Jun 2026 | OCR/doc analysis, doc chat, anti-hallucination citation checker, **Telegram assistant** |
-| 3 — Depth | Jun–Jul 2026 | Hierarchical legal research, OneDrive, notes, production hardening |
+Priority capability groups:
 
-**Committed launch:** **16 July 2026** (public `.online` site).
+1. court and matter monitoring
+2. deadline and task coordination
+3. document intake, OCR, review, and matter context
+4. citation-verified legal research and drafting support
+5. permissions, auditability, privacy, and reliable notifications
 
-## Trust architecture (differentiators)
+Capability presence in a repository or demo is not the same as validated customer value or production readiness.
 
-1. **Citation verification** against LeyesBiblio, SJF, DOF before answers reach a brief.
-2. **Single operational chain:** monitor → deadline → calendar → case → research.
-3. **Built for Mexican litigation** (expedientes, acuerdos, boletines) — not translated US legal tech.
-4. **Privacy by design:** associate-level matter visibility; partner aggregates; PII sanitization before external LLM calls where required.
+## Readiness ladder
 
-## Entity & GTM
+| Stage | Evidence required |
+| --- | --- |
+| Prototype | Workflow demonstrable with synthetic or sample data |
+| Pilot | Named design partner, controlled real use, issues and feedback recorded |
+| Production-ready | Security, privacy, reliability, support, backups, monitoring, and acceptance gates passed |
+| Repeatable commercial | Multiple paying firms use the workflow repeatedly with sustainable onboarding/support |
 
-- **Separate entity (spinout)** from agency — target **after KLGV launch, within 2026** ([company identity](./company-identity.md)).
-- **Design partner:** [KLGV](./klgv-relationship.md).
-- **Future revenue:** SaaS subscription — [business model](./business-model.md).
-- **Engineering:** [Curia tech stack](./curia-tech-stack.md) — TanStack Start, Cloudflare, Turso, Mastra.
+Curia is currently classified at **pilot**.
 
-## Public vs internal
+## Commercial and entity boundary
 
-Safe for public subset later: problem statement, phased roadmap dates, trust pillars.
+- Curia targets its own Mexican SAPI and its own raise.
+- Curia customer contracts, product IP, cap table, and investor rights must be separate from Agentic Engineering.
+- Any AE-provided engineering or platform services should be documented through an arm's-length agreement.
+- KLGV evidence should support Curia's raise; it must not be inflated into multi-customer traction.
 
-Keep internal: KLGV pricing, investor links, eng stack, unreleased feature details.
+## Near-term proof
+
+- weekly active users and repeated workflows
+- successful and failed notification/monitoring events
+- verified output accuracy and lawyer review rate
+- time saved and avoided manual steps
+- support load and critical incidents
+- willingness to renew, expand, or refer
+- one additional qualified firm entering the pipeline
 
 ## Related
 
-- [Brand & domains](./brand-and-domains.md)
-- [KLGV relationship](./klgv-relationship.md)
+- [[articles/curia-gtm-pricing-playbook|Curia GTM and pricing playbook]]
+- [[articles/klgv-relationship|KLGV relationship]]
+- [[articles/legal-entity-structure|Legal entity structure]]
+- [[articles/claims-registry|Claims registry]]

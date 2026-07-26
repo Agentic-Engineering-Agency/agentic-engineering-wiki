@@ -1,46 +1,81 @@
 ---
-description: "Dual ICP: MX mid-market ops automation + global startup agent infra."
-sources:
-  - research/founder-interview-round-2-2026-06-26.md
+title: Ideal client profile
+description: Priority ICPs and qualification gates for AE services and Curia without portfolio dilution.
 status: canonical
 tags:
   - sales
   - icp
   - agency
+  - curia
   - canonical
   - internal
-title: Ideal client profile
+sources:
+  - research/operating-state-and-revenue-sequencing.md
+  - articles/founder-led-growth-operating-system.md
+  - external-sources/sites-portfolio-snapshot-2026-07-26.md
 ---
-# Ideal client profile (agency)
+# Ideal client profile
 
-Who we pursue for **agency services** (not Curia SaaS buyers).
+Use separate ICPs for Agentic Engineering services and Curia. Do not mix them into one generic AI lead list.
 
-## Primary ICP (dual track)
+## AE services — primary ICP
 
-### Track A — Mexican mid-market operations
+Operationally complex Mexican mid-market companies where a founder or senior operator owns a costly workflow and can provide enough data to design a Blueprint.
 
-- **Geo:** Mexico (often Jalisco / CDMX adjacency)
-- **Size:** mid-market — big enough for messy ops, small enough to lack internal AI platform team
-- **Pain:** repetitive back-office workflows, handoffs, approval chains; want automation **with human gates**
-- **Fit:** [Operational workflow automation](../external-sources/agenticengineering-agency-site.md), [agent systems](./delivery-process.md)
+**Strong signals**
 
-### Track B — US / global startups (agent infra)
+- repeated spreadsheet, email, document, pricing, support, or approval work
+- visible handoff failures or slow decision cycles
+- named executive sponsor and workflow owner
+- accessible sample data with permission boundaries
+- measurable baseline such as time, error, margin, throughput, or cycle time
+- willingness to buy implementation if the Blueprint shows value
 
-- **Stage:** seed–Series B-ish; shipping product, hitting agent/orchestration wall
-- **Pain:** demo agents don't survive production; need eval, routing, observability
-- **Fit:** [Intelligent system integration](../external-sources/agenticengineering-agency-site.md), [multi-agent + SpecSafe discipline](./company-identity.md)
+Multiempaques is the current reference learning case, not proof of a closed implementation.
 
-## Anti-fit (implicit)
+## AE platform / agent-infrastructure ICP
 
-- Engagements needing **>2 parallel workstreams** without contractor bench
-- Pure staff-augment body shops (we sell outcomes + systems, not hours)
-- Legal firms wanting **Curia** — route to product ([Curia overview](./curia-overview.md)), not custom agency build (unless explicit SI exception)
+Product teams and technical founders with an agent system that already matters to users but suffers from model inconsistency, evaluation gaps, routing cost, failure recovery, or observability problems.
 
-## Sales posture
+Qualify for:
 
-Public form casts wide net (budget tiers to $200K+). Internal gate: **honest fit** in Audit phase — refer out when not [capacity-safe](./company-identity.md).
+- repeated production task volume
+- a task-level quality metric
+- failure examples and evaluation data
+- economic value from improved reliability or lower inference cost
+- authority to change the harness, not merely compare models
+
+## Curia ICP
+
+Mexican litigation or legal-operations firms that can name a repeated workflow such as monitoring, deadline management, document review, or citation-verified research; assign an active design-partner owner; and evaluate value using real matters under appropriate data controls.
+
+Curia leads belong in Curia's own pipeline, pricing, entity, and raise evidence.
+
+## Qualification rubric
+
+Score each account 0–2 on:
+
+1. pain severity
+2. workflow frequency
+3. data readiness
+4. executive ownership
+5. measurable value
+6. implementation authority
+7. budget/timing
+8. reference or repeatability potential
+
+Start the 50-account pilot with the highest-scoring narrow segment. Expand only after enrichment accuracy, positive replies, meetings, qualification, and follow-up throughput are measured.
+
+## Anti-fit
+
+- broad “add AI” requests with no workflow owner or success metric
+- inaccessible or unlawfully sourced data
+- buyers expecting autonomous external actions without human governance
+- engagements that require a bench beyond current delivery capacity
+- speculative product partnerships that dilute the two primary 30-day lanes
 
 ## Related
 
-- [Delivery process](./delivery-process.md)
-- [Competitive landscape](./competitive-landscape.md)
+- [[articles/founder-led-growth-operating-system|Founder-led growth operating system]]
+- [[articles/curia-overview|Curia overview]]
+- [[articles/model-routing-and-sales-harness|Model routing and sales harness]]

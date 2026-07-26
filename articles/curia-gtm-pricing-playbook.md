@@ -1,7 +1,6 @@
 ---
-description: Curia pricing (per-seat), GTM channels, launch slip, support ceiling.
-sources:
-  - research/founder-interview-round-3-2026-06-26.md
+title: Curia GTM & pricing playbook
+description: Founder-led Curia design-partner motion, pricing tests, and commercial evidence gates.
 status: canonical
 tags:
   - curia
@@ -10,68 +9,64 @@ tags:
   - sales
   - canonical
   - internal
-title: Curia GTM & pricing playbook
+sources:
+  - research/operating-state-and-revenue-sequencing.md
+  - research/investor-claims-and-entity-readiness.md
+  - articles/claims-registry.md
 ---
 # Curia GTM & pricing playbook
 
-Internal canonical. Sources: [R3](../research/founder-interview-round-3-2026-06-26.md), [Curia overview](./curia-overview.md).
+Curia should grow from documented design-partner value, not from a broad launch claim.
 
-## Pricing model (launch)
+## Current motion
 
-| Element | Decision |
+1. **Activate KLGV pilot use** around one or two high-frequency workflows.
+2. Measure reliability, verified output, time saved, user retention, support load, and willingness to pay or expand.
+3. Convert those observations into a claims-approved case study.
+4. Recruit the next firm through a narrow founder-led referral and outbound motion.
+5. Repeat until onboarding and support are predictable enough for a broader channel.
+
+## Pricing status
+
+Public pricing is not yet canonical. Test alternatives against usage and buyer feedback:
+
+| Hypothesis | Advantage | Risk |
+| --- | --- | --- |
+| Per seat | Familiar and easy to explain | Penalizes wider adoption; weak link to value |
+| Per firm / tier | Predictable buyer budget | Requires careful usage and support limits |
+| Workflow or matter-based | Closer to operational value | Harder billing and forecasting |
+| Platform fee + seats/usage | Scales across firm sizes | More complex before value is proven |
+
+Before approving a price, record the included workflows, onboarding, data limits, support, security expectations, minimum term, and expansion path. KLGV terms are confidential and must not silently become the public anchor.
+
+## First-five-firm funnel
+
+| Stage | Exit criterion |
 | --- | --- |
-| Model | **Per-seat SaaS** (partners / associates / firm roles — tiers TBD) |
-| KLGV | **Design-partner discount** only; not free |
-| Public price list | **TBD** until post–design-partner learnings |
-| Services | No heavy implementation fee at launch (not 25D) |
+| Target | Firm matches Curia ICP and has a named workflow |
+| Discovery | Pain, current process, decision-maker, data/privacy boundary documented |
+| Workflow demo | Realistic matter path demonstrated; limitations disclosed |
+| Pilot proposal | Scope, users, evidence plan, support, price, and acceptance agreed |
+| Active pilot | Weekly use and issues measured |
+| Paid/expanded | Commercial terms accepted and value evidence captured |
 
-> [!NOTE]
-> Publish **value story** on `.online` before publishing numbers. First external price anchor comes after KLGV usage data.
+## Founder-led channels
 
-## GTM motion (firms 2–10)
+- KLGV referrals where appropriate and consented
+- targeted legal-network introductions
+- evidence-based LinkedIn content
+- narrow outbound to firms matching the workflow and readiness criteria
+- educational sessions around verified legal AI and operating risk
 
-```mermaid
-flowchart LR
-  KLGV[KLGV design partner] --> Ref[Referrals / co-marketing]
-  Online[agenticengineering.online] --> Inb[Inbound leads]
-  LI[LinkedIn] --> Inb
-  Ref --> Pipe[Founder-led pipeline]
-  Inb --> Pipe
-  Pipe --> Demo[Demo + trial]
-```
+Do not run mass outreach until response handling, privacy, claims, and onboarding are ready.
 
-1. **KLGV referrals & co-marketing (B)** — primary warm channel in Jalisco legal network.
-2. **Inbound (C)** — `.online` Spanish product site + LinkedIn thought leadership.
-3. **Not primary:** cold outbound blitz, paid ads (unset — revisit post-launch).
+## Support ceiling
 
-**Founder-led sales** until ~10 firms ([support model](#support-model)).
-
-## Launch contingency (July 16)
-
-If slip: **soft launch to KLGV only (A)** — production for design partner; **adjust public date quietly** on `.online` / `.agency` without broad press.
-
-Do **not** default to public delay announcement (not 27C) unless reputational need.
-
-## Support model
-
-- **Founders = support** until **~10 firm customers** (31A).
-- **No CS hire** before Curia revenue (32A).
-- Document top 10 support themes weekly during KLGV phase → informs hire #1 spec later.
-
-## Competitive framing (Mexico)
-
-Sell against **ChatGPT + spreadsheets** ([competitive landscape](./competitive-landscape.md)):
-
-- Verified citations vs hallucinated articles
-- Monitor → deadline → Outlook chain vs manual morning ritual
-
-## Public subset (safe later)
-
-- Problem, trust pillars, phased roadmap
-- **Not** KLGV discount %, investor, internal seat math
+Founders can support early firms, but support effort must be measured. Hiring or automation decisions should follow observed ticket volume, response commitments, implementation burden, and revenue—not an arbitrary customer count.
 
 ## Related
 
-- [KLGV launch playbook](./klgv-launch-playbook.md)
-- [KLGV relationship](./klgv-relationship.md)
-- [Public wiki boundary](./public-wiki-boundary.md)
+- [[articles/curia-overview|Curia overview]]
+- [[articles/ideal-client-profile|Ideal client profile]]
+- [[articles/marketing-honesty-policy|Marketing honesty policy]]
+- [[articles/claims-registry|Claims registry]]

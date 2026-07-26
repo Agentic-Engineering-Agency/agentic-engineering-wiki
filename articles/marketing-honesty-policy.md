@@ -1,57 +1,65 @@
 ---
-description: Aspirational hero + honest How-we-work page; what stays internal.
-sources:
-  - research/founder-interview-round-3-2026-06-26.md
+title: Marketing honesty policy
+description: Evidence states and public-claim rules for AE, Curia, products, models, and fundraising.
 status: canonical
 tags:
   - marketing
   - brand
+  - claims
   - policy
   - canonical
   - internal
-title: Marketing honesty policy
+sources:
+  - research/investor-claims-and-entity-readiness.md
+  - articles/claims-registry.md
+  - external-sources/sites-portfolio-snapshot-2026-07-26.md
 ---
 # Marketing honesty policy
 
-How public copy on `.agency` / `.online` relates to [internal truths](./company-identity.md).
+Bold positioning is allowed; ambiguous evidence states are not. Every material public, sales, or investor claim must distinguish intent, implementation, deployment, payment, repetition, and production readiness.
 
-**Decision (R3 24B):** Keep **aspirational hero**; add separate **"How we work" / capacity** page with honest limits.
+## Claim-state vocabulary
 
-## Layers
+| State | Meaning |
+| --- | --- |
+| Concept | Proposed direction; no working artifact required |
+| Prototype | Working demonstration under limited conditions |
+| Pilot | Controlled real use with a named participant and measured issues |
+| Paid design partner | Commercial relationship shaping the product; not automatically repeatable deployment |
+| Production-ready | Defined security, reliability, support, and acceptance gates passed |
+| Repeatable commercial | Multiple customers repeatedly obtain value with sustainable sales/onboarding/support |
+| Target | Planned entity, raise, product, or metric; not completed |
+| Verified result | Supported by a named source, time window, definition, and reviewer |
 
-| Surface | Tone | Examples |
-| --- | --- | --- |
-| Hero / headline | Aspirational | "Global AI Engineering Agency", "senior review from day one" |
-| How we work | Honest | 2 founders, both ship code; **1–2 concurrent engagements**; selective fit |
-| Product (Curia) | Evidence-based | Trust pillars, phased roadmap, citation verification |
-| Internal wiki | Full truth | KLGV investor, discounts, priority splits, slip contingencies |
+## Required boundaries
 
-## Required honest claims (public "How we work")
+- Describe the Delaware AE corporation and Curia SAPI as targets until formation evidence exists.
+- Describe intended AE ownership of Ultimate Harness, PriceGenius, Defade, and candidate assets as intent until chain of title is complete.
+- Use the canonical KLGV paid-pilot wording from [[articles/claims-registry|Claims registry]].
+- Do not imply the five reviewed Sites projects are publicly deployed; the observed access state was owner-only.
+- Do not turn repository count, commits, agents, prompts, or tokens into customer traction.
+- Do not call a model router universally superior. State the task, corpus, metric, baseline, sample size, cost, latency, and date.
+- Do not combine AE and Curia raise claims or investor rights.
 
-- Small **founder-led** engineering team (not a bench of seniors)
-- **Selective capacity** — we take 1–2 client builds at a time
-- **Spec + test gates** on agent work ([SpecSafe](./specsafe-product-thesis.md))
-- We refer out when not a fit ([delivery process](./delivery-process.md) Audit phase)
+## Public service copy
 
-## Do not publish
+Safe claims focus on the work method: founder-led delivery, explicit specifications, evaluations, human approvals, observability, and selective capacity. Capability claims should link to a case study, benchmark, or artifact when possible.
 
-Per [public wiki boundary](./public-wiki-boundary.md) + R3 **30A**:
+## Curia copy
 
-- KLGV investor name / cap table
-- Design-partner discount terms
-- Informal contracting status ([legal entity](./legal-entity-structure.md))
+Safe current framing: legal-operations product for Mexican firms; one current paid design partner; deployed in pilot use; product and commercial repeatability still being proven.
 
-## `.online` (Curia)
+## Investor materials
 
-Spanish product marketing can stay bold on **outcomes**; avoid implying nationwide firm count or paid customers beyond KLGV design partnership unless true.
+Every number needs a source and definition. Decks must reconcile entity, instrument, amount, customer status, pricing, market sizing, and IP ownership before sharing. Contradictory draft decks remain drafts, not evidence.
 
-## Action items
+## Approval gate
 
-- [ ] Draft `/how-we-work` (or equivalent) on `.agency`
-- [ ] Link from footer; not required in hero
-- [ ] Align [founder story](./founder-story.md) public excerpt with this page
+A human reviews before any external send, post, proposal, price, deck share, or public deployment. This policy does not authorize those actions.
 
 ## Related
 
-- [Company identity](./company-identity.md)
-- [Public wiki boundary](./public-wiki-boundary.md)
+- [[articles/claims-registry|Claims registry]]
+- [[articles/company-identity|Company identity]]
+- [[articles/curia-overview|Curia overview]]
+- [[articles/model-routing-and-sales-harness|Model routing and sales harness]]
