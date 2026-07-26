@@ -100,4 +100,4 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 
 - 2026-07-26 — Applied the adversarial account-discovery correction: 28 distinct labels, a 4/5/17/2 readiness split, and the >=15 trigger gate left open pending a complete row ledger.
 
-- 2026-07-26 — Added the [28-row trigger ledger](./research/ae-28-row-trigger-ledger-2026-07-26.md): 18 raw YES, 13 durable YES, 10 conservative, and the >=15 evidence gate not cleared.
+- 2026-07-26 — Reconciled the existing [28-row trigger ledger](./research/ae-28-row-trigger-ledger-2026-07-26.md): 20 raw YES / 8 UNKNOWN / 0 NO; 15 durable YES; 11 conservative after adding Poly Rafia; identity 24 MATCHED / 1 DISTINCT / 3 UNKNOWN; operating 25/2/1 and systems 24/4; dispositions 4 E1 / 5 E2 / 17 Hold / 2 DQ unchanged. Fifteen frozen UNKNOWN or non-durable records were reviewed; only DIDCOM and Poly Rafia upgraded. The numerical >=15 evidence gate is CLEARED exactly, pending human review, and authorizes no second batch or downstream research, CRM, qualification/activation, drafting/outreach/sends, deployment/merge, access, archive, or delete action.

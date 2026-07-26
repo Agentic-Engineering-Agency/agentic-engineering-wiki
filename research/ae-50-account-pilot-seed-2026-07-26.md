@@ -35,14 +35,17 @@ This is a provisional research record, not a final claim of market validation, c
 | --- | --- | --- |
 | Primary-cohort denominator | 28 distinct candidate labels | Legal-entity/domain dedup pending |
 | Relative research-readiness split | 4 E1, 5 E2, 17 holds, 2 disqualifiers | 4 + 5 + 17 + 2 = 28 |
-| Raw strict-trigger verdict | 18 yes, 10 unknown, 0 no | Absence was not inferred |
-| Durable-trigger count | 13 yes | Tested against the provisional >=15 gate |
-| Conservative working set | 10 | Narrower than the durable count; not qualification |
-| Provisional >=15 discovery threshold | NOT CLEARED | 13 durable yes < 15; segment not rejected |
+| Raw strict-trigger verdict | 20 YES, 8 UNKNOWN, 0 NO | Absence was not inferred |
+| Durable-trigger count | 15 YES | Numerical >=15 gate cleared exactly; human review pending |
+| Conservative working set | 11 | Prior 10 plus Poly Rafia; narrower than the durable count and not qualification |
+| Identity adjudication | 24 MATCHED, 1 DISTINCT, 3 UNKNOWN | DIDCOM upgraded to MATCHED |
+| Operating-model adjudication | 25 INDUSTRIAL, 2 OUTSIDE, 1 UNKNOWN | Unchanged |
+| System-signal adjudication | 24 PRESENT, 4 UNKNOWN | Unchanged; DIDCOM remains UNKNOWN |
+| Numerical >=15 evidence gate | CLEARED exactly | 15 durable YES; pending human review |
 | Accounting/shared-services comparison | 2 passes of 7 | TACTIK CSC and Grupo GSG Mefintax |
 | Enterprise calibration | 3 labels | Super Kiosko, ALMER, and Grupo Castores; all above 1,000 employees |
 
-The [28-row trigger ledger](./ae-28-row-trigger-ledger-2026-07-26.md) repairs the failed measurement. The provisional >=15 evidence gate is not cleared because 13 durable YES verdicts are below 15. The segment is not rejected, and no second batch is authorized.
+The [28-row trigger ledger](./ae-28-row-trigger-ledger-2026-07-26.md) makes the corrected measurement reproducible. Fifteen frozen UNKNOWN or non-durable records were reviewed; only DIDCOM and Poly Rafia were upgraded. The numerical >=15 evidence gate is cleared exactly at 15 durable YES verdicts, pending human review. No second batch or downstream activation is authorized.
 
 ## Corrected disposition arithmetic
 
@@ -60,22 +63,23 @@ E1 and E2 are relative research-readiness labels only. They never mean qualified
 | Candidate label | Corrected disposition | Open gate or evidence rule |
 | --- | --- | --- |
 | Raloy Lubricantes | E2 | Current size evidence must be cited |
-| DIDCOM | Hold | Industrial operating-model evidence and a durable replacement for the transient anti-bot job-board source are missing |
+| Poly Rafia | Hold | [Liconsa contract with Poly Rafia](https://repositorio.liconsa.gob.mx/files/DC/SADM/2022/CONTRATOS%201/CADQ-635-2022%20POLIESTER%20BOPP%20POLY%20RAFIA%20VP%202022.pdf) supports monthly orders, a per-delivery invoice package, electronic CFDI/PDF/XML, and correction/resubmission: strict YES, durable YES, conservative IN. These are Poly-side obligations; Liconsa AP controls are not attributed to Poly. |
+| DIDCOM | Hold | [DIDCOM privacy notice](https://didcom.com.mx/wp-content/uploads/2021/09/Aviso-de-Privacidad-Didcom.pdf) matches Grupo Tecnológico DIDCOM SA de CV to didcom.com.mx and supports invoice/payment communications, billing management, and collections: strict YES, durable YES, conservative OUT because system remains UNKNOWN. |
 | JAKO | Hold | Old size evidence must be refreshed |
 | Ah Cacao | Hold | B2B/industrial operating-model adjudication is pending |
 | IMAG Organics | Hold | Identity mapping to “Inulina y Miel de Agave” and frozen-workflow trigger proof are pending |
 | Nobazul | Hold | Identity mapping to the SAP-cited Mieles Campos Azules remains unverified |
 | Grupo Pochteca | Hold | The supplier manual has an internal 2024 revision; the more-than-1,000-employee claim still needs a direct source |
 | Maison Paulette | Disqualify | The cited SAP source supports a B2C pastry/bistro-chain operating model |
-| Super Tiendas Esquer | Disqualify | The cited SAP/Xamai PDF supports a B2C retail operating model |
+| Super Tiendas Esquer | Disqualify | [Audited Chihuahua procurement report](https://ihacienda.chihuahua.gob.mx/tfiscal/indtfisc/InformeTecnicoASE2021.pdf) supports one audited procurement, not recurrence; a trade domain was observed but legal mapping remains unresolved. Trigger UNKNOWN, NOT COUNTED, DQ. |
 
 The supporting direct sources and retained transient URLs are in the [summary adjudication](../external-sources/ae-account-discovery-snapshot-2026-07-26.md).
 
 ## Completed row-level ledger
 
-The [28-row trigger ledger](./ae-28-row-trigger-ledger-2026-07-26.md) records all required row fields and separates raw, durable, and conservative counts. It reports 18 raw YES / 10 UNKNOWN / 0 NO, 13 durable YES, and a conservative working set of 10.
+The [28-row trigger ledger](./ae-28-row-trigger-ledger-2026-07-26.md) records all required row fields and separates raw, durable, and conservative counts. It reports 20 raw YES / 8 UNKNOWN / 0 NO, 15 durable YES, and a conservative working set of 11. Identity is 24 MATCHED / 1 DISTINCT / 3 UNKNOWN; operating model remains 25 INDUSTRIAL / 2 OUTSIDE / 1 UNKNOWN; systems remain 24 PRESENT / 4 UNKNOWN.
 
-These counts do not change the 4/5/17/2 human dispositions and do not qualify or activate any account. Human review remains pending.
+These counts do not change the 4 E1 / 5 E2 / 17 Hold / 2 DQ human dispositions and do not qualify or activate any account. The numerical >=15 evidence gate is cleared exactly, but human review remains pending.
 
 ## Qualification contract and boundary
 
@@ -83,24 +87,24 @@ Even after the trigger ledger is complete, an account cannot count toward the 50
 
 Unknown is acceptable. Inference is not.
 
-This corrected research record does not:
+This corrected research record records the numerical >=15 evidence gate as cleared exactly, pending human review. It does not:
 
-- clear the provisional >=15 discovery threshold or the 50-qualified-account gate;
+- clear the 50-qualified-account gate or constitute human approval;
 - create pipeline, traction, customers, or revenue evidence;
 - authorize a second batch;
-- authorize named-person or personal-contact research or retention;
+- authorize named-person or contact research or retention;
 - authorize CRM creation or mutation;
 - authorize drafting, outreach, or sends;
-- authorize qualification, account activation, deployment, merge, access change, archival, deletion, or marking AE-369 complete.
+- authorize qualification, account activation, deployments, merges, access changes, archival, deletion, or marking AE-369 complete.
 
 ## Priority evidence repairs
 
-1. Human-review the completed 28-row trigger ledger and repair UNKNOWN or non-durable fields before any reassessment of the >=15 gate.
-2. Replace the transient secondary job-board evidence for DIDCOM, Pinturas Adhler, and MEXDEN while retaining the current URLs as provenance.
-3. Refresh Mexican control and size for every E2 label; refresh JAKO’s old size evidence.
-4. Independently corroborate vendor-published Odoo, SAP, SAP/Xamai, Tangente, and partner cases.
-5. Finish role-only, allowed-use, duplicate, reviewer, and human-disposition fields.
-6. Resolve legal-entity/domain dedup at the candidate-label level.
+1. Human-review the completed 28-row trigger ledger; the numerical >=15 gate is cleared exactly but human review remains pending.
+2. Preserve the completed DIDCOM and Poly Rafia upgrades; replace transient secondary job-board evidence for Pinturas Adhler and MEXDEN, and find a durable case permalink for DIMECA.
+3. Repair the eight remaining strict-trigger UNKNOWN rows and other non-durable fields inside the frozen cohort.
+4. Refresh Mexican control and size for every E2 label; refresh JAKO’s old size evidence.
+5. Independently corroborate vendor-published Odoo, SAP, SAP/Xamai, Tangente, and partner cases.
+6. Finish role-only, allowed-use, duplicate, reviewer, human-disposition, and legal-entity/domain-dedup fields.
 
 Evidence repair applies only to the existing 28-label cohort. It does not authorize a second discovery batch.
 
