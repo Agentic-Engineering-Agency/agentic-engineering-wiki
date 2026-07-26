@@ -107,7 +107,7 @@ Every adapter result must emit:
 |---|---|
 | source_id | Stable connector/system identifier |
 | source_record_id | Stable upstream record ID when provided |
-| entity_scope | AE, Curia, UH/platform, PriceGenius, Defade, Muta/incubation, or proof asset |
+| entity_scope | AE, Curia, UH/platform, PriceGenius, Defade, Muta/incubation, Agentforge/incubation, SpecSafe/methodology, or proof asset |
 | authority | authoritative, working mirror, evidence-only, aggregate-only, or unverified |
 | source_status | healthy, stale, scoped, blocked, not_configured, or unknown |
 | observed_at | Timestamp represented by the upstream record |
@@ -121,7 +121,7 @@ Every adapter result must emit:
 | redactions | Fields dropped before normalization |
 | schema_version | Version of the adapter contract |
 
-Mandatory redactions include connector tokens, credentials, cookies, secrets, private message bodies unless explicitly required later, direct personal contact details in aggregate founder views, and any cross-client confidential data. PostHog api_token fields and the plaintext credential-bearing root config file are specifically excluded [source](../external-sources/founder-dashboard-source-snapshot-2026-07-26.md).
+Mandatory redactions include connector tokens, credentials, cookies, secrets, private message bodies, any cross-client confidential data, and direct personal data — names, email addresses, phone numbers, and calendar attendee identities — in every founder view, unless a named human has approved a specific, recorded per-record exception. PostHog api_token fields and the plaintext credential-bearing root config file are specifically excluded. Calendar is redacted at the adapter before normalization: meeting cards render title, time, duration, and attendee count only [source](../external-sources/founder-dashboard-source-snapshot-2026-07-26.md).
 
 ## Degraded-state semantics
 
@@ -152,7 +152,7 @@ stable ID; entity scope; company; public ICP evidence; source; owner; stage; las
 
 ### Contact
 
-stable ID; account link; role; public/provided channel; consent or lawful-use basis; last verified date. Direct personal data is hidden from aggregate founder cards by default.
+stable ID; account link; role; public/provided channel; consent or lawful-use basis; last verified date. Direct personal data is redacted at the adapter and is not rendered in any v0 founder view; a contact surfaces role, account link, lawful-use basis, and last-verified date only.
 
 ### Opportunity
 
@@ -205,6 +205,8 @@ A portfolio rollup may count workstreams or risks, but it may not add Curia cust
 
 Every KPI card must show formula, numerator, denominator, entity, currency where relevant, window, exclusions, source state, and calculated-at.
 
+Every KPI additionally binds to a named source and a minimum authority level. A KPI defined over authoritative data may not be satisfied by a working-mirror, evidence-only, or aggregate-only source; where only a lower-authority source exists, the card renders `not_configured` and names the missing authority rather than a number. In v0 this applies to Conversations, Proposals delivered, Proposal acceptance, and Collected cash.
+
 ### Agentic Engineering
 
 | KPI | Definition |
@@ -212,7 +214,7 @@ Every KPI card must show formula, numerator, denominator, entity, currency where
 | Verified accounts | Accounts passing the current evidence contract in the selected AE segment |
 | Qualified-account rate | Qualified accounts divided by reviewed accounts in the same bounded cohort |
 | Next-action hygiene | Active accounts/opportunities with current owner, next action, and due date divided by active records |
-| Conversations | Two-way replies or held meetings recorded in the authoritative pipeline for the period |
+| Conversations | Two-way replies or held meetings recorded in the authoritative pipeline for the period. No authoritative pipeline exists in v0, so this card renders `not_configured`; Apollo aggregate meeting counts may never populate it. |
 | Proposals delivered | Proposals with scope, price, expiry/decision date, and human-approved delivery evidence |
 | Proposal acceptance | Accepted proposals divided by proposals reaching an explicit accepted/rejected decision |
 | Collected cash | Settled cash actuals for AE in original currencies; no silent currency conversion |
@@ -223,9 +225,9 @@ Every KPI card must show formula, numerator, denominator, entity, currency where
 | KPI | Definition |
 |---|---|
 | Paid design partners | Verified current paid Curia design partners, not AE customers |
-| Active users | Defined product users inside an explicit window and product project |
+| Active users | Count of distinct verified Curia product users with at least one named qualifying product event during the explicit window and project; the event taxonomy must be versioned |
 | Repeated workflows | Same qualified Curia workflow completed on multiple dates inside the window |
-| Verified outputs | Outputs passing the agreed legal/source review gate |
+| Verified outputs | Count of Curia outputs with a recorded pass disposition under a named, versioned legal/source review gate; until the gate version is approved, the card renders `not_configured` |
 | Issues resolved | Pilot issues closed with evidence and denominator |
 | Renewal/expansion signal | Explicit, dated customer signal; not model-inferred sentiment |
 | Second-firm readiness | Qualified firms and readiness gates, separate from contacted or contracted firms |
@@ -312,8 +314,12 @@ Only after v0 proves reliability: design explicit, narrowly authorized write act
 - A Gmail auth failure renders blocked plus reason and no unread count.
 - A stale source renders its last value, stale age, and last-success timestamp.
 - A scoped GitHub connector never labels its two visible repositories as the whole organization.
-- A zero displays only after a successful query with visible window, scope, and denominator.
+- A zero displays only after a successful query with visible window, scope, filters, and denominator, no silent truncation or narrowing, a fetched-at value inside freshness SLA, and a metric definition that permits zero.
+- An aggregate-only or working-mirror zero can never populate a KPI whose definition requires an authoritative source; that card renders `not_configured`.
+- An unclassifiable payload renders `unknown`, names the evidence needed to classify it, and shows no number.
 - A PostHog payload cannot expose, log, cache, or forward api_token.
+- A Calendar payload cannot expose, log, cache, or forward attendee names, email addresses, or phone numbers.
+- A Contact or Twenty person record cannot render direct personal data in any v0 view; a redaction failure fails the build rather than degrading the card.
 - The root credential-bearing config file cannot be loaded as a dashboard source.
 - AE and Curia opportunity, cash, customer, claim, and raise records cannot cross default partitions.
 - Two conflicting cap-table files produce a reconciliation blocker, not a combined value.
