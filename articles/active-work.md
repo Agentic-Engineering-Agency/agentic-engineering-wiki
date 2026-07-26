@@ -23,7 +23,7 @@ Agentic Engineering has produced substantial code, research, sites, decks, and o
 
 The next 30 days therefore have two primary outcome lanes:
 
-1. **Agentic Engineering revenue:** complete the Multiempaques Blueprint once sufficient data arrives, issue a priced implementation proposal about 7–10 days later, and run one bounded 50-account outbound pilot.
+1. **Agentic Engineering revenue:** record the Multiempaques sufficient-data gate, complete the free Blueprint exception, issue a priced implementation proposal about 7–10 days after that recorded gate date, and run one bounded 50-account outbound pilot.
 2. **Curia commercial evidence:** deepen paid design-partner use with KLGV, measure repeated workflow value, and recruit the next qualified firm without overstating production readiness.
 
 See [[articles/founder-led-growth-operating-system|Founder-led growth operating system]] and [[articles/priority-rules|Priority rules]].
