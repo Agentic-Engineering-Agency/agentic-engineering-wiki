@@ -1,18 +1,22 @@
 ---
 name: open-knowledge-pack-knowledge-base
-description: How to work in a Knowledge Base project (the `knowledge-base`
-  starter pack). Read when the project has the three-layer source-grounded
-  layout — `external-sources/` → `research/` → `articles/` — wired to the
-  `workflow` MCP tool's ingest / research / consolidate kinds. Carries the
-  pack's workflow, per-folder rules, status flows, and log discipline so this
-  guidance does NOT live inside template bodies or log.md. Complements the
-  platform `open-knowledge` skill; does not replace it.
+version: "0.18.0"
+description: "How to work in a Knowledge Base project (the `knowledge-base` starter pack). Read when the project has the three-layer source-grounded layout — `external-sources/` → `research/` → `articles/` — wired to the `workflow` MCP tool's ingest / research / consolidate kinds. Carries the pack's workflow, per-folder rules, status flows, and log discipline so this guidance does NOT live inside template bodies or log.md. Complements the platform `open-knowledge` skill; does not replace it."
+compatibility: "Claude Code, Claude Desktop, Claude Cowork, Claude.ai web. Requires OpenKnowledge MCP server. Installed project-local by `ok seed --pack knowledge-base`."
+metadata:
+  pack: "knowledge-base"
+  author: "Inkeep"
+  repository: "https://github.com/inkeep/open-knowledge"
 ---
 # Knowledge Base pack — how to work here
 
 This project uses the **source-grounded knowledge-base** layout. The whole point is a closed evidence loop: nothing canonical exists without a traceable chain back to a preserved source. This skill holds the workflow so the templates and `log.md` can stay clean — when you create a doc from a template you get structure, and the *how* lives here.
 
 > This skill is pack guidance. The platform `open-knowledge` skill (read/write/preview/grounding rules) still governs every markdown operation — this layers the KB workflow on top.
+
+## Link at creation
+
+The user watches your build live — the editor follows the file you're writing, and the knowledge graph assembles on screen as pages get linked. No view management on your part; just author well: every page carries its links from the moment it's written (at minimum the hub/index page and its most related siblings — an unlinked page is invisible in the graph), and related pages share a `cluster:` frontmatter value (e.g. `cluster: architecture`) so the graph's cluster coloring makes the map read at a glance.
 
 ## The three layers
 
@@ -65,5 +69,3 @@ Entry shape:
 ## Templates
 
 Each folder has a starter template (`clip`, `research-log`, `article`). Create with `write({ document: { path, template: "<name>" } })`. Templates carry only structure (headings + frontmatter scaffold) — the meaning of each field and section is described above, not repeated inside the document body.
-
-**Never add a body-level `# H1`.** Every doc's frontmatter `title:` already renders as its heading. A duplicate `# Title` at the top of the body trips markdownlint MD025 (multiple top-level headings) — the article templates already start at `## Summary` for this reason; keep it that way in `research/` and `external-sources/` docs too.
