@@ -7,6 +7,7 @@ created: 2026-07-26
 author: Codex
 tags: [ research, provisional, investor, claims, entity, diligence ]
 title: Investor claims and entity readiness
+superseded_by: articles/claims-registry.md
 ---
 
 ## Question

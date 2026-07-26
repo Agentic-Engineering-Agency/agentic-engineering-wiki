@@ -7,6 +7,7 @@ created: 2026-07-26
 author: Codex
 tags: [ research, provisional, operations, revenue, portfolio, gtm ]
 title: Operating state and revenue sequencing
+superseded_by: articles/founder-led-growth-operating-system.md
 ---
 
 ## Question

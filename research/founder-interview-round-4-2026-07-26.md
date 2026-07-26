@@ -7,6 +7,7 @@ created: 2026-07-26
 author: Lalo, captured by Codex
 tags: [ research, interview, founder, provisional, strategy ]
 title: Founder interview — Round 4
+superseded_by: articles/portfolio-and-platform-strategy.md
 ---
 
 ## Question

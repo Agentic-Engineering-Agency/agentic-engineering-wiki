@@ -7,6 +7,7 @@ created: 2026-07-26
 author: Codex
 tags: [ research, provisional, models, sales, marketing, evaluation ]
 title: Model routing and sales harness
+superseded_by: articles/model-routing-and-sales-harness.md
 ---
 
 ## Question
