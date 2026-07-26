@@ -6,8 +6,6 @@ tags: [sales, gtm, evidence, internal]
 sources:
   - research/ae-50-account-pilot-seed-2026-07-26.md
 ---
-# Account discovery evidence rules
-
 ## Admission gate
 
 An account enters a research pilot only when public, permission-compatible sources establish:
