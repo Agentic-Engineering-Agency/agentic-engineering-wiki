@@ -58,7 +58,7 @@ The UI is a later implementation. The current deliverable is the source-of-truth
 - blending AE and Curia revenue, traction, customer, entity, raise, or IP claims;
 - treating forecasts, deck numbers, historical lead batches, fixtures, or missing data as live business facts.
 
-These exclusions preserve the current human-approval and entity-separation rules [sources](../articles/founder-led-growth-operating-system.md, ../articles/portfolio-and-platform-strategy.md).
+These exclusions preserve the current human-approval and entity-separation rules [founder-led growth operating system](../articles/founder-led-growth-operating-system.md) and [portfolio/platform strategy](../articles/portfolio-and-platform-strategy.md).
 
 ## Information hierarchy
 
@@ -168,7 +168,7 @@ Linear issue/project; entity scope; owner; expected outcome; priority; status; b
 
 ### Delivery gate
 
-client/product; gate name; state; prerequisite; owner; observed date; target window; evidence; next action. Multiempaques pricing timing is computed only from a recorded sufficient-data gate date, never first-file receipt or an artificial due date [sources](../articles/founder-led-growth-operating-system.md, ./linear-reconciliation-result-2026-07-26.md).
+client/product; gate name; state; prerequisite; owner; observed date; target window; evidence; next action. Multiempaques pricing timing is computed only from a recorded sufficient-data gate date, never first-file receipt or an artificial due date [founder-led growth operating system](../articles/founder-led-growth-operating-system.md) and [Linear reconciliation](./linear-reconciliation-result-2026-07-26.md).
 
 ### Evidence and claim
 
@@ -199,7 +199,7 @@ Every revenue, customer, cash, claim, raise, and pipeline record carries one ent
 - **Portfolio validation:** Defade, PriceGenius, Muta, Agentforge, SpecSafe, or other options, each with an explicit owner and evidence gate;
 - **Proof assets:** Prism Arena and MemSWE as evidence, not revenue unless a separate transaction record exists.
 
-A portfolio rollup may count workstreams or risks, but it may not add Curia customer evidence, revenue, or fundraising claims to AE. This separation is a founder-approved operating rule, while formation and assignment remain target states until verified [sources](../articles/portfolio-and-platform-strategy.md, ./founder-interview-round-4-2026-07-26.md).
+A portfolio rollup may count workstreams or risks, but it may not add Curia customer evidence, revenue, or fundraising claims to AE. This separation is a founder-approved operating rule, while formation and assignment remain target states until verified [portfolio/platform strategy](../articles/portfolio-and-platform-strategy.md) and [founder interview Round 4](./founder-interview-round-4-2026-07-26.md).
 
 ## KPI dictionary
 
@@ -341,7 +341,7 @@ AE-388 remains the specialized spec deliverable related to LP-23; it should not 
 5. a separate implementation issue only after spec acceptance;
 6. AE-370 only when CRM sync or migration enters scope.
 
-AE-387 runs event-driven in parallel and remains externally data-gated. Claim/entity truth under AE-254, AE-389, and AE-390 precedes investor-facing aggregation [sources](./linear-reconciliation-result-2026-07-26.md, ../external-sources/founder-dashboard-source-snapshot-2026-07-26.md).
+AE-387 runs event-driven in parallel and remains externally data-gated. Claim/entity truth under AE-254, AE-389, and AE-390 precedes investor-facing aggregation [Linear reconciliation](./linear-reconciliation-result-2026-07-26.md) and [founder-dashboard source snapshot](../external-sources/founder-dashboard-source-snapshot-2026-07-26.md).
 
 ## Open questions
 

@@ -66,3 +66,13 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Resolved all six accepted P2 hygiene findings: recorded-gate pricing language, ShesMine diligence, open CRM-decision qualification, and superseded-research labels.
 - Claude's bounded read-only recheck returned PASS with no surviving P0/P1. Its final P2 echo in the Active Work executive summary was then aligned to the same recorded sufficient-data gate date.
 - Final graph audit: zero dead links in the changed corpus. Scope remained wiki + Linear only.
+
+## 2026-07-26 — founder-dashboard source and v0 contract
+- Captured a read-only source snapshot across Linear, six owner-only Sites projects, bounded Calendar, connector-scoped GitHub, per-project PostHog, Apollo aggregates, local machine-readable business data, dashboard code surfaces, and agent/runtime constraints.
+- Specified the v0 source envelope, degraded states, zero rules, normalized ledgers, AE/Curia/portfolio/proof partitions, KPI contracts, role boundaries, implementation phases, and deterministic tests.
+- Recorded Gmail, Paperclip/Tailscale, authoritative CRM pipeline, finance actuals, broader GitHub coverage, and some agent-runtime coverage as blocked, not configured, scoped, or unknown—not zero.
+- Excluded the plaintext credential-bearing root config from dashboard sources without copying any secret value; created urgent planning-only Linear issue AE-392 for future separately approved remediation.
+- Updated AE-388 and LP-23 with the canonical doc paths, source-authority rules, sequencing, and current mutation boundary.
+- Opus 5 completed one bounded read-only validation: PASS, no P0. Corrected both P1 findings (all-view direct-personal-data redaction and minimum-authority KPI binding) plus the accepted P2 contract clarifications.
+- Verification: both OpenKnowledge documents synced, Problems 0; Linear comments and AE-392 relation re-read successfully.
+- Scope held: no sends, merges, deployments, publications, access changes, archival, deletion, credential use/rotation, or repository mutation outside OpenKnowledge-managed wiki Markdown and Linear.
