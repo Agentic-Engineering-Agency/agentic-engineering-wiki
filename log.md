@@ -76,3 +76,14 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Opus 5 completed one bounded read-only validation: PASS, no P0. Corrected both P1 findings (all-view direct-personal-data redaction and minimum-authority KPI binding) plus the accepted P2 contract clarifications.
 - Verification: both OpenKnowledge documents synced, Problems 0; Linear comments and AE-392 relation re-read successfully.
 - Scope held: no sends, merges, deployments, publications, access changes, archival, deletion, credential use/rotation, or repository mutation outside OpenKnowledge-managed wiki Markdown and Linear.
+
+## 2026-07-26 — provider, revenue, portfolio, and raise consolidation
+- Used one bounded Claude Opus 5 read-only audit, then preserved Anthropic quota and moved the fresh-context challenge to Cursor default Grok 4.5 High Fast. Cursor reported no changed files.
+- Added current official provider evidence for Opus 5, Fable 5, GPT-5.6 Sol/Terra/Luna, Kimi K3, Grok 4.5, Cursor Composer 2.5, and Sakana Fugu Ultra. Corrected stale local Fable availability and classified Fugu Ultra's hidden pool as ineligible for known-family independent review.
+- Updated the canonical model router to separate product, route, tools, version, retention, price, and provider-family independence. No model is represented as having proven conversion or revenue superiority.
+- Added the 2026-07-27 through 2026-08-02 evidence-packet cadence: frozen AE wedge and 50-company gate, Multiempaques sufficient-data gate before its 7–10-day pricing clock, and Curia research-only posture while readiness/legal gates remain open.
+- Recorded the provisional PII-free Git JSON opportunity-ledger proposal and its disqualifiers/cutover gate; no ledger or dashboard was implemented.
+- Added separate AE/Curia raise-readiness gap registers and a 30-day optional-portfolio evidence allocation: chain of title 25%, UH proof 25%, Defade 20%, PriceGenius 20%, SpecSafe 10%, and zero new Muta/Agentforge/Forgecraft build.
+- Updated Linear AE-388, LP-23, AE-254, UH-142, AE-369, and CUR-348 with the new gates and canonical paths.
+- Verification: OpenKnowledge Synced, Problems 0; five changed pages had zero broken local links; targeted secret scan and malformed citation scan returned no findings.
+- Scope held: wiki + Linear only; no sends, merges, deployments, publications, access changes, archival, deletion, credential use/rotation, or non-wiki repository mutation.
