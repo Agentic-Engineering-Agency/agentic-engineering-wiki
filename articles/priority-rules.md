@@ -1,7 +1,6 @@
 ---
-description: 70/30 Curia/agency default; agency wins on contract deadline.
-sources:
-  - research/founder-interview-round-3-2026-06-26.md
+title: Priority rules
+description: Outcome-based portfolio priorities for revenue, Curia evidence, and bounded validation.
 status: canonical
 tags:
   - operations
@@ -9,41 +8,63 @@ tags:
   - founders
   - canonical
   - internal
-title: Priority rules
+sources:
+  - research/founder-interview-round-4-2026-07-26.md
+  - research/operating-state-and-revenue-sequencing.md
+  - external-sources/linear-operating-snapshot-2026-07-26.md
 ---
-# Priority rules — Curia vs agency
+# Priority rules
 
-How founders allocate time when [Curia](./curia-overview.md) and [agency](./ideal-client-profile.md) demand peaks overlap.
+The former fixed 70/30 Curia-versus-agency split is superseded. Priorities now follow near-term outcomes, explicit deadlines, and evidence gates.
 
-Sources: [R3 33B+C](../research/founder-interview-round-3-2026-06-26.md).
+## Thirty-day primary lanes
 
-## Default weekly split
+### Lane 1 — Agentic Engineering revenue
 
-| Track | Baseline time | Owners |
-| --- | --- | --- |
-| **Curia** | **~70%** | Both founders (project-based tasks) |
-| **Agency** | **~30%** | Both founders |
+1. Receive and qualify Multiempaques data.
+2. Complete the free Blueprint exception.
+3. Deliver the implementation price approximately 7–10 days after sufficient data arrives.
+4. Start paid work only after acceptance.
+5. In parallel, run one 50-account outbound pilot before expanding to a 500-lead program.
 
-Revisit weekly in Wednesday triage ([KLGV playbook](./klgv-launch-playbook.md)).
+### Lane 2 — Curia commercial evidence
 
-## Override: contractual agency deadline (B)
+1. Increase real KLGV pilot usage.
+2. Measure repeated workflow value and product reliability.
+3. Resolve pilot blockers.
+4. Recruit the next qualified firm.
+5. Keep the Curia raise and entity work separate from AE.
 
-If a **paying agency client** has a **contractual delivery deadline** in the week:
+## Bounded secondary bets
 
-1. Agency work **wins** for the minimum scope to meet the commitment
-2. Curia launch scope may slip **only** per [soft-launch contingency](./curia-gtm-pricing-playbook.md#launch-contingency-july-16) — KLGV first
+Ultimate Harness, PriceGenius, and Defade receive small, time-boxed validation slices only when the two primary lanes retain owners and next actions. Muta, Agentforge, SpecSafe, Prism, and MemSWE remain incubation or proof tracks unless evidence promotes them.
 
-**Current agency client:** [Héctor Guerra FX](./clients-hector-guerra.md) — only active services engagement (23C).
+## Override order
 
-## Override: Curia launch window (implicit A)
+When work conflicts, use this sequence:
 
-During **July 2026 launch crunch**, Curia may temporarily exceed 70% **unless** Héctor (or future client) has hard contractual date — document exception in `#ops` or wiki log.
+1. Safety, legal, privacy, or irreversible-risk incident.
+2. Accepted customer obligation with a real deadline.
+3. Revenue or customer-evidence gate due within seven days.
+4. Pipeline action with a named owner and buyer.
+5. Reliability work that unblocks an active gate.
+6. Product/research work with a defined validation test.
+7. General polish, speculative tooling, or broad repo cleanup.
 
-## Hiring interaction
+## Work-in-progress limits
 
-**No hires until Curia revenue (32A)** — priority rules must be sustainable with **two builders** only.
+- At most two primary commercial outcome lanes.
+- One owner and one next action per active opportunity.
+- New automation must replace a measured bottleneck, not merely add another tool.
+- No 500-lead expansion until the 50-account pilot establishes data quality, reply handling, and human-approval throughput.
+- Do not spend frontier-model capacity on bulk enrichment when a cheaper model passes the same acceptance test.
+
+## Stop and escalate
+
+Human founders or counsel must decide: entity/cap-table changes, financing instruments, IP transfers, major architecture commitments, public pricing, contract terms, external sends, deployments, access changes, merges, archival, or deletion.
 
 ## Related
 
-- [Active work snapshot](./active-work.md)
-- [Team & roles](./team-and-roles.md)
+- [[articles/active-work|Active work snapshot]]
+- [[articles/founder-led-growth-operating-system|Founder-led growth operating system]]
+- [[articles/model-routing-and-sales-harness|Model routing and sales harness]]

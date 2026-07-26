@@ -1,62 +1,77 @@
 ---
-description: Two founders (both code) plus an 8-agent AI operating org as of 2026-07-03.
-sources:
-  - research/founder-interview-round-2-2026-06-26.md
+title: Team & roles
+description: Current people, agent-runtime boundaries, and authority rules requiring role reconciliation.
 status: canonical
 tags:
   - team
   - founders
+  - agents
   - internal
   - canonical
-title: Team & roles
+sources:
+  - research/founder-interview-round-4-2026-07-26.md
+  - external-sources/chronicle-and-runtime-snapshot-2026-07-26.md
+  - research/investor-claims-and-entity-readiness.md
 ---
 # Team & roles
 
-Internal canonical. Sources: [R1](../research/founder-interview-round-1-2026-06-26.md), [R2](../research/founder-interview-round-2-2026-06-26.md).
+This page separates operational participation from legal founder, officer, employee, contractor, or equity status. Those are not interchangeable.
 
-## Founders
+## People and role evidence
 
-| Person | Title (public) | Location |
+| Person | Current knowledge | Required reconciliation |
 | --- | --- | --- |
-| Eduardo Javier García López | Cofundador | Zapopan, MX |
-| Fernando Ramos | Co-Founder & AI Engineer | Mexico |
+| Eduardo Javier García López (Lalo) | Founder/operator and primary daily-driver audience | Exact officer title, entity role, equity and signing authority |
+| Lucy | Described by Lalo as main co-founder and primary daily-driver audience | Full legal name, exact role, entity/equity and signing authority |
+| Fernando Ramos | Historical wiki records list co-founder and AI engineer | Current operating role, entity/equity and signing authority |
+| Other contributors | Repositories and projects may include additional contributors | Contractor/employee/advisor status and IP assignment |
 
-## Operating model
+Do not infer a cap table from product activity, repository access, or a public title.
 
-> [!NOTE]
-> **Both founders code.** Work splits by **project**, not by a rigid "sales vs engineering" division.
+## Human authority
 
-Implications for wiki / hiring:
-- No hidden "business cofounder doesn't ship" dynamic — capacity math assumes **two builders**.
-- Client comms, Curia domain work, and agency delivery can land on either founder depending on sprint — document **project owner** per engagement in client pages, not assumed roles.
+Humans retain approval for:
 
-## Agent operating org
+- external sends and public posts
+- customer pricing and proposals
+- contracts and financing
+- entity, cap-table, and IP decisions
+- merges, deployments, access changes, archival, and deletion
+- material investor/customer claims
 
-> [!NOTE]
-> **As of 2026-07-03** the two founders operate an **8-agent AI org** (a Paperclip-run swarm) that does day-to-day delivery — dogfooding the agent infrastructure the company builds. The founders set direction and hold accountability; the agents execute assigned tasks. Source: live Paperclip agent roster, 2026-07-03. **Update this table when the roster changes.**
+Agents may research, draft, compare, test, and propose within the active scope.
 
-| Agent | Title | Role (`role`) | Charter |
-| --- | --- | --- | --- |
-| Johan | CEO | `ceo` | Coordination, hiring, board interface |
-| Magnus | CTO | `cto` | Technical direction, review gating, agent management |
-| Astrid | Founding Engineer | `engineer` | Backlog→PR loop, swarm health, Linear/GitHub/Craft reconciliation |
-| Ingrid | Product Engineer — Curia | `engineer` | Curia Phase 2–3 delivery for the 16 July 2026 launch |
-| Soren | Review & QA Engineer | `qa` | Adversarial PR review, staging QA, release verification |
-| Liv | Documentation Engineer | `general` | Wiki + repo docs, doc-drift detection, public-boundary checks |
-| Henrik | Sales & Pipeline Lead | `general` | Lead pipeline / sales pipeline |
-| Freja | Marketing Lead | `cmo` | Marketing voice and campaigns |
+## Agent operating environment
 
-Notes:
-- The org grew from **4 → 8 agents** in the AGE-17 hiring round on 2026-07-03; Johan (CEO) predates it (2026-07-02).
-- Shared-credential caveat: all agents currently share one GitHub identity, so an independent reviewer identity for Soren is still being provisioned — QA approvals are advisory until then.
-- This section is **internal only** — the agent-swarm operating model is not part of the public subset ([public wiki boundary](./public-wiki-boundary.md)).
+A July 3 snapshot documented an eight-agent Paperclip roster. That is historical evidence, not confirmed live capacity. Current access to the server is blocked by an expired Tailscale peer key, so no agent should claim current Paperclip health or completion until connectivity is restored and the roster is re-read.
 
-## Capacity
+Other observed environments include Claude Desktop/Code, Codex, Herdr, OMP, Ghostty, and related agent tooling. Persistence alone does not prove useful output: each session needs an owner, bounded task, artifact path, validation result, and termination condition.
 
-- **1–2 concurrent agency engagements** max ([company identity](./company-identity.md)).
-- **June 2026 load:** Curia Phase 2–3 **plus** one agency client ([active work](./active-work.md)).
+## Recommended operating roles
+
+| Function | Human owner | Agent support |
+| --- | --- | --- |
+| Revenue and pipeline | Lalo; co-founder allocation to confirm | Research, enrichment, scoring, drafts, ledger hygiene |
+| Curia product and customer success | Named owner to confirm | Usage synthesis, QA, documentation, issue triage |
+| Technical platform | Named AE owner to confirm | Harness implementation, evaluation, adversarial review |
+| Claims and investor readiness | Founders + counsel | Evidence extraction, contradiction checks, data-room index |
+| Operations dashboard | Lalo and Lucy as primary readers | Daily digest, blockers, metrics, agent-run summaries |
+
+## Agent-run contract
+
+Every meaningful run should record:
+
+1. objective and scope
+2. input sources and permissions
+3. model/harness used
+4. artifact or issue produced
+5. test or reviewer result
+6. decisions requiring a human
+7. stop condition and cost signal
 
 ## Related
 
-- [Company identity](./company-identity.md)
-- [Active work snapshot](./active-work.md)
+- [[articles/founder-led-growth-operating-system|Founder-led growth operating system]]
+- [[articles/model-routing-and-sales-harness|Model routing and sales harness]]
+- [[articles/legal-entity-structure|Legal entity structure]]
+- [[articles/active-work|Active work snapshot]]

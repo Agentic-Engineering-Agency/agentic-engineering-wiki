@@ -1,7 +1,6 @@
 ---
-description: Informal founder-name contracts today; Curia spinout target 2026.
-sources:
-  - research/founder-interview-round-3-2026-06-26.md
+title: Legal entity structure
+description: Target AE and Curia entities, raise separation, and chain-of-title gates.
 status: canonical
 tags:
   - legal
@@ -9,43 +8,72 @@ tags:
   - internal
   - confidential
   - canonical
-title: Legal entity structure
+sources:
+  - research/founder-interview-round-4-2026-07-26.md
+  - research/investor-claims-and-entity-readiness.md
+  - articles/claims-registry.md
 ---
 # Legal entity structure
 
-Internal. **Not for public wiki.** Source: [R3 29B](../research/founder-interview-round-3-2026-06-26.md).
+Internal planning record, not legal advice and not public marketing copy.
 
-## Today (2026-06-26)
+## Approved target structure
 
-| Aspect | Status |
-| --- | --- |
-| Formal MX/US entity for agency + Curia | **Informal** |
-| Client contracts | Under **founder names** |
-| Curia IP ownership | Unclear / commingled with founders — **spinout within 2026** planned |
-| Lawyer engaged | **Not confirmed** (not 29D) |
+```mermaid
+flowchart TB
+  F["Founders and contributors"] --> AE["Agentic Engineering Delaware corporation - target"]
+  F --> C["Curia Mexican SAPI - target"]
+  AE --> AER["Separate AE raise"]
+  C --> CR["Separate Curia raise"]
+  AE <-->|"Documented arm's-length services or licenses only"| C
+```
 
-> [!WARNING]
-> Informal structure is **acceptable for early design partner** but blocks clean SaaS contracts, investor cap table, and second law-firm sales. Spinout paperwork is on the critical path after KLGV launch.
+| Entity | Target jurisdiction/form | Intended scope | Financing |
+| --- | --- | --- | --- |
+| Agentic Engineering | Delaware corporation via Stripe Atlas | Agency, multi-model platform, selected product IP | Separate AE raise |
+| Curia | Mexican SAPI | Curia product, customer contracts, Curia IP | Separate Curia raise |
 
-## Target state (post–KLGV launch, 2026)
+These are approved targets. Until filings, bank/tax setup, contracts, and assignments are executed, describe them as **planned** or **in formation**, not existing.
 
-1. **Curia** — separate entity; holds product IP, SaaS contracts, KLGV investor stake
-2. **Agentic Engineering agency** — services entity or continued founder contracting until volume warrants incorporation
+## Chain-of-title workstream
 
-See [Curia overview](./curia-overview.md) spinout timing.
+Create an asset schedule for every candidate AE asset:
 
-## Wiki / marketing rules
+| Asset | Intended destination | Required evidence |
+| --- | --- | --- |
+| Ultimate Harness | AE | Repo identity, contributors, licenses, invention/IP assignment |
+| PriceGenius | AE | Same, plus customer/data rights |
+| Defade | AE | Same, plus brand/domain ownership |
+| Muta | Possible AE | Founder decision + full diligence |
+| Agentforge | Possible AE | Name/repository resolution + full diligence |
+| SpecSafe | Possible AE | Open-source licenses, contributor rights, trademark/product boundary |
+| Curia | Curia SAPI | Separate code/data/contracts/IP schedule |
 
-- Do **not** state corporate entity names on public site until real
-- [KLGV investor](./klgv-relationship.md) — internal wiki only (30A)
+No wiki statement itself transfers IP.
 
-## Open actions
+## Required separation
 
-- [ ] Engage MX counsel for Curia spinout + IP assignment
-- [ ] Template MSA under future entity name
-- [ ] Clarify Héctor Guerra contract party name on file
+- Separate cap tables, investment instruments, bank/tax records, and data rooms.
+- Separate customer contracts and privacy/data-processing obligations.
+- Written services, license, or cost-sharing agreement for shared infrastructure or staff.
+- Clear rules for improvements created during cross-entity work.
+- Board/founder approvals for any transfer, exclusive license, or related-party transaction.
+
+## Current evidence status
+
+The current knowledge base does not establish completed AE incorporation, completed Curia SAPI registration, complete cap tables, executed assignments, or final financing instruments. Historical founder-name contracting may exist, but every active agreement must be inventoried rather than assumed.
+
+## Completion gates
+
+- [ ] Counsel confirms AE and Curia formation paths.
+- [ ] Founder, advisor, employee, and contractor roles/cap-table rights are reconciled.
+- [ ] IP and contract asset schedules are complete.
+- [ ] Assignments and intercompany agreements are executed.
+- [ ] Each raise has a separate claims-approved data room.
+- [ ] Public sites use only the entity names and statuses supported by records.
 
 ## Related
 
-- [Business model & funding](./business-model.md)
-- [KLGV relationship](./klgv-relationship.md)
+- [[articles/company-identity|Company identity]]
+- [[articles/business-model|Business model and funding]]
+- [[articles/claims-registry|Claims registry]]

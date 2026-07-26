@@ -1,56 +1,79 @@
 ---
-description: Revenue model, funding, and partnership economics for Agentic Engineering.
-sources:
-  - research/founder-interview-round-1-2026-06-26.md
+title: Business model & funding
+description: Revenue sequence and separate financing paths for Agentic Engineering and Curia.
 status: canonical
 tags:
   - company
   - business-model
+  - funding
   - canonical
   - internal
-title: Business model & funding
+sources:
+  - research/founder-interview-round-4-2026-07-26.md
+  - research/operating-state-and-revenue-sequencing.md
+  - research/investor-claims-and-entity-readiness.md
 ---
 # Business model & funding
 
-Internal canonical. Sources: [founder interview R1](../research/founder-interview-round-1-2026-06-26.md).
+Agentic Engineering and Curia have connected founders and capabilities, but their commercial models, entities, cap tables, and raises must remain separable.
 
-## Revenue streams
+## Revenue sequence
 
 ```mermaid
 flowchart LR
-  A[Agency services] -->|fixed-fee projects| R[Revenue today]
-  B[Early client partnerships] -->|discount + equity/rev-share| R
-  C[Curia SaaS] -->|future| R2[Revenue target]
-  A -.-> C
+  A["Focused diagnostic or Blueprint"] --> B["Paid implementation"]
+  B --> C["Support or optimization retainer"]
+  B --> D["Reusable harness and product evidence"]
+  D --> E["Platform or product revenue"]
 ```
 
-### Agency services (today)
+### Agentic Engineering
 
-- **Model:** project **fixed-fee** engagements (not primary retainer model).
-- **Scope:** custom AI products, workflow automation, agent systems, infra/integration work per [public service lines](../external-sources/agenticengineering-agency-site.md).
-- **Capacity gate:** 1–2 concurrent projects ([company identity](./company-identity.md)).
+1. **Focused diagnostics / Blueprints** — normally paid discovery; Multiempaques is the approved free first-client exception.
+2. **Fixed-scope implementation** — milestone-priced delivery tied to a measurable operational outcome.
+3. **Operate / optimize** — optional recurring support, monitoring, evaluation, and improvement.
+4. **Platform and product revenue** — only after Ultimate Harness and portfolio wedges demonstrate repeatable demand and reliability.
 
-### Curia (future)
+### Curia
 
-- **Model:** **SaaS subscription** (target; not primary revenue today).
-- **Status:** in build; public launch target **16 July 2026** per [Curia overview](./curia-overview.md).
-- **Entity:** intended **spinout** from agency ([company identity](./company-identity.md)).
+- Target model: paid legal-operations software and associated onboarding/support for Mexican law firms.
+- Current commercial evidence: one paid design partner, KLGV, in pilot use.
+- Pricing model remains a hypothesis until usage, willingness-to-pay, and support load are measured. Do not present a public price as approved without a current decision record.
 
-### Early partnership economics
+## Commercial rules
 
-- Willing to structure **equity or revenue-share** with strategic early clients where it accelerates product-market fit or de-risks Curia.
-- Not the default for every client — case-by-case.
+- Do not offer unpaid custom work by default. The Multiempaques Blueprint exception is bounded and must produce reusable evidence.
+- Do not start paid implementation before scope, price, decision-maker, and acceptance are explicit.
+- Do not blend agency delivery and Curia product promises in one ambiguous contract.
+- Record lead source, stage, next action, owner, expected value, confidence, and evidence in the founder ledger.
 
-## Funding
+## Financing paths
 
-- **Self-funded** (founder capital) as of 2026-06-26.
-- **Strategic investors:** Eduardo García Villanueva (KLGV) holds investor stake — see [KLGV relationship](./klgv-relationship.md).
+| Company | Target entity | Raise | Use of funds |
+| --- | --- | --- | --- |
+| Agentic Engineering | Delaware corporation via Stripe Atlas | Separate AE raise | Services-to-platform growth, harness/evaluation infrastructure, selected IP portfolio, GTM |
+| Curia | Mexican SAPI | Separate Curia raise | Legal-product development, security/compliance, firm onboarding, distribution |
 
-## Pricing posture (public form vs reality)
+> [!IMPORTANT]
+> Entity formations, instrument terms, amounts, cap tables, and IP assignments are **not complete facts** unless supported by executed records. Investor decks must not imply otherwise.
 
-Public inquiry form lists budgets up to **$200K+**. Internal note: validate actual closed deal sizes as engagements complete; do not assume enterprise-scale closes without evidence.
+## Raise readiness gates
+
+Each raise needs its own:
+
+- entity and cap table
+- instrument and target amount
+- use-of-funds model and runway
+- IP and contract asset schedule
+- customer and pipeline evidence
+- market sizing with sourced assumptions
+- diligence folder and claims review
+
+A shared narrative may explain founder leverage and infrastructure synergies, but it cannot blur ownership or investor rights.
 
 ## Related
 
-- [KLGV relationship](./klgv-relationship.md)
-- [Company identity](./company-identity.md)
+- [[articles/legal-entity-structure|Legal entity structure]]
+- [[articles/claims-registry|Claims registry]]
+- [[articles/founder-led-growth-operating-system|Founder-led growth operating system]]
+- [[articles/portfolio-and-platform-strategy|Portfolio and platform strategy]]
