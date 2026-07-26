@@ -53,6 +53,7 @@ The existing Linear workspace and connector were healthy, so no replacement work
 | AE-389 | Remove cross-entity Curia/KLGV traction from AE investor claims | Urgent, Todo; assigned Lalo; due 2026-07-29 |
 | AE-390 | Correct prohibited KLGV “production deployment” wording in Client Sales collateral | Urgent, Todo; assigned Lalo; due 2026-07-29 |
 | CUR-524 | Reconcile Curia investor-deck pilot status, pricing, and ten-pilot milestone claims | High, Todo; assigned Lalo; due 2026-07-31 |
+| AE-391 | Reconcile public agency-site Curia launch, privacy, and KLGV publication claims | High, Todo; assigned Lalo; due 2026-07-31 |
 
 ## Reviewer corrections incorporated
 
@@ -65,6 +66,7 @@ The existing Linear workspace and connector were healthy, so no replacement work
 - Created immediate collateral-remediation owners without authorizing any Sites edit or deployment.
 - Corrected AE-390 after final GPT-5.6 Sol review: removed unsupported “single website” and customer-sentiment wording; replacement drafting must quote the canonical claims registry.
 - Re-read structured relations with Linear's relation-aware issue endpoint. Simpler search/fetch views may omit those fields and are not evidence that an edge is absent.
+- Closed the final Claude adversarial-review gaps: qualified Curia's not-yet-formed entity in the founder story; registered the public agency-site claim surface and AE-391 owner; anchored Multiempaques timing to the recorded gate date; added ShesMine diligence; qualified the open CRM decision; and labeled superseded research on the home page.
 
 ## Operating consequences
 

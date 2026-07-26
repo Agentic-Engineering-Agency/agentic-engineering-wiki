@@ -56,7 +56,7 @@ Agentic Engineering intends to own and use Ultimate Harness, PriceGenius, and De
 | Asset | Canonical role | Near-term proof gate |
 |---|---|---|
 | Agency | Immediate cash engine and customer-discovery surface | Prepaid engagement from a qualified recurring-workflow buyer |
-| Multiempaques engagement | First-client validation exception | Free Blueprint after sufficient data; price 7–10 days later; implementation after acceptance |
+| Multiempaques engagement | First-client validation exception | Free Blueprint after the sufficient-data gate; price approximately 7–10 days after the recorded gate date; implementation only after scope-and-price acceptance |
 | Ultimate Harness | Delivery, orchestration, evaluation, and governance IP; possible workshop offer | Chain of title plus canonical corpus, baselines, family-aware review, and a task-specific promotion decision |
 | PriceGenius | B2B pricing-intelligence option | Chain of title, one measurable buyer workflow, safe demo specification, and credible paid signal before major build |
 | Defade | Bounded B2C restoration option | Chain of title plus re-verified live revision, checkout/support readiness, analytics contract, and one approved low-risk test |

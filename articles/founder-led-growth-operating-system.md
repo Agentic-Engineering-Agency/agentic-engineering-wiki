@@ -149,7 +149,7 @@ The ledger is the contract for the future daily-driver dashboard.
 - Calendar and email are read surfaces; they do not replace CRM records.
 - The dashboard reads these systems and should not silently become a second write authority.
 
-Twenty is the current confirmed-contact CRM decision in the landing-page plan [source](../external-sources/linear-operating-snapshot-2026-07-26.md). Older HubSpot work is superseded operationally unless founders choose a migration. Gmail remains unavailable until OAuth is repaired; Paperclip is excluded until remote health returns [source](../external-sources/chronicle-and-runtime-snapshot-2026-07-26.md).
+Twenty is the current working mirror for confirmed contacts in the landing-page plan, pending the open CRM architecture decision in AE-370 [source](../external-sources/linear-operating-snapshot-2026-07-26.md). Older HubSpot work remains operationally superseded unless that decision authorizes a migration. Gmail remains unavailable until OAuth is repaired; Paperclip is excluded until remote health returns [source](../external-sources/chronicle-and-runtime-snapshot-2026-07-26.md).
 
 ## Daily-driver dashboard contract
 

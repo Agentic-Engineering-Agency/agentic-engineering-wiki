@@ -48,6 +48,7 @@ Create an asset schedule for every candidate AE asset:
 | Agentforge | Possible AE | Name/repository resolution + full diligence |
 | SpecSafe | Possible AE | Open-source licenses, contributor rights, trademark/product boundary |
 | Curia | Curia SAPI | Separate code/data/contracts/IP schedule |
+| ShesMine prior entity/assets | Diligence and disposition decision pending | Inventory contracts, IP, liabilities, domains, contributors, licenses, and any relationship to current AE assets |
 
 No wiki statement itself transfers IP.
 

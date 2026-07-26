@@ -59,6 +59,7 @@ Approved wording:
 | “Deployed in pilot use” | Approved with the non-production qualifier |
 | “Production deployment” | Prohibited today |
 | Existing Client Sales deck wording that says “production deployment” | Prohibited in place; corrected-copy work is owned in Linear AE-390. No deployment is authorized in the current batch. |
+| Public agency-site snapshot: “NOW SHIPPING · Curia for KLGV Abogados · Launch July 2026,” “LFPDPPP-compliant positioning,” and KLGV under “Trusted by (public)” | Current live state and publication permission unverified; wording outruns production, privacy, and evidence gates. Inventory and corrected-copy work is owned in Linear AE-391. No site edit or deployment is authorized in the current batch. |
 | Curia investor-deck “deployed” / “first customer” wording without the pilot/non-production qualifier | Unverified or misleading in place; reconciliation is owned in Linear CUR-524. |
 | “Production customer” | Prohibited today |
 | “Repeatable commercial deployment” | Prohibited today |

@@ -65,12 +65,15 @@ Canonical operating knowledge for Agentic Engineering, Curia, the product portfo
 - [[research/linear-reconciliation-result-2026-07-26|Linear reconciliation result]]
 - [[external-sources/prism-scenespec-snapshot-2026-07-26|Prism SceneSpec snapshot]]
 
-## Current research — provisional
+## Superseded research — retained for provenance
 
-- [[research/founder-interview-round-4-2026-07-26|Founder interview — Round 4]]
-- [[research/operating-state-and-revenue-sequencing|Operating state and revenue sequencing]]
-- [[research/model-routing-and-sales-harness|Model routing and sales-harness research]]
-- [[research/investor-claims-and-entity-readiness|Investor claims and entity readiness]]
+- [[research/founder-interview-round-4-2026-07-26|Founder interview — Round 4]] → superseded by [[articles/portfolio-and-platform-strategy|Portfolio and platform strategy]]
+- [[research/operating-state-and-revenue-sequencing|Operating state and revenue sequencing]] → superseded by [[articles/founder-led-growth-operating-system|Founder-led growth operating system]]
+- [[research/model-routing-and-sales-harness|Model routing and sales-harness research]] → superseded by [[articles/model-routing-and-sales-harness|Model routing and sales harness]]
+- [[research/investor-claims-and-entity-readiness|Investor claims and entity readiness]] → superseded by [[articles/claims-registry|Claims registry]]
+
+## Earlier founder interview records — provisional
+
 - [[research/founder-interview-round-1-2026-06-26|Founder interview — Round 1]]
 - [[research/founder-interview-round-2-2026-06-26|Founder interview — Round 2]]
 - [[research/founder-interview-round-3-2026-06-26|Founder interview — Round 3]]

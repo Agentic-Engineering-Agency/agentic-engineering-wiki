@@ -35,7 +35,7 @@ See [[articles/founder-led-growth-operating-system|Founder-led growth operating 
 - Current stage: **data pending**.
 - Commercial exception: the initial Blueprint is free for this first-client learning case.
 - Next gate: confirm data sufficiency and access boundaries.
-- Then: build the Blueprint, present findings, and provide the implementation price approximately **7–10 days after sufficient data is received**.
+- Then: record the sufficient-data gate date, build the Blueprint, present findings, and provide the implementation price approximately **7–10 days after that recorded gate date**.
 - Paid work begins only if Multiempaques accepts the price and scope.
 
 ### Curia and KLGV

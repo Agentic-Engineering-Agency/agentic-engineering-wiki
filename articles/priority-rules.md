@@ -23,7 +23,7 @@ The former fixed 70/30 Curia-versus-agency split is superseded. Priorities now f
 
 1. Receive and qualify Multiempaques data.
 2. Complete the free Blueprint exception.
-3. Deliver the implementation price approximately 7–10 days after sufficient data arrives.
+3. Record the sufficient-data gate date and deliver the implementation price approximately 7–10 days after that recorded date.
 4. Start paid work only after acceptance.
 5. In parallel, run one 50-account outbound pilot before expanding to a 500-lead program.
 
