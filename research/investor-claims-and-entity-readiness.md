@@ -81,6 +81,39 @@ Every public claim should also carry an owner, evidence path, observed date, app
 7. Instrumented delivery cost, gross contribution, conversion, CAC, retention, expansion, and churn definitions.
 8. A claims review gate before any investor or customer-facing send.
 
+## Separate raise-readiness gap register — 2026-07-26
+
+Neither raise is diligence-ready. The entity descriptions remain target state until formation evidence is indexed. A local metadata review found duplicate AE decks, bios, and cap tables across May and July collateral, no clearly named formation/tax/assignment/financing instrument packet, and no dedicated Curia diligence-room directory. Filename absence is scoped metadata evidence, not proof that a document does not exist elsewhere. A prior controlled workbook review also flagged cap-table formula integrity; revalidate the current workbook before use.
+
+### Agentic Engineering — top five evidence gaps
+
+1. **Formation packet:** Stripe Atlas filing, certificate, bylaws, founder/board consents, EIN, registered address/agent, banking/payment ownership, and initial capitalization.
+2. **Financing packet:** validated cap table; one chosen instrument; amount, cap/valuation, pro forma, rights, use of funds, milestones, and runway. Do not copy Curia's ask or instrument wording.
+3. **IP chain of title:** invention/contributor assignments plus repository, domain, trademark, dataset, OSS-license, and customer-data schedules for Ultimate Harness, PriceGenius, Defade, Muta, Agentforge, SpecSafe, and any legacy ShesMine assets.
+4. **AE-only traction and economics:** executed AE contracts, payments, delivery actuals, gross contribution, permissioned references, and current opportunity stages. Curia/KLGV evidence is not AE traction.
+5. **Sourced operating model:** current actuals, runway, ICP, pricing, market assumptions, and milestones; reconcile duplicate collateral and dirty-source provenance before investor use.
+
+### Curia — top five evidence gaps
+
+1. **SAPI formation packet:** incorporation, RFC, domicile, capitalization, banking/payment ownership, and governance records.
+2. **Separate financing packet:** Curia cap table, chosen instrument, amount/terms, use of funds, runway, and milestones; no dedicated local diligence room was observed.
+3. **Curia chain of title:** code, datasets, domains, trademarks, contributor rights, vendors, privacy obligations, customer contracts, and AE-provided infrastructure or services.
+4. **KLGV evidence packet:** executed contract/payment proof, pilot scope and acceptance, usage/reliability, lawyer-review protocol, incidents, outcomes, and publication/case-study permissions.
+5. **Repeatability, economics, and security:** second-firm evidence, validated pricing, renewal/expansion, onboarding/support cost, retention, privacy/security review, backups, monitoring, and incident readiness.
+
+### Shared blockers
+
+- Founder, advisor, employee, and contractor roles, equity, confidentiality, and IP rights remain incompletely reconciled.
+- Legacy ShesMine contracts, liabilities, IP, domains, licenses, and disposition need a documented decision.
+- AE↔Curia needs arm's-length services/license, cost-sharing, improvement-ownership, data-processing, and related-party approval rules.
+- Cap tables, financing instruments, bank/tax records, contracts, data rooms, and claim approvals must remain separate.
+
+### Next three draft-only artifacts
+
+1. `AE_Raise_Readiness_and_Data_Room_Index_DRAFT.md` — target-state entity language, evidence inventory, financing decisions, claims reconciliation, owners, and approvers.
+2. `Curia_Raise_Readiness_and_Data_Room_Index_DRAFT.md` — SAPI target, financing options, KLGV evidence, security/privacy, pricing, and milestones.
+3. `AE_Curia_Chain_of_Title_and_Related_Party_Register_DRAFT.xlsx` — assets, contributors, current/intended owner, contracts, licenses, domains, data rights, required assignment/novation, intercompany terms, and approvals.
+
 ## Trade-offs
 
 - Separate entities and raises increase legal/accounting overhead, but make each investment thesis and IP boundary clearer.
