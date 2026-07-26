@@ -286,7 +286,7 @@ The first queue should include source/credential remediation decisions, Multiemp
 
 ### Phase 0 — accepted contract and fixtures
 
-1. Approve this object/source contract and the canonical ledger storage decision.
+1. Approve this object/source contract, private repository host, and named founder activation owner.
 2. Create fixtures for healthy, stale, scoped, blocked, not-configured, and unknown sources.
 3. Create separate AE and Curia fixture records plus a prohibited cross-entity aggregation case.
 4. Define metric formulas and freshness SLAs.
@@ -369,7 +369,8 @@ AE-387 runs event-driven in parallel and remains externally data-gated. Claim/en
 
 ## Open questions
 
-- Which versioned system stores the founder opportunity ledger before the CRM decision?
+- Which private repository host will hold each entity's provisional opportunity ledger?
+- Who is the named founder activation owner for each entity?
 - Which finance system is authoritative for separate AE and Curia cash actuals?
 - Which decisions and financial fields should default to Lucy versus Lalo, if any?
 - What freshness SLA applies to each connector?

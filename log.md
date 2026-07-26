@@ -101,3 +101,11 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - 2026-07-26 — Applied the adversarial account-discovery correction: 28 distinct labels, a 4/5/17/2 readiness split, and the >=15 trigger gate left open pending a complete row ledger.
 
 - 2026-07-26 — Reconciled the existing [28-row trigger ledger](./research/ae-28-row-trigger-ledger-2026-07-26.md): 20 raw YES / 8 UNKNOWN / 0 NO; 15 durable YES; 11 conservative after adding Poly Rafia; identity 24 MATCHED / 1 DISTINCT / 3 UNKNOWN; operating 25/2/1 and systems 24/4; dispositions 4 E1 / 5 E2 / 17 Hold / 2 DQ unchanged. Fifteen frozen UNKNOWN or non-durable records were reviewed; only DIDCOM and Poly Rafia upgraded. Poly’s system/change evidence is the live [first-party company page](https://www.polyrafia.com.mx/nosotros/), labeled as an integrated-management-system/technology signal and not ERP; the Liconsa contract remains its durable workflow source. The numerical >=15 evidence gate is CLEARED exactly, pending human review, and authorizes no second batch or downstream research, CRM, qualification/activation, drafting/outreach/sends, deployment/merge, access, archive, or delete action.
+
+## 2026-07-26 — provisional opportunity-ledger authority reconciliation
+
+- Reconciled the [canonical authority decision](./articles/founder-led-growth-operating-system.md#provisional-opportunity-ledger-authority-decision) and [dashboard contract](./research/founder-dashboard-v0-operating-contract-2026-07-26.md): private Git JSON is temporary authority for opportunity state only after per-entity activation; Twenty remains a contact mirror.
+- Prohibited direct PII and unconstrained free text; required typed opaque evidence references, strict AE/Curia partitioning, and an exact pinned commit.
+- Specified a conditional no-dual-authority cutover that preserves `ae-*` and `curia-*` continuity IDs.
+- Controls are specified, not implemented or enforced.
+- No repository, ledger, schema, CI, manifest, adapter, dashboard, CRM sync, or write path was implemented.
