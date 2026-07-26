@@ -52,7 +52,7 @@ The existing Linear workspace and connector were healthy, so no replacement work
 | CUR-523 | Research-only preparation for Curia's second qualified design partner | High, Todo; assigned Lalo; due 2026-08-08 |
 | AE-389 | Remove cross-entity Curia/KLGV traction from AE investor claims | Urgent, Todo; assigned Lalo; due 2026-07-29 |
 | AE-390 | Correct prohibited KLGV “production deployment” wording in Client Sales collateral | Urgent, Todo; assigned Lalo; due 2026-07-29 |
-| CUR-524 | Reconcile unverified Curia pricing and ten-pilot milestone in investor collateral | High, Todo; assigned Lalo; due 2026-07-31 |
+| CUR-524 | Reconcile Curia investor-deck pilot status, pricing, and ten-pilot milestone claims | High, Todo; assigned Lalo; due 2026-07-31 |
 
 ## Reviewer corrections incorporated
 

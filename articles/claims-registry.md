@@ -59,6 +59,7 @@ Approved wording:
 | “Deployed in pilot use” | Approved with the non-production qualifier |
 | “Production deployment” | Prohibited today |
 | Existing Client Sales deck wording that says “production deployment” | Prohibited in place; corrected-copy work is owned in Linear AE-390. No deployment is authorized in the current batch. |
+| Curia investor-deck “deployed” / “first customer” wording without the pilot/non-production qualifier | Unverified or misleading in place; reconciliation is owned in Linear CUR-524. |
 | “Production customer” | Prohibited today |
 | “Repeatable commercial deployment” | Prohibited today |
 | Customer quote, ROI, adoption, metric, screenshot, or case study | Unverified until signed evidence and publication permission are indexed |
