@@ -19,6 +19,14 @@ sources:
   - articles/claims-registry.md
   - articles/founder-led-growth-operating-system.md
   - research/operating-state-and-revenue-sequencing.md
+  - research/twenty-custom-apps-2026-08-10.md
+  - research/twenty-omniroute-provider-2026-08-10.md
+  - https://docs.twenty.com/developers/introduction
+  - https://docs.twenty.com/developers/extend/apps/config/roles
+  - https://docs.twenty.com/developers/self-host/capabilities/upgrade-guide
+  - https://github.com/Agentic-Engineering-Agency/twenty-revenue-workcell-app/commit/bc0fb8b4bcb9fa101feccf25bc7091f64877d665
+  - https://github.com/Agentic-Engineering-Agency/agentic-engineering-revenue-workcell/commit/a630326e6cfe6e245bc52d5a663e167eed1a7cce
+  - https://github.com/Agentic-Engineering-Agency/agentic-engineering-gtm/commit/31a7573367312ec82f877a834c441058478b1645
 created: 2026-08-10
 author: Codex
 tags: [ research, provisional, lovable, gtm, agentic-engineering, revenue-workcell ]
@@ -142,6 +150,27 @@ with four read-only tools over sanitized fixtures. Neither event authorizes publ
 data. Local review disabled invocation telemetry, bounded OAuth/tool inputs, added anti-framing
 headers, and recorded client/tenant authorization, RLS, edge limits, redirect registration, and
 canonical-host verification as publish gates. The project remains unpublished.
+
+## Implementation receipt — 2026-08-10
+
+This dated receipt records later runtime evidence than the same-day pre-install states in the
+[Twenty custom-app boundary](./twenty-custom-apps-2026-08-10.md) and
+[OmniRoute provider contract](./twenty-omniroute-provider-2026-08-10.md). It updates runtime state
+only; the security, claims, authority, and human-approval boundaries in those notes remain in
+force.
+
+| Surface | Evidence state | Dated receipt and boundary |
+| --- | --- | --- |
+| Twenty CRM | Observed | An authenticated live check established Twenty `2.29.0` with the private governed app `Agentic Engineering Revenue Workcell` version `0.2.0` installed from the [reviewed app commit](https://github.com/Agentic-Engineering-Agency/twenty-revenue-workcell-app/commit/bc0fb8b4bcb9fa101feccf25bc7091f64877d665). A dedicated read-only API role could read Workflow Fit Check summaries, while People, Companies, Decision Receipts, and create, update, soft-delete, destroy, and restore attempts were denied. The negative canary persisted no record. This establishes a least-privilege read path, not opportunity authority or permission to write. |
+| OmniRoute | Observed configuration | Twenty now selects `GPT-5.6 Sol via OmniRoute` (`omniroute/aug/gpt5.6-sol`) as its recommended Smart default. Client-configuration and authenticated model-catalog checks passed. This proves configuration and catalog reachability only; it does not prove paid inference, output quality, or cost. The provider credential remains server-side. |
+| Lovable internal preview | Observed | An authenticated Founder preview at the [reviewed Workcell commit](https://github.com/Agentic-Engineering-Agency/agentic-engineering-revenue-workcell/commit/a630326e6cfe6e245bc52d5a663e167eed1a7cce) displayed `LIVE TWENTY · SOLO LECTURA`, `HEALTHY`, zero reviewed Workflow Fit Check records, and explicit no-write copy. That zero is a healthy empty query inside the stated object scope; it is not a claim of zero pipeline, demand, or revenue. |
+| Lovable standalone preview | Observed fail-closed | The direct standalone preview still showed an earlier stale/fail-closed result during the same verification window. No `Publish` action was performed, so the application remains unpublished and is not approved for real prospect data or external use. |
+| Linear | Blocked | The installed integration is active at the package level, but OAuth is not configured and no account is connected. Linear therefore remains a visible `blocked` source; the Workcell must not show invented execution state or a false zero. |
+| GTM operating pack | Prepared; authority not configured | The internal [Revenue Engine operating pack](https://github.com/Agentic-Engineering-Agency/agentic-engineering-gtm/tree/31a7573367312ec82f877a834c441058478b1645/ops/revenue-engine) defines qualification, outreach approval, proposal, CRM, and release gates. Opportunity and stage authority remains `not_configured` pending AE-370. Agents may research, draft, and prepare; a named human remains required for sends, proposal issuance, publication, invoices or payment links, charges, and commercial close. |
+
+This receipt closes only the server-to-CRM read canary. It does not close the complete technical
+gate for tenant-isolated real data or publication. No credentials, role or key identifiers, token
+paths, fingerprints, personal identifiers, or raw upstream responses belong in this note.
 
 ## Credit operating plan
 
