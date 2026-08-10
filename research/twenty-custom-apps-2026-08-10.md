@@ -196,7 +196,7 @@ the human-readable check title.
 | `checkedAt` | `DATE_TIME` | Nullable until a human review completes |
 | `language` | `SELECT` | Non-null; `EN` or `ES`; default `EN`; identifies source language, not a UI locale |
 | `workflowSummary` | `RICH_TEXT` | Nullable bounded summary; no direct contact data or unsupported ROI claim |
-| `riskFlags` | `MULTI_SELECT` | Default empty; `DATA_BOUNDARY`, `HUMAN_APPROVAL`, `SYSTEM_AUTHORITY`, `SECURITY_PRIVACY`, `ECONOMIC_EVIDENCE` |
+| `riskFlags` | `MULTI_SELECT` | Required; defaults to `HUMAN_APPROVAL`; options also include `DATA_BOUNDARY`, `SYSTEM_AUTHORITY`, `SECURITY_PRIVACY`, and `ECONOMIC_EVIDENCE` |
 | `sourceReferences` | `ARRAY` | Default empty; dated URLs or repository/wiki references; never credentials or unrestricted workspace payloads |
 | `company` | nullable `RELATION` | Many checks to one standard Company; deletion uses `SET_NULL` |
 | `person` | nullable `RELATION` | Many checks to one standard Person; deletion uses `SET_NULL` |
