@@ -324,7 +324,6 @@ one.
 | CRM authority remains unresolved for pipeline data | Adding Opportunity fields or relations could silently pre-empt AE-370 | Accepted CRM authority decision; `0.1.0` proceeds only without Opportunity mutation |
 | Production operator and permission role are unnamed | Install and human access would be unaudited | Named operator plus reviewed role diff showing read/update only |
 | Backup and restore are unproved | App uninstall or later schema migration may remove app-owned data | Successful non-production database/metadata restore drill with owner and timestamp |
-| No non-production target is identified | The live workspace cannot be the first integration-test environment | Disposable Twenty server running the target version with sanitized fixtures |
 | Existing inbound integrations lack a joint regression gate | A schema change could break Landing Page, newsletter, or Curia upserts | Integration run proving all three Person upsert contracts remain unchanged |
 | External read contract is absent | A Revenue Workcell API key could expose direct CRM or cross-prospect data | Separate approved read-only field allowlist, API-key role, privacy review, and tenant isolation test |
 | AI scope has no accepted need or cost/permission contract | Live model defaults do not authorize autonomous CRM actions | Separate spec and approval; AI entities remain absent from `0.1.0` |
@@ -334,5 +333,11 @@ one.
 Keep this as the implementation boundary until the blockers close. The smallest safe deliverable
 today is the reviewed source package and tarball, not a live installation. Local lint, typecheck,
 unit tests, manifest validation, tarball build, and credential scan passed; the default runtime
-role is deny-all. Compatibility, disposable install/uninstall, live metadata, and rollback
+role is deny-all. CI run
+[`31391168566`](https://github.com/Agentic-Engineering-Agency/twenty-revenue-workcell-app/actions/runs/31391168566)
+also installed and synchronized the package against a disposable Twenty `2.29.0` instance,
+verified the live object, fields, relations, and deny-all role, and required a successful
+uninstall. The `0.1.0` tarball SHA-256 is
+`cee7defb8e29741035e123d6e676f9e4f52f2d9643ef3281c7161afa414c8dfd`.
+Live-version compatibility, production metadata, joint inbound regression, and backup/rollback
 evidence remain release gates. Do not weaken `engines.twenty` merely to install on `2.26.1`.
