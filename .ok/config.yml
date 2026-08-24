@@ -63,3 +63,5 @@ contentRules:
     enabled: true
     generate:
       index: true
+autoSync:
+  default: true
