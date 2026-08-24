@@ -1,3 +1,6 @@
+---
+type: agents.md
+---
 # agentic-engineering-wiki Agent Rules
 
 Internal, source-backed operating knowledge for Agentic Engineering, Curia, the portfolio, and go-to-market work.

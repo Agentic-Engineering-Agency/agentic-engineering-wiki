@@ -4,7 +4,7 @@ okf_version: "0.2"
 
 # Index
 
-## Other
+## agents.md
 
 * [agentic-engineering-wiki Agent Rules](./AGENTS.md)
 
