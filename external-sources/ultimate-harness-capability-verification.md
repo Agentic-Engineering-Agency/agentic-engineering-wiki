@@ -10,6 +10,8 @@ confidentiality: internal
 source_origin: Local verification artifact supplied by the coordinating task
 ---
 
+<!-- markdownlint-disable MD025 -->
+
 # Ultimate Harness capability verification
 
 - Date: 2026-09-05
