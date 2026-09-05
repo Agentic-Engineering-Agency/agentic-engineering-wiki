@@ -2,7 +2,7 @@
 type: research-note
 description: "Síntesis interna provisional para decisiones de producto, verificación y cartera."
 status: provisional
-sources: [ external-sources/squad-product-research-report-2026-09-05.md, external-sources/ultimate-harness-capability-verification.md, external-sources/notion-operating-authority-snapshot-2026-09-05.md ]
+sources: [ external-sources/squad-product-research-report-2026-09-05.md, external-sources/ultimate-harness-capability-verification.md, external-sources/notion-operating-authority-snapshot-2026-09-05.md, external-sources/jfrog-prompt-to-release-traceability-2026-09-05.md, external-sources/release-evidence-counterexample-audit-2026-09-05.md ]
 created: 2026-09-05
 author: codex-mcp-client
 tags: [ research, provisional, internal, strategy, telar, ultimate-harness, prism ]
@@ -15,7 +15,9 @@ confidentiality: internal
 
 ## Qué decisión conviene preparar
 
-La hipótesis comercial propuesta para Telar-Demo es un expediente de release que reúna evidencia vigente de varios sistemas, señale faltantes y conserve el contexto de una decisión humana en el workflow del comprador. La investigación no demostró disposición a pagar por esa oferta ni una ventaja exclusiva. El primer comparador debe ser el proceso actual del comprador: exportaciones, CI y documentos, además de plataformas instaladas. [Informe revisado, secciones 1 y 7–10](../external-sources/squad-product-research-report-2026-09-05.md).
+**Un expediente neutral de release no constituye por sí solo una oportunidad exclusiva para Telar.** JFrog AppTrust y Kosli documentan directamente cadenas de evidencia ligadas al release. La hipótesis propuesta para Telar-Demo debe ser más específica: resolver un caso que siga descubierto después de configurar el proceso o producto del comprador, con menor esfuerzo de integración o revisión demostrado. No se estableció disposición a pagar ni superioridad de Telar. [Auditoría final de contraejemplos](../external-sources/release-evidence-counterexample-audit-2026-09-05.md).
+
+El expediente propuesto reúne evidencia vigente, señala faltantes y conserva el contexto de decisión humana. Su baseline debe incluir exportaciones, CI y documentos, además de AppTrust, Kosli y el stack realmente instalado. Si una regla o una attestation personalizada resuelve el problema, se propone favorecer esa integración antes que otro registro. Es una recomendación de investigación, no una decisión de arquitectura ni de construcción. [Informe inicial](../external-sources/squad-product-research-report-2026-09-05.md) y [reconciliación competitiva](../external-sources/release-evidence-counterexample-audit-2026-09-05.md).
 
 Squad sirve como referencia de experiencia: misiones, cola de atención, contexto y permisos se presentan de forma integrada. La recomendación es estudiar esos patrones y medir su utilidad; tener memoria, aprobación y varios runtimes no basta como diferenciación genérica. [Informe revisado, secciones 2–6](../external-sources/squad-product-research-report-2026-09-05.md).
 
@@ -42,11 +44,23 @@ La [estrategia de cartera](../articles/portfolio-and-platform-strategy.md), el [
 | Squad: permisos | Documentado | Describe restricciones por agente y cuenta; una VM por workspace no demuestra aislamiento de sistema operativo por agente |
 | Paperclip | Inspeccionado en código y documentado | v2026.817.0 contiene HMAC, snapshots, staleness e idempotencia por efecto interno. Las actualizaciones de 31 de agosto y 2 de septiembre se revisaron documentalmente; no se probó firma humana ni transacción universal sobre servicios externos |
 | Ultimate Harness | Probado en alcance focalizado | 82/82 pruebas pasaron; un probe temporal aceptó una etiqueta de aprobador no autenticada y un diff cambiado después de verificar, aunque había un review gate declarado |
+| JFrog AppTrust | Documentado; GA anunciado el 2 de septiembre | Evidencia firmada ligada al release; sesiones de agentes y session BOM previstos para después en 2026. [Fuente](../external-sources/jfrog-prompt-to-release-traceability-2026-09-05.md) |
+| Kosli | Documentado; baseline del 20 de marzo de 2025 | Release Flow con fingerprints y evidencia SDLC; go/no-go humano en CI. No ejecutado. [Auditoría](../external-sources/release-evidence-counterexample-audit-2026-09-05.md) |
 | APIs de integración | Documentado; integración no probada | LangSmith, AgentCore y attachments de ServiceNow ofrecen rutas plausibles; no se ejecutaron APIs autenticadas |
 | Spark / Prism | Inspeccionado y propuesto | La lectura de Spark v2.1.0 no permite tratar un await genérico como barrera global de LoD y paging; no se ejecutó benchmark |
 | Demanda y precio de Telar | Desconocido | No se estableció un comprador dispuesto a pagar por el expediente propuesto |
 
 Fuentes: [informe revisado, secciones 2–12](../external-sources/squad-product-research-report-2026-09-05.md) y [anexo reproducible de UH](../external-sources/ultimate-harness-capability-verification.md). Documentado no significa probado, y un resultado focalizado no certifica el producto completo.
+
+## Contraejemplos directos: JFrog y Kosli
+
+El anuncio oficial de JFrog del 2 de septiembre de 2026 presenta Prompt to Release Traceability como generalmente disponible. Describe recolección de commits, PRs y aprobadores de GitHub, y transiciones de Jira; firma y adjunta esa evidencia a la versión de aplicación antes de los gates de promoción. La evidencia de sesiones de agentes y el session bill of materials están previstos para más adelante en 2026: no se cuentan como entregados. Es evidencia documental del proveedor, sin prueba propia de ejecución. [Extractos oficiales fechados](../external-sources/jfrog-prompt-to-release-traceability-2026-09-05.md) y [auditoría de alcance](../external-sources/release-evidence-counterexample-audit-2026-09-05.md).
+
+Kosli documentó el 20 de marzo de 2025 un release Flow que compara fingerprints de artefactos entrantes y salientes, reúne evidencia del ciclo de desarrollo y deja el go/no-go humano en CI. Es un baseline previo, no un lanzamiento de las últimas seis semanas. Su endpoint de reporte de aprobación asocia SHA256, entorno y commits; el aprobador opcional es una cadena y no prueba por sí solo una firma criptográfica humana. No se ejecutó el flujo. [Auditoría y fuentes primarias de Kosli](../external-sources/release-evidence-counterexample-audit-2026-09-05.md).
+
+La documentación inspeccionada de AppTrust también contempla evidencia externa y reglas de aprobación de ServiceNow; SLSA VSA aporta un formato existente de resumen de verificación. Antes de inventar un registro o formato nuevo se propone evaluar una attestation o integración compatible. La auditoría no estableció menor costo total de Telar ni ausencia universal de campos en los incumbentes. [Auditoría final](../external-sources/release-evidence-counterexample-audit-2026-09-05.md).
+
+Kosli identifica a Firi como cliente y a DNB en un POC. Es señal nominal de demanda en la categoría adyacente de evidencia y compliance SDLC, no prueba de compra del caso específico de Telar. Los ahorros que publica JFrog no se adoptan como ROI independiente. [Alcance de la evidencia comercial](../external-sources/release-evidence-counterexample-audit-2026-09-05.md).
 
 ## Ultimate Harness: qué se probó y qué falta
 
@@ -64,7 +78,7 @@ Se propone preparar estas fases para discusión, sin fechas ni propietarios inve
 
 | Fase propuesta | Evidencia que permitiría decidir |
 | --- | --- |
-| Baseline de una decisión real de release | Quién reúne la evidencia, cuánto tarda y qué resuelve el proceso actual |
+| Baseline de una decisión real de release | Quién reúne la evidencia, cuánto tarda y qué sigue sin resolverse después de configurar el proceso o producto existente, incluidos AppTrust o Kosli cuando apliquen |
 | Fixture sintético | Evidencia faltante, caducada o ligada a un candidato que cambió; resultado explícito de evidencia insuficiente |
 | Un origen y un destino elegidos por el comprador | Permisos, versiones y metadatos suficientes; integración sólo tras autorización de implementación |
 | Comparación en una decisión de release autorizada | Tiempo de preparación y revisión, faltantes relevantes, decisión que cambia y disposición a contratar un piloto |
@@ -97,9 +111,12 @@ Los enlaces siguientes son navegación a los registros vigentes, verificados por
 - [Agentic Delivery Operating Model — 2026-09-02](https://app.notion.com/p/Agentic-Delivery-Operating-Model-2026-09-02-3d013597488480d2a642c1e9098a54cc): límites aprobados y disponibilidad.
 - [Telar — Planning Release v3](https://app.notion.com/p/Telar-Planning-Release-v3-3c013597488481dc98f5e426e843c816): planning only.
 
+## Conclusión para el siguiente experimento
+
+Se propone continuar sólo con una necesidad residual concreta y comparar el esfuerzo de integración y revisión contra el stack que el comprador puede usar. Un expediente más completo, neutralidad o un hash no establecen una ventaja por sí solos. Si basta una regla o attestation personalizada, favorecer esa integración. Si el caso requiere gobernar estado externo mutable, definir ese alcance antes de llamarlo candidato exacto. Para UH, autenticar al aprobador y vincular evidencia al candidato mejora corrección, pero no demuestra diferenciación comercial. [Auditoría final de contraejemplos](../external-sources/release-evidence-counterexample-audit-2026-09-05.md).
+
 ## Preguntas abiertas y límite de uso
 
 Faltan comprador y pago, integraciones reales, readiness actual completo de Telar-Demo, inventario exhaustivo de Linear, pruebas prácticas de Spark y mediciones propias de permisos, costo y recuperación de Squad. Las dos rondas de crítica en Claude ayudaron a retirar overclaims; no fueron una evaluación ciega ni prueba comercial. Command Code no produjo inferencia de validación. [Método y límites del informe](../external-sources/squad-product-research-report-2026-09-05.md).
 
 Este material es interno. Su publicación en la wiki no aprueba claims externos: rigen el [registro de claims](../articles/claims-registry.md) y la [frontera de publicación](../articles/public-wiki-boundary.md). La oferta pagada, titulares comerciales y autoridad de outreach que siguen abiertos requieren decisión de los fundadores; esta síntesis no los resuelve.
-

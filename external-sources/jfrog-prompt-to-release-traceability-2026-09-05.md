@@ -11,6 +11,8 @@ author: Sophie Starchenko, JFrog
 confidentiality: internal
 ---
 
+<!-- markdownlint-disable MD028 -->
+
 Extractos seleccionados de la publicación oficial de JFrog, leída el 5 de septiembre de 2026. Se conserva una captura parcial, no una copia íntegra del artículo.
 
 ## Evidencia agrupada y firma — fragmentos de la explicación de AppTrust
