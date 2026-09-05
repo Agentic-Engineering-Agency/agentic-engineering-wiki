@@ -11,8 +11,20 @@ author: Sophie Starchenko, JFrog
 confidentiality: internal
 ---
 
-## Source
+Extractos seleccionados de la publicación oficial de JFrog, leída el 5 de septiembre de 2026. Se conserva una captura parcial, no una copia íntegra del artículo.
 
-## Highlights
+## Evidencia agrupada y firma — fragmentos de la explicación de AppTrust
 
-## My notes
+> commits, PRs, Jira tickets, and approver records
+
+> signs them
+
+## Disponibilidad — fragmentos del cierre del anuncio
+
+> generally available now
+
+> Agent session evidence and the session bill of materials
+
+> later this year
+
+El enlace de procedencia, autor y fechas figuran en los metadatos. Los fragmentos se mantienen separados para no componer una cita que el artículo no contiene.
