@@ -4,6 +4,11 @@ description: Append-only audit trail of changes to this knowledge base.
 ---
 Append-only audit trail. Add one dated entry per turn that creates, edits, or restructures content. The knowledge-base skill describes what to log and the entry shape. Newest entries first.
 
+## 2026-09-05 — Aclaración final de Linear y formato de Notion
+
+- Corregida la [síntesis existente](./research/strategy-and-product-evidence-2026-09-05.md): todos los totales anteriores de Linear quedan sin auditar; las listas son parciales y se requiere una exportación estable con claves, equipo, estado y proyecto. La explicación de paginación se atribuye a Linear Agent, sin presentarla como auditoría independiente de API.
+- Enlazada la conversación de aclaración y retirada la nota temporal de formato de Notion, cuya finalización fue verificada por su tarea. Fuentes y decisiones conservan sus estados.
+
 ## 2026-09-05 — Enlace recíproco a investigación de Notion
 
 - Añadido a la [síntesis existente](./research/strategy-and-product-evidence-2026-09-05.md) el enlace a [Investigación y coordinación — Squad, Telar, Ultimate Harness y Prism — 2026-09-05](https://app.notion.com/p/3d2135974884805db8dac1eb204668ac), tras verificación de contenido persistido comunicada por la tarea de Notion.
