@@ -10,6 +10,7 @@ Append-only audit trail. Add one dated entry per turn that creates, edits, or re
 - Preservados [extractos oficiales de JFrog](./external-sources/jfrog-prompt-to-release-traceability-2026-09-05.md) y la [auditoría final de contraejemplos](./external-sources/release-evidence-counterexample-audit-2026-09-05.md), con enlaces en el índice de fuentes.
 - Separadas disponibilidad documentada y ejecución propia, evidencia GA y session BOM futuro, demanda de categoría y disposición a pagar por Telar. La recomendación exige una necesidad residual y favorece integración si una regla o attestation personalizada basta.
 - Conservados el informe inicial, las decisiones aceptadas, la arquitectura y los límites planning only y LOCAL-ONLY. El enlace recíproco a la investigación de Notion sigue pendiente de una página verificada.
+- Verificados los cinco documentos de esta actualización: cero errores y cero enlaces internos rotos. La síntesis mantiene seis advertencias de compatibilidad del esquema sobre status provisional y las cinco entradas sources; las dos nuevas fuentes, el índice y este log no tienen advertencias. Las dos fuentes nuevas tienen tres backlinks cada una.
 
 ## 2026-09-05 — Investigación de producto y autoridad operativa
 
