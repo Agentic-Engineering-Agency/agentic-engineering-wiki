@@ -172,6 +172,10 @@ Do not add another model unless it addresses an observed failure mode or enters 
 
 Review monthly and whenever a model/version/provider/tool/prompt changes. Promote or demote at the workflow level, not globally. Preserve losing routes’ results so future pricing or quality changes can be compared.
 
+## Verificación posterior y límites de promoción
+
+La [investigación del 5 de septiembre de 2026](../research/strategy-and-product-evidence-2026-09-05.md) enlaza pruebas focalizadas de Ultimate Harness y distingue autenticación del aprobador, vínculo al candidato exacto y recibos de revisión. Incluye un experimento separado de Spark para Prism; no reemplaza el baseline histórico ni demuestra resultados de ventas.
+
 ## References
 
 - [Model-routing research](../research/model-routing-and-sales-harness.md)

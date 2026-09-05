@@ -52,6 +52,10 @@ Not (yet) dedicated Mexican legal SaaS incumbents or Harvey in MX mid-market.
 
 Curia sells **trust architecture** (verified citations, single ops chain), not "another AI chat for lawyers."
 
+## Investigación competitiva fechada
+
+La [revisión de Squad, plataformas de agentes y sustitutos de Telar](../research/strategy-and-product-evidence-2026-09-05.md) distingue documentación, demo, código inspeccionado y pruebas. Sus hipótesis comerciales siguen propuestas; la investigación no acredita demanda ni exclusividad.
+
 ## Related
 
 - [Curia — product overview](./curia-overview.md)

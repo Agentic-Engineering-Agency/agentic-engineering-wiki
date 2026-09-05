@@ -6,6 +6,10 @@
 
 ## source
 
+* [Squad y la próxima decisión de producto — informe fuente](./squad-product-research-report-2026-09-05.md) - Informe revisado preservado con sus fuentes y límites.
+* [Ultimate Harness capability verification — 2026-09-05](./ultimate-harness-capability-verification.md) - Pruebas y probe reproducible en revisión exacta.
+* [Notion — verificación de autoridad operativa — 2026-09-05](./notion-operating-authority-snapshot-2026-09-05.md) - Registro fechado de autoridad y navegación verificada.
+
 * [AE account-discovery snapshot — 2026-07-26](./ae-account-discovery-snapshot-2026-07-26.md) - Point-in-time summary adjudication for 28 distinct candidate labels in the Mexican industrial wedge, its 2/7 comparison cohort, enterprise calibration set, and measured trigger-evidence gate.
 * [Chronicle and runtime snapshot — 2026-07-26](./chronicle-and-runtime-snapshot-2026-07-26.md) - Point-in-time record of recent desktop work patterns, active agent sessions, and operating constraints.
 * [Founder dashboard source snapshot — 2026-07-26](./founder-dashboard-source-snapshot-2026-07-26.md) - Point-in-time, read-only evidence capture for connector health, Sites, Linear, existing dashboard code, local business data, and agent-runtime constraints.

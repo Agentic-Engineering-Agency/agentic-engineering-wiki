@@ -16,6 +16,10 @@ sources:
 ---
 Canonical operating knowledge for Agentic Engineering, Curia, the product portfolio, GTM, agent/model harnesses, and investor-readiness boundaries. Internal-first; public use requires the [[articles/public-wiki-boundary|Public wiki boundary]].
 
+## Investigación y verificación — 2026-09-05
+
+[Squad, Telar y Ultimate Harness — evidencia y próximos experimentos](../research/strategy-and-product-evidence-2026-09-05.md) reúne investigación provisional, pruebas focalizadas y enlaces a la autoridad vigente en Notion. Las propuestas no sustituyen decisiones aprobadas ni convierten los snapshots de julio en estado actual.
+
 ## Start here
 
 1. [[articles/active-work|Active work snapshot]] — current commercial gates and runtime constraints

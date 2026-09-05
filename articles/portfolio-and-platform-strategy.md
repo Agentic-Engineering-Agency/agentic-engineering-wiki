@@ -136,6 +136,10 @@ The approved ambition is for task-specific multi-model routing to outperform any
 6. Route all platform and customer claims through the canonical claims policy.
 7. Review this strategy when a product passes or fails its evidence gate.
 
+## Evidencia posterior para reconciliación
+
+La [investigación del 5 de septiembre de 2026](../research/strategy-and-product-evidence-2026-09-05.md) conserva la arquitectura aprobada vigente en Notion y separa el experimento advisory de Telar, las brechas verificadas de Ultimate Harness y el track propuesto de Spark para Prism. No modifica las decisiones históricas de esta página, activa asignaciones ni cierra la elección de harness OSS.
+
 ## References
 
 - [Founder interview — Round 4](../research/founder-interview-round-4-2026-07-26.md)

@@ -8,6 +8,8 @@
 
 ## research-note
 
+* [Squad, Telar y Ultimate Harness — evidencia y próximos experimentos — 2026-09-05](./strategy-and-product-evidence-2026-09-05.md) - Investigación interna provisional, arquitectura vigente y experimentos propuestos.
+
 * [AE 28-row trigger ledger — 2026-07-26](./ae-28-row-trigger-ledger-2026-07-26.md) - Row-level company evidence ledger for the frozen 28-label AE cohort, separating raw, durable, and conservative working-wedge counts.
 * [AE 50-account pilot — evidence seed and segment correction](./ae-50-account-pilot-seed-2026-07-26.md) - Provisional research decision for the Mexican-controlled industrial wedge, with 28 distinct candidate labels, a 4/5/17/2 readiness split, and a measured trigger-evidence gate.
 * [Founder dashboard v0 operating and data contract — 2026-07-26](./founder-dashboard-v0-operating-contract-2026-07-26.md) - Implementation-ready read-only specification for Lalo and Lucy, grounded in current ledgers, connector health, code surfaces, Sites patterns, and Linear sequencing.

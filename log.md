@@ -4,6 +4,13 @@ description: Append-only audit trail of changes to this knowledge base.
 ---
 Append-only audit trail. Add one dated entry per turn that creates, edits, or restructures content. The knowledge-base skill describes what to log and the entry shape. Newest entries first.
 
+## 2026-09-05 — Investigación de producto y autoridad operativa
+
+- Creada la [síntesis provisional de Squad, Telar y Ultimate Harness](./research/strategy-and-product-evidence-2026-09-05.md), con evidencia del informe revisado, verificación reproducible de UH y autoridad vigente comunicada desde Notion.
+- Añadidos enlaces desde home, panorama competitivo, estrategia de cartera, model routing y los índices existentes.
+- Conservados estados aprobados, planning only, LOCAL-ONLY, baseline histórico de Prism y elección de harness OPEN. No se modificaron producto, issues, decisiones aceptadas ni despliegues.
+- Validación pendiente de cierre: auditoría administrada de documentos y enlaces. Enlace recíproco a la nueva investigación de Notion pendiente de página verificada; los registros canónicos existentes ya están enlazados.
+
 ## 2026-07-26: Fix agency-site hero heading
 
 - Replaced the emphasized `Global AI Engineering Agency` line with a `###` heading to resolve markdownlint/MD036.
