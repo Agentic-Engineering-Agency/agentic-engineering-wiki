@@ -4,6 +4,11 @@ description: Append-only audit trail of changes to this knowledge base.
 ---
 Append-only audit trail. Add one dated entry per turn that creates, edits, or restructures content. The knowledge-base skill describes what to log and the entry shape. Newest entries first.
 
+## 2026-09-05 — Enlace recíproco a investigación de Notion
+
+- Añadido a la [síntesis existente](./research/strategy-and-product-evidence-2026-09-05.md) el enlace a [Investigación y coordinación — Squad, Telar, Ultimate Harness y Prism — 2026-09-05](https://app.notion.com/p/3d2135974884805db8dac1eb204668ac), tras verificación de contenido persistido comunicada por la tarea de Notion.
+- Resuelto el enlace pendiente de las entradas anteriores. Conservados los estados de investigación, fuentes y decisiones; el formato de Notion seguía en ajuste. No se usó el navegador ni se cambió Notion desde esta tarea.
+
 ## 2026-09-05 — Contraejemplos directos del expediente de release
 
 - Reconciliada la [misma síntesis provisional](./research/strategy-and-product-evidence-2026-09-05.md) con JFrog AppTrust y Kosli como comparadores directos.

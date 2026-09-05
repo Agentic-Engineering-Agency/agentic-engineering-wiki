@@ -101,6 +101,8 @@ Twenty fue reportado como disponible en la evidencia más reciente; la acción p
 
 ## Dónde continuar la decisión
 
+La [tarea de investigación en Notion](https://app.notion.com/p/3d2135974884805db8dac1eb204668ac), titulada [Investigación y coordinación — Squad, Telar, Ultimate Harness y Prism — 2026-09-05](https://app.notion.com/p/3d2135974884805db8dac1eb204668ac), reúne la investigación y coordinación relacionada. La tarea de Notion verificó el 5 de septiembre de 2026 que su contenido completo estaba persistido; el ajuste de formato seguía en curso. Este enlace es navegación a investigación, no una decisión aprobada ni evidencia de ejecución probada de competidores.
+
 Los enlaces siguientes son navegación a los registros vigentes, verificados por la tarea de Notion y preservados en la [captura de autoridad](../external-sources/notion-operating-authority-snapshot-2026-09-05.md):
 
 - [Agentic Engineering OS](https://app.notion.com/p/Agentic-Engineering-OS-d86c64792a0f474f8918364c39e98d9d): hub de estrategia y gobierno.
