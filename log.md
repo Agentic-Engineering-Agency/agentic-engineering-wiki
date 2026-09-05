@@ -4,6 +4,13 @@ description: Append-only audit trail of changes to this knowledge base.
 ---
 Append-only audit trail. Add one dated entry per turn that creates, edits, or restructures content. The knowledge-base skill describes what to log and the entry shape. Newest entries first.
 
+## 2026-09-05 — Contraejemplos directos del expediente de release
+
+- Reconciliada la [misma síntesis provisional](./research/strategy-and-product-evidence-2026-09-05.md) con JFrog AppTrust y Kosli como comparadores directos.
+- Preservados [extractos oficiales de JFrog](./external-sources/jfrog-prompt-to-release-traceability-2026-09-05.md) y la [auditoría final de contraejemplos](./external-sources/release-evidence-counterexample-audit-2026-09-05.md), con enlaces en el índice de fuentes.
+- Separadas disponibilidad documentada y ejecución propia, evidencia GA y session BOM futuro, demanda de categoría y disposición a pagar por Telar. La recomendación exige una necesidad residual y favorece integración si una regla o attestation personalizada basta.
+- Conservados el informe inicial, las decisiones aceptadas, la arquitectura y los límites planning only y LOCAL-ONLY. El enlace recíproco a la investigación de Notion sigue pendiente de una página verificada.
+
 ## 2026-09-05 — Investigación de producto y autoridad operativa
 
 - Creada la [síntesis provisional de Squad, Telar y Ultimate Harness](./research/strategy-and-product-evidence-2026-09-05.md), con evidencia del informe revisado, verificación reproducible de UH y autoridad vigente comunicada desde Notion.

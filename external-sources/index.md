@@ -6,6 +6,8 @@
 
 ## source
 
+* [JFrog AppTrust — trazabilidad de release — extractos del anuncio](./jfrog-prompt-to-release-traceability-2026-09-05.md) - Extractos oficiales con disponibilidad actual y futura separadas.
+* [Auditoría de contraejemplos — evidencia de release — 2026-09-05](./release-evidence-counterexample-audit-2026-09-05.md) - JFrog, Kosli y límites de diferenciación para Telar.
 * [Squad y la próxima decisión de producto — informe fuente](./squad-product-research-report-2026-09-05.md) - Informe revisado preservado con sus fuentes y límites.
 * [Ultimate Harness capability verification — 2026-09-05](./ultimate-harness-capability-verification.md) - Pruebas y probe reproducible en revisión exacta.
 * [Notion — verificación de autoridad operativa — 2026-09-05](./notion-operating-authority-snapshot-2026-09-05.md) - Registro fechado de autoridad y navegación verificada.
